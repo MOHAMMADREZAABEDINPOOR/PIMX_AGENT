@@ -229,8 +229,7 @@ test('deep research searches, reads evidence and saves a grounded document', asy
   await page.locator('#composer-input').fill('Research photovoltaic energy storage and inverter efficiency'); await page.locator('#btn-send-message').click();
   await expect(page.getByRole('button', { name: 'React to message' })).toBeVisible();
   expect(searches).toBeGreaterThanOrEqual(2); expect(reads).toBeGreaterThan(0); expect(prompt).toContain('LIVE WEB EVIDENCE'); expect(prompt).toContain('operating conditions');
-  const artifacts = (await persisted(page)).artifacts;
-  expect(artifacts.some((a: { kind: string; content: string }) => a.kind === 'DOCUMENT' && a.content.includes('Solar research report'))).toBe(true);
+  await expect.poll(async()=> (await persisted(page)).artifacts.some((a: { kind: string; content: string }) => a.kind === 'DOCUMENT' && a.content.includes('Solar research report'))).toBe(true);
 });
 
 test('uploaded PDF and DOCX text is extracted and sent as grounded source context', async ({ page }) => {
