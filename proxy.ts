@@ -5,8 +5,14 @@ export function proxy(request:NextRequest){
   if(secret){const supplied=Buffer.from(request.headers.get('x-pimx-proxy-secret') || ''),expected=Buffer.from(secret);if(supplied.length!==expected.length || !timingSafeEqual(supplied,expected))return NextResponse.json({error:{message:'Access is not allowed.'}},{status:403,headers:{'Cache-Control':'no-store'}});}
   const configured=process.env.APP_URL || (process.env.NODE_ENV === 'production' ? 'https://pimxagent.pages.dev' : undefined);
   const incoming = new Headers(request.headers),faPath = request.nextUrl.pathname === '/fa' || request.nextUrl.pathname.startsWith('/fa/');
-  const locale = faPath || request.cookies.get('pimx_locale')?.value==='fa'?'fa':'en'; incoming.set('x-pimx-locale',locale);
-  const forward = () => { if(faPath){const target=request.nextUrl.clone();target.pathname=target.pathname.replace(/^\/fa(?=\/|$)/,'') || '/';return NextResponse.rewrite(target,{request:{headers:incoming}});} return NextResponse.next({request:{headers:incoming}}); };
+  // Only the authenticated deployment adapter may carry the original locale.
+  const adapterFa=Boolean(secret)&&request.headers.get('x-pimx-locale')==='fa';
+  const locale = faPath || adapterFa || request.cookies.get('pimx_locale')?.value==='fa'?'fa':'en'; incoming.set('x-pimx-locale',locale);
+  const forward = () => { if(faPath){const target=request.nextUrl.clone();target.pathname=target.pathname.replace(/^\/fa(?=\/|$)/,'') || '/';
+    // The Node middleware adapter can normalize nextUrl's host to localhost.
+    // The authenticated Pages adapter supplies the actual request origin.
+    if(secret){target.host=incoming.get('x-forwarded-host') || target.host;target.protocol=(incoming.get('x-forwarded-proto') || target.protocol.replace(':',''))+':';}
+    return NextResponse.rewrite(target,{request:{headers:incoming}});} return NextResponse.next({request:{headers:incoming}}); };
   if(!configured)return forward();
   const canonical=new URL(configured),local=['localhost','127.0.0.1','[::1]'].includes(canonical.hostname);
   if(local)return forward();
