@@ -1,7 +1,27 @@
 {
- "$schema":"node_modules/wrangler/config-schema.json","name":"pimxagent",
- "pages_build_output_dir":".pages-output","compatibility_date":"2026-09-27",
- "compatibility_flags":["nodejs_compat","global_fetch_strictly_public"],
- "d1_databases":[{"binding":"DB","database_name":"pimx-agent-db","database_id":"533064eb-b7ce-41e9-b7f4-4e552da4ea90","migrations_dir":"migrations/d1"}],
- "vars":{"APP_RUNTIME":"cloudflare","APP_URL":"https://pimxagent.pages.dev","TRUST_PROXY":"true","SMTP_HOST":"smtp.gmail.com","SMTP_PORT":"465","SMTP_USER":"pimxagent@gmail.com"}
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pimxagent",
+  "pages_build_output_dir": ".pages-output",
+  "compatibility_date": "2026-09-27",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "pimx-agent-db",
+      "database_id": "533064eb-b7ce-41e9-b7f4-4e552da4ea90",
+      "migrations_dir": "migrations/d1"
+    }
+  ],
+  "vars": {
+    "APP_RUNTIME": "cloudflare",
+    "APP_URL": "https://pimxagent.pages.dev",
+    "TRUST_PROXY": "true",
+    "SMTP_HOST": "smtp.gmail.com",
+    "SMTP_PORT": "465",
+    "SMTP_USER": "pimxagent@gmail.com",
+    "NEXT_PUBLIC_TURNSTILE_SITE_KEY": "0x4AAAAAAFFgNkcM8Bi6FkBS"
+  }
 }
