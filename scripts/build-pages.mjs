@@ -11,5 +11,5 @@ await build({entryPoints:['cloudflare-pages/app-worker.js'],outfile:'.pages-outp
  {name:'node-builtins',setup(builder){builder.onResolve({filter:new RegExp(`^(${builtinModules.filter(name=>!name.startsWith('node:')).map(name=>name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')})$`)},args=>({path:`node:${args.path}`,external:true}));}}
 ]});
 if(/\bimport\s*\(\s*["']node:sqlite["']/.test(readFileSync('.pages-output/_worker.js','utf8')))throw new Error('Local SQLite must not be statically imported by the Cloudflare Pages worker.');
-writeFileSync('.pages-output/_routes.json',JSON.stringify({version:1,include:['/*'],exclude:['/_next/static/*','/media/*','/fonts/*','/icons/*','/sw.js','/offline.html','/brand-logo.webp']}));
+writeFileSync('.pages-output/_routes.json',JSON.stringify({version:1,include:['/*'],exclude:['/_next/static/*','/media/*','/fonts/*','/icons/*','/sw.js','/offline','/offline.html','/brand-logo.webp']}));
 console.log('Cloudflare Pages app, assets and D1 runtime packaged.');

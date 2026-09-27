@@ -16,7 +16,8 @@ test('Proxy rewrites Persian routes to the authenticated request host instead of
 test('Pages enforces HTTPS and serves public assets without entering the private app',async()=>{
  let calls=0;const worker=createPagesWorker({fetch:()=>{calls++;return new Response('private');}}),env={ASSETS:{fetch:()=>new Response('public image')}};
  const redirect=await worker.fetch(new Request('http://pimxagent.pages.dev/contact'),env,{});expect(redirect.status).toBe(308);expect(redirect.headers.get('location')).toBe('https://pimxagent.pages.dev/contact');
- expect(await(await worker.fetch(new Request('https://pimxagent.pages.dev/media/pimx-workspace-dark.webp'),env,{})).text()).toBe('public image');expect(calls).toBe(0);
+ expect(await(await worker.fetch(new Request('https://pimxagent.pages.dev/media/pimx-workspace-dark.webp'),env,{})).text()).toBe('public image');
+ expect(await(await worker.fetch(new Request('https://pimxagent.pages.dev/offline'),env,{})).text()).toBe('public image');expect(calls).toBe(0);
 });
 test('Pages preserves the original locale across shared-route rewrites',async()=>{
  const worker=createPagesWorker({fetch:(request:Request)=>new Response(request.headers.get('x-pimx-locale'))});
