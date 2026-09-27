@@ -31,8 +31,7 @@ async function sqlite() {
   if (!localDeployment()) throw new Error('A Cloudflare D1 binding is required in production.');
   if (!globals.pimxDatabase) {
     // This local-only module must not enter the Cloudflare worker module graph.
-    // Keep this runtime-only import dynamic through the Pages bundler as well.
-    const localModule = ['node', 'sqlite'].join(':');
+    const localModule = 'node:sqlite';
     const { DatabaseSync: Database } = await import(/* webpackIgnore: true */ /* turbopackIgnore: true */ localModule);
     mkdirSync(dataDirectory(), { recursive: true });
     const db: DatabaseSync = new Database(resolve(dataDirectory(), 'pimx.sqlite'));
