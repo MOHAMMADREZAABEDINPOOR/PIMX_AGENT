@@ -34,5 +34,7 @@ test('English default, Persian navigation, theme photographs and product film wo
 });
 test('the installed shell shows Persian offline guidance for a Persian route',async({page,context})=>{
  await page.addInitScript(()=>localStorage.setItem('pimx_cookie_consent','rejected'));await page.goto('/fa/');await page.evaluate(async()=>{await navigator.serviceWorker.ready;});await expect.poll(()=>page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(true);
+ // Reproduce Pages' clean-URL redirect metadata in the cached HTML response.
+ const redirected=await page.evaluate(async()=>{const response=await fetch('/offline.html/'),result={ok:response.ok,redirected:response.redirected};const key=(await caches.keys()).find(key=>key.startsWith('pimx-shell-'))!;await(await caches.open(key)).put('/offline.html',response);return result;});expect(redirected).toEqual({ok:true,redirected:true});
  await context.setOffline(true);await page.goto('/fa/offline-probe',{waitUntil:'domcontentloaded'});await expect(page.locator('html')).toHaveAttribute('lang','fa');await expect(page.locator('h1')).toHaveText('لحظه‌ای بدون اینترنت.');await expect(page.getByRole('link',{name:'تلاش دوباره'})).toHaveAttribute('href','/fa/');
 });
