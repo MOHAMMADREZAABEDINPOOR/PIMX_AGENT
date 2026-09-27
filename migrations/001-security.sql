@@ -1,0 +1,27 @@
+BEGIN;
+
+CREATE TABLE IF NOT EXISTS app_users (id TEXT PRIMARY KEY, email TEXT UNIQUE NOT NULL, display_name TEXT NOT NULL, password_hash TEXT NOT NULL, role TEXT NOT NULL DEFAULT 'USER', workspace_key TEXT NOT NULL, created_at BIGINT NOT NULL);
+CREATE TABLE IF NOT EXISTS app_sessions (token_hash TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES app_users(id) ON DELETE CASCADE, expires_at BIGINT NOT NULL, last_seen BIGINT NOT NULL);
+CREATE TABLE IF NOT EXISTS app_credentials (id TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES app_users(id) ON DELETE CASCADE, provider_id TEXT NOT NULL, label TEXT NOT NULL, secret TEXT NOT NULL, base_url TEXT, api_format TEXT NOT NULL, created_at BIGINT NOT NULL);
+CREATE TABLE IF NOT EXISTS app_workspaces (user_id TEXT PRIMARY KEY REFERENCES app_users(id) ON DELETE CASCADE, payload TEXT NOT NULL, version BIGINT NOT NULL DEFAULT 1, updated_at BIGINT NOT NULL);
+CREATE TABLE IF NOT EXISTS app_shares (id TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES app_users(id) ON DELETE CASCADE, payload TEXT NOT NULL, expires_at BIGINT NOT NULL, created_at BIGINT NOT NULL);
+CREATE TABLE IF NOT EXISTS app_share_index (id TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES app_users(id) ON DELETE CASCADE);
+CREATE TABLE IF NOT EXISTS app_limits (bucket TEXT PRIMARY KEY, count INTEGER NOT NULL, reset_at BIGINT NOT NULL);
+CREATE TABLE IF NOT EXISTS app_contacts (id TEXT PRIMARY KEY, payload TEXT NOT NULL, created_at BIGINT NOT NULL);
+CREATE TABLE IF NOT EXISTS app_pageviews (day TEXT NOT NULL, path TEXT NOT NULL, count BIGINT NOT NULL DEFAULT 0, PRIMARY KEY(day,path));
+CREATE INDEX IF NOT EXISTS app_sessions_user ON app_sessions(user_id);
+CREATE INDEX IF NOT EXISTS app_credentials_owner ON app_credentials(user_id);
+CREATE INDEX IF NOT EXISTS app_shares_owner ON app_shares(user_id);
+ALTER TABLE app_credentials ENABLE ROW LEVEL SECURITY;
+ALTER TABLE app_credentials FORCE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS owner_access ON app_credentials;
+CREATE POLICY owner_access ON app_credentials USING (user_id = current_setting('app.user_id',true)) WITH CHECK (user_id = current_setting('app.user_id',true));
+ALTER TABLE app_workspaces ENABLE ROW LEVEL SECURITY;
+ALTER TABLE app_workspaces FORCE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS owner_access ON app_workspaces;
+CREATE POLICY owner_access ON app_workspaces USING (user_id = current_setting('app.user_id',true)) WITH CHECK (user_id = current_setting('app.user_id',true));
+ALTER TABLE app_shares ENABLE ROW LEVEL SECURITY;
+ALTER TABLE app_shares FORCE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS owner_access ON app_shares;
+CREATE POLICY owner_access ON app_shares USING (user_id = current_setting('app.user_id',true)) WITH CHECK (user_id = current_setting('app.user_id',true));
+COMMIT;

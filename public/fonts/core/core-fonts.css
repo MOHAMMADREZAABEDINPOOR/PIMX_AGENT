@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Vazirmatn Local';
+  src: url('/fonts/core/Vazirmatn-Variable.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter Local';
+  src: url('/fonts/core/Inter-Variable.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Pimx Agent AI",
+  "description": "Multi-provider AI chat and agent platform featuring 18+ model providers, 9 composer modes, canvas, artifacts, deep research, local RAG sources, web dev sandbox, memory, and Cloudflare D1 deployment readiness.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

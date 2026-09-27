@@ -1,0 +1,5526 @@
+{
+  "Language": [
+    "Language",
+    "زبان"
+  ],
+  "English": [
+    "English",
+    "انگلیسی"
+  ],
+  "Persian": [
+    "Persian",
+    "فارسی"
+  ],
+  "Contact": [
+    "Contact",
+    "تماس"
+  ],
+  "Sign in": [
+    "Sign in",
+    "ورود"
+  ],
+  "Get started": [
+    "Get started",
+    "شروع کنید"
+  ],
+  "Privacy": [
+    "Privacy",
+    "حریم خصوصی"
+  ],
+  "Terms": [
+    "Terms",
+    "شرایط استفاده"
+  ],
+  "Close": [
+    "Close",
+    "بستن"
+  ],
+  "Cancel": [
+    "Cancel",
+    "انصراف"
+  ],
+  "Save": [
+    "Save",
+    "ذخیره"
+  ],
+  "Delete": [
+    "Delete",
+    "حذف"
+  ],
+  "Settings": [
+    "Settings",
+    "تنظیمات"
+  ],
+  "Loading…": [
+    "Loading…",
+    "در حال بارگذاری…"
+  ],
+  "Try again": [
+    "Try again",
+    "تلاش مجدد (بارگذاری مجدد کامپوننت)"
+  ],
+  "Send": [
+    "Send",
+    "ارسال"
+  ],
+  "Download": [
+    "Download",
+    "دریافت"
+  ],
+  "Upload": [
+    "Upload",
+    "بارگذاری"
+  ],
+  "Elapsed": [
+    "Elapsed",
+    "زمان سپری‌شده"
+  ],
+  "Steps": [
+    "Steps",
+    "گام‌ها"
+  ],
+  "Phase": [
+    "Phase",
+    "مرحله"
+  ],
+  "Standard Chat": [
+    "Standard Chat",
+    "گفتگوی معمولی"
+  ],
+  "Live Web Search": [
+    "Live Web Search",
+    "جست‌وجوی زندهٔ وب"
+  ],
+  "Retrieves current web results and citations dynamically.": [
+    "Retrieves current web results and citations dynamically.",
+    "نتایج و ارجاعات تازهٔ وب را دریافت می‌کند."
+  ],
+  "Deep Thinking": [
+    "Deep Thinking",
+    "تفکر عمیق"
+  ],
+  "Formulates comprehensive internal reasoning traces before answering.": [
+    "Formulates comprehensive internal reasoning traces before answering.",
+    "پیش از پاسخ، هدف و راه‌حل را با دقت بررسی می‌کند."
+  ],
+  "Canvas Mode": [
+    "Canvas Mode",
+    "حالت سند"
+  ],
+  "Living document writer with version history and inline replacement.": [
+    "Living document writer with version history and inline replacement.",
+    "نوشتن سند زنده با تاریخچهٔ نسخه‌ها و ویرایش مستقیم."
+  ],
+  "Slides Presentation": [
+    "Slides Presentation",
+    "ارائهٔ اسلاید"
+  ],
+  "Interactive slide deck generation with PDF and PowerPoint export.": [
+    "Interactive slide deck generation with PDF and PowerPoint export.",
+    "ساخت اسلاید تعاملی با خروجی PDF و PowerPoint."
+  ],
+  "Artifacts Mode": [
+    "Artifacts Mode",
+    "حالت خروجی تعاملی"
+  ],
+  "Generates interactive React, HTML, SVG, and Mermaid preview sandboxes.": [
+    "Generates interactive React, HTML, SVG, and Mermaid preview sandboxes.",
+    "پیش‌نمایش تعاملی React، HTML، SVG و Mermaid می‌سازد."
+  ],
+  "Chat with Sources": [
+    "Chat with Sources",
+    "گفتگو با منابع"
+  ],
+  "Strictly grounds answers in uploaded documents, URLs, and citations [S1:C2].": [
+    "Strictly grounds answers in uploaded documents, URLs, and citations [S1:C2].",
+    "پاسخ را به اسناد، لینک‌ها و ارجاعات بارگذاری‌شده متصل می‌کند [S1:C2]."
+  ],
+  "Multi-Agent Research": [
+    "Multi-Agent Research",
+    "تحقیق چندایجنتی"
+  ],
+  "Executes independent research rounds, peer critiques, and lead synthesis.": [
+    "Executes independent research rounds, peer critiques, and lead synthesis.",
+    "تحقیق مستقل، نقد متقابل و جمع‌بندی نهایی انجام می‌دهد."
+  ],
+  "Multi-Model Debate": [
+    "Multi-Model Debate",
+    "مناظرهٔ چندمدلی"
+  ],
+  "Role-based dialectic arguments, rebuttals, and reasoned judge scoring.": [
+    "Role-based dialectic arguments, rebuttals, and reasoned judge scoring.",
+    "استدلال موافق و مخالف، پاسخ متقابل و داوری مستند."
+  ],
+  "Web Dev Workspace": [
+    "Web Dev Workspace",
+    "فضای کاری ساخت وب"
+  ],
+  "Multi-file web project generation with live iframe execution sandbox.": [
+    "Multi-file web project generation with live iframe execution sandbox.",
+    "ساخت پروژهٔ وب چندفایلی با پیش‌نمایش قابل اجرا."
+  ],
+  "Interactive Learn": [
+    "Interactive Learn",
+    "یادگیری تعاملی"
+  ],
+  "Progressive lessons, quiz mode, worked exercises, and progress tracking.": [
+    "Progressive lessons, quiz mode, worked exercises, and progress tracking.",
+    "درس‌های مرحله‌ای، آزمون، تمرین حل‌شده و پیگیری پیشرفت."
+  ],
+  "Memory & Knowledge": [
+    "Memory & Knowledge",
+    "حافظه و دانش"
+  ],
+  "Personal long-term facts and knowledge base association.": [
+    "Personal long-term facts and knowledge base association.",
+    "نگهداری نکات شخصی و اتصال به پایگاه دانش."
+  ],
+  "Multi-Model Compare": [
+    "Multi-Model Compare",
+    "مقایسهٔ چند مدل"
+  ],
+  "Comparing up to 4 AI models side-by-side in real-time.": [
+    "Comparing up to 4 AI models side-by-side in real-time.",
+    "مقایسهٔ زندهٔ پاسخ یک تا چهار مدل کنار هم."
+  ],
+  "Model Council & Consensus": [
+    "Model Council & Consensus",
+    "شورای مدل‌ها و توافق"
+  ],
+  "Multi-model deliberation, brainstorming, and collective synthesis.": [
+    "Multi-model deliberation, brainstorming, and collective synthesis.",
+    "همفکری چند مدل، ایده‌پردازی و جمع‌بندی مشترک."
+  ],
+  "Minimize Workspace Panel": [
+    "Minimize Workspace Panel",
+    "کوچک کردن پنل فضای کاری"
+  ],
+  "Open Workspace Panel": [
+    "Open Workspace Panel",
+    "باز کردن پنل فضای کاری"
+  ],
+  "Minimize": [
+    "Minimize",
+    "کوچک کردن"
+  ],
+  "Workspace": [
+    "Workspace",
+    "فضای کاری"
+  ],
+  "Deactivate Tool": [
+    "Deactivate Tool",
+    "غیرفعال کردن ابزار"
+  ],
+  "ASSISTANT": [
+    "ASSISTANT",
+    "دستیار"
+  ],
+  "Detach Assistant from Chat": [
+    "Detach Assistant from Chat",
+    "جدا کردن دستیار از گفتگو"
+  ],
+  "Agent plan": [
+    "Agent plan",
+    "برنامهٔ ایجنت"
+  ],
+  "Reading sources": [
+    "Reading sources",
+    "مطالعهٔ منابع"
+  ],
+  "Synthesizing": [
+    "Synthesizing",
+    "جمع‌بندی"
+  ],
+  "ایجنت در حال کار": [
+    "Agent working",
+    "ایجنت در حال کار"
+  ],
+  "Agent working": [
+    "Agent working",
+    "ایجنت در حال کار"
+  ],
+  "فعالیت ایجنت": [
+    "Agent activity",
+    "فعالیت ایجنت"
+  ],
+  "Agent activity": [
+    "Agent activity",
+    "فعالیت ایجنت"
+  ],
+  "گام": [
+    "steps",
+    "گام"
+  ],
+  "steps": [
+    "steps",
+    "گام"
+  ],
+  "CALLING": [
+    "CALLING",
+    "در حال فراخوانی"
+  ],
+  "FAILED": [
+    "FAILED",
+    "ناموفق"
+  ],
+  "در حال اجرا": [
+    "Running",
+    "در حال اجرا"
+  ],
+  "Running": [
+    "Running",
+    "در حال اجرا"
+  ],
+  "live": [
+    "live",
+    "در حال اجرا"
+  ],
+  "خطا": [
+    "Error",
+    "خطا"
+  ],
+  "Error": [
+    "Error",
+    "خطا"
+  ],
+  "failed": [
+    "failed",
+    "ناموفق"
+  ],
+  "done": [
+    "done",
+    "انجام‌شده"
+  ],
+  "pending": [
+    "pending",
+    "در انتظار"
+  ],
+  "Capabilities": [
+    "Capabilities",
+    "امکانات"
+  ],
+  "Tap any capability to arm it before you send": [
+    "Tap any capability to arm it before you send",
+    "پیش از ارسال، هر قابلیت را برای فعال کردن انتخاب کنید"
+  ],
+  "Active": [
+    "Active",
+    "فعال"
+  ],
+  "Unavailable": [
+    "Unavailable",
+    "در دسترس نیست"
+  ],
+  "Arm": [
+    "Arm",
+    "فعال کردن"
+  ],
+  "Delete conversation": [
+    "Delete conversation",
+    "حذف گفتگو"
+  ],
+  "This conversation and its saved messages will be removed from your history.": [
+    "This conversation and its saved messages will be removed from your history.",
+    "این گفتگو و پیام‌های ذخیره‌شدهٔ آن از تاریخچه حذف می‌شوند."
+  ],
+  "More conversation options": [
+    "More conversation options",
+    "گزینه‌های بیشتر گفتگو"
+  ],
+  "Share Link Copied!": [
+    "Share Link Copied!",
+    "لینک اشتراک کپی شد!"
+  ],
+  "Share Conversation": [
+    "Share Conversation",
+    "اشتراک‌گذاری گفتگو"
+  ],
+  "View files in chat": [
+    "View files in chat",
+    "دیدن فایل‌های گفتگو"
+  ],
+  "Unpin chat": [
+    "Unpin chat",
+    "برداشتن سنجاق گفتگو"
+  ],
+  "Pin chat": [
+    "Pin chat",
+    "سنجاق کردن گفتگو"
+  ],
+  "Archive": [
+    "Archive",
+    "بایگانی"
+  ],
+  "Move to project": [
+    "Move to project",
+    "انتقال به پروژه"
+  ],
+  "New project": [
+    "New project",
+    "پروژهٔ جدید"
+  ],
+  "Remove from project": [
+    "Remove from project",
+    "حذف از پروژه"
+  ],
+  "Code": [
+    "Code",
+    "کد"
+  ],
+  "Live Preview": [
+    "Live Preview",
+    "پیش‌نمایش زنده"
+  ],
+  "lines": [
+    "lines",
+    "خط"
+  ],
+  "Copied!": [
+    "Copied!",
+    "کپی شد!"
+  ],
+  "Copy": [
+    "Copy",
+    "کپی"
+  ],
+  "Save as Workspace Artifact": [
+    "Save as Workspace Artifact",
+    "ذخیره به‌عنوان خروجی فضای کاری"
+  ],
+  "Artifact": [
+    "Artifact",
+    "خروجی تعاملی"
+  ],
+  "Exit Fullscreen": [
+    "Exit Fullscreen",
+    "خروج از تمام‌صفحه"
+  ],
+  "Fullscreen View": [
+    "Fullscreen View",
+    "نمای تمام‌صفحه"
+  ],
+  "preview": [
+    "preview",
+    "پیش‌نمایش"
+  ],
+  "Save Artifact": [
+    "Save Artifact",
+    "ذخیرهٔ خروجی"
+  ],
+  "Copied": [
+    "Copied",
+    "کپی شد"
+  ],
+  "Living documents workspace": [
+    "Living documents workspace",
+    "فضای کاری اسناد زنده"
+  ],
+  "Artifacts Sandboxes": [
+    "Artifacts Sandboxes",
+    "محیط خروجی‌های تعاملی"
+  ],
+  "React, HTML, SVG previews": [
+    "React, HTML, SVG previews",
+    "پیش‌نمایش React، HTML و SVG"
+  ],
+  "Deep Research": [
+    "Deep Research",
+    "تحقیق عمیق"
+  ],
+  "Autonomous multi-agent research": [
+    "Autonomous multi-agent research",
+    "تحقیق خودکار چندایجنتی"
+  ],
+  "Model Debate": [
+    "Model Debate",
+    "مناظرهٔ مدل‌ها"
+  ],
+  "Multi-model dialectic debate": [
+    "Multi-model dialectic debate",
+    "مناظرهٔ استدلالی چند مدل"
+  ],
+  "Web Dev Sandbox": [
+    "Web Dev Sandbox",
+    "محیط ساخت وب"
+  ],
+  "Multi-file web project builder": [
+    "Multi-file web project builder",
+    "ساخت پروژهٔ وب چندفایلی"
+  ],
+  "Learn Mode": [
+    "Learn Mode",
+    "حالت یادگیری"
+  ],
+  "Interactive socratic teacher": [
+    "Interactive socratic teacher",
+    "معلم سقراطی تعاملی"
+  ],
+  "Grounded document QA": [
+    "Grounded document QA",
+    "پرسش و پاسخ مستند"
+  ],
+  "Search...": [
+    "Search...",
+    "جست‌وجو…"
+  ],
+  "Last opened": [
+    "Last opened",
+    "آخرین باز شدن"
+  ],
+  "Recent chats": [
+    "Recent chats",
+    "گفتگوهای اخیر"
+  ],
+  "No conversations found.": [
+    "No conversations found.",
+    "گفتگویی پیدا نشد."
+  ],
+  "Matching Conversations (": [
+    "Matching Conversations (",
+    "گفتگوهای مطابق ("
+  ],
+  "Tools & Modes": [
+    "Tools & Modes",
+    "ابزارها و حالت‌ها"
+  ],
+  "No results matching &quot;": [
+    "No results matching &quot;",
+    "نتیجه‌ای مطابق «"
+  ],
+  "No results matching \"": [
+    "No results matching &quot;",
+    "نتیجه‌ای مطابق «"
+  ],
+  "&quot;": [
+    "&quot;",
+    "»"
+  ],
+  "\"": [
+    "&quot;",
+    "»"
+  ],
+  "Side-by-Side Model Comparison (": [
+    "Side-by-Side Model Comparison (",
+    "مقایسهٔ مدل‌ها کنار هم ("
+  ],
+  "Models)": [
+    "Models)",
+    "مدل)"
+  ],
+  "Parallel Execution": [
+    "Parallel Execution",
+    "اجرای هم‌زمان"
+  ],
+  "AI": [
+    "AI",
+    "هوش مصنوعی"
+  ],
+  "STREAMING": [
+    "STREAMING",
+    "در حال دریافت"
+  ],
+  "Live": [
+    "Live",
+    "زنده"
+  ],
+  "Reasoning": [
+    "Reasoning",
+    "استدلال"
+  ],
+  "ERROR": [
+    "ERROR",
+    "خطا"
+  ],
+  "Generating response...": [
+    "Generating response...",
+    "در حال ساخت پاسخ…"
+  ],
+  "No content returned.": [
+    "No content returned.",
+    "محتوایی دریافت نشد."
+  ],
+  "Copy model response": [
+    "Copy model response",
+    "کپی پاسخ مدل"
+  ],
+  "Branch conversation from this model's reply into a new chat": [
+    "Branch conversation from this model's reply into a new chat",
+    "ساخت گفتگوی جدید از پاسخ این مدل"
+  ],
+  "Branched": [
+    "Branched",
+    "شاخه ساخته شد"
+  ],
+  "Branch": [
+    "Branch",
+    "شاخه‌سازی"
+  ],
+  "Regenerate reply from this model": [
+    "Regenerate reply from this model",
+    "ساخت دوبارهٔ پاسخ این مدل"
+  ],
+  "Retry": [
+    "Retry",
+    "تلاش دوباره"
+  ],
+  "Compare Models": [
+    "Compare Models",
+    "مقایسهٔ مدل‌ها"
+  ],
+  "Select between 1 to 4 models to compare their responses side-by-side in real-time.": [
+    "Select between 1 to 4 models to compare their responses side-by-side in real-time.",
+    "یک تا چهار مدل انتخاب کنید تا پاسخ‌های آن‌ها را زنده کنار هم مقایسه کنید."
+  ],
+  "Search models to compare...": [
+    "Search models to compare...",
+    "جست‌وجوی مدل برای مقایسه…"
+  ],
+  "Selected for comparison:": [
+    "Selected for comparison:",
+    "مدل‌های منتخب برای مقایسه:"
+  ],
+  "No configured models match the search criteria.": [
+    "No configured models match the search criteria.",
+    "مدل تنظیم‌شده‌ای مطابق جست‌وجو نیست."
+  ],
+  "k context": [
+    "k context",
+    "هزار توکن زمینه"
+  ],
+  "• Reasoning": [
+    "• Reasoning",
+    "• استدلال"
+  ],
+  "• Vision": [
+    "• Vision",
+    "• بینایی"
+  ],
+  "• Tools": [
+    "• Tools",
+    "• ابزار"
+  ],
+  "Live Test Connection": [
+    "Live Test Connection",
+    "آزمایش زندهٔ اتصال"
+  ],
+  "Select at least 1 model (up to 4)": [
+    "Select at least 1 model (up to 4)",
+    "حداقل یک و حداکثر چهار مدل انتخاب کنید"
+  ],
+  "Apply Comparison (": [
+    "Apply Comparison (",
+    "اعمال مقایسه ("
+  ],
+  "Detach Assistant": [
+    "Detach Assistant",
+    "جدا کردن دستیار"
+  ],
+  "Detach Knowledge Base": [
+    "Detach Knowledge Base",
+    "جدا کردن پایگاه دانش"
+  ],
+  "IMAGE": [
+    "IMAGE",
+    "عکس"
+  ],
+  "Reading documents…": [
+    "Reading documents…",
+    "در حال خواندن اسناد…"
+  ],
+  "Describe document to write, revise, or format in Canvas...": [
+    "Describe document to write, revise, or format in Canvas...",
+    "سندی را که می‌خواهید بنویسید، بازبینی یا قالب‌بندی کنید شرح دهید…"
+  ],
+  "Describe presentation topic or outline for interactive slide deck...": [
+    "Describe presentation topic or outline for interactive slide deck...",
+    "موضوع یا طرح کلی اسلایدهای ارائه را شرح دهید…"
+  ],
+  "Describe web application or components to generate...": [
+    "Describe web application or components to generate...",
+    "وب‌سایت یا بخش‌هایی را که می‌خواهید بسازید شرح دهید…"
+  ],
+  "Enter topic for autonomous deep research & synthesis...": [
+    "Enter topic for autonomous deep research & synthesis...",
+    "موضوع تحقیق عمیق و جمع‌بندی را وارد کنید…"
+  ],
+  "Ask with live web search enabled...": [
+    "Ask with live web search enabled...",
+    "با جست‌وجوی زندهٔ وب سؤال بپرسید…"
+  ],
+  "Ask anything, summarize documents, brainstorm...": [
+    "Ask anything, summarize documents, brainstorm...",
+    "سؤال بپرسید، سند خلاصه کنید یا ایده‌پردازی کنید…"
+  ],
+  "Attach images, documents, or code files": [
+    "Attach images, documents, or code files",
+    "پیوست عکس، سند یا فایل کد"
+  ],
+  "Tools & Capabilities": [
+    "Tools & Capabilities",
+    "ابزارها و امکانات"
+  ],
+  "Tools": [
+    "Tools",
+    "ابزارها"
+  ],
+  "Capabilities & Tools": [
+    "Capabilities & Tools",
+    "امکانات و ابزارها"
+  ],
+  "Select to activate": [
+    "Select to activate",
+    "برای فعال کردن انتخاب کنید"
+  ],
+  "Conflict": [
+    "Conflict",
+    "تداخل"
+  ],
+  "Connect": [
+    "Connect",
+    "اتصال"
+  ],
+  "Stop": [
+    "Stop",
+    "توقف"
+  ],
+  "Select 2 or more models (unlimited) to collaborate, debate, and synthesize collective wisdom.": [
+    "Select 2 or more models (unlimited) to collaborate, debate, and synthesize collective wisdom.",
+    "حداقل دو مدل برای همکاری، مناظره و جمع‌بندی مشترک انتخاب کنید."
+  ],
+  "Search models for council...": [
+    "Search models for council...",
+    "جست‌وجوی مدل برای شورا…"
+  ],
+  "Select All (": [
+    "Select All (",
+    "انتخاب همه ("
+  ],
+  "Clear": [
+    "Clear",
+    "پاک کردن"
+  ],
+  "models selected (Min: 2)": [
+    "models selected (Min: 2)",
+    "مدل انتخاب‌شده (حداقل: ۲)"
+  ],
+  "Select at least 2 models for multi-model council": [
+    "Select at least 2 models for multi-model council",
+    "برای شورای مدل‌ها حداقل دو مدل انتخاب کنید"
+  ],
+  "Activate Council (": [
+    "Activate Council (",
+    "فعال کردن شورا ("
+  ],
+  "New Conversation": [
+    "New Conversation",
+    "گفتگوی جدید"
+  ],
+  "Advice:": [
+    "Advice:",
+    "پیشنهاد:"
+  ],
+  "SETTINGS": [
+    "SETTINGS",
+    "تنظیمات"
+  ],
+  "Provider Settings": [
+    "Provider Settings",
+    "تنظیمات ارائه‌دهنده"
+  ],
+  "Switch Model": [
+    "Switch Model",
+    "تغییر مدل"
+  ],
+  "New Chat": [
+    "New Chat",
+    "گفتگوی جدید"
+  ],
+  "Technical Details": [
+    "Technical Details",
+    "جزئیات فنی"
+  ],
+  "Raw Upstream Response": [
+    "Raw Upstream Response",
+    "پاسخ خام ارائه‌دهنده"
+  ],
+  "No additional technical details.": [
+    "No additional technical details.",
+    "جزئیات فنی دیگری موجود نیست."
+  ],
+  "Export Conversation": [
+    "Export Conversation",
+    "خروجی گفتگو"
+  ],
+  "Exports on-screen active branch only with preserved markdown.": [
+    "Exports on-screen active branch only with preserved markdown.",
+    "فقط شاخهٔ فعال نمایش‌داده‌شده با حفظ Markdown خروجی می‌شود."
+  ],
+  "Markdown": [
+    "Markdown",
+    "Markdown"
+  ],
+  "JSON Data": [
+    "JSON Data",
+    "دادهٔ JSON"
+  ],
+  "HTML File": [
+    "HTML File",
+    "فایل HTML"
+  ],
+  "Print / PDF": [
+    "Print / PDF",
+    "چاپ / PDF"
+  ],
+  "Will open platform printer dialog for high-resolution vector PDF export.": [
+    "Will open platform printer dialog for high-resolution vector PDF export.",
+    "پنجرهٔ چاپ برای خروجی PDF با کیفیت بالا باز می‌شود."
+  ],
+  "Copied to Clipboard": [
+    "Copied to Clipboard",
+    "در کلیپ‌بورد کپی شد"
+  ],
+  "Copy All": [
+    "Copy All",
+    "کپی همه"
+  ],
+  "Print Document": [
+    "Print Document",
+    "چاپ سند"
+  ],
+  "Download File": [
+    "Download File",
+    "دریافت فایل"
+  ],
+  "Edit your message...": [
+    "Edit your message...",
+    "پیام‌تان را ویرایش کنید…"
+  ],
+  "Save & Submit": [
+    "Save & Submit",
+    "ذخیره و ارسال"
+  ],
+  "Copy message": [
+    "Copy message",
+    "کپی پیام"
+  ],
+  "Edit message": [
+    "Edit message",
+    "ویرایش پیام"
+  ],
+  "Fan-out Compare": [
+    "Fan-out Compare",
+    "مقایسهٔ هم‌زمان"
+  ],
+  "Previous branch response": [
+    "Previous branch response",
+    "پاسخ شاخهٔ قبلی"
+  ],
+  "Next branch response": [
+    "Next branch response",
+    "پاسخ شاخهٔ بعدی"
+  ],
+  "جستجوی عکس‌های اسلاید": [
+    "Slide photo search",
+    "جستجوی عکس‌های اسلاید"
+  ],
+  "Slide photo search": [
+    "Slide photo search",
+    "جست‌وجوی عکس اسلاید"
+  ],
+  "DONE": [
+    "DONE",
+    "انجام‌شده"
+  ],
+  "عکس مرتبط": [
+    "matching photos",
+    "عکس مرتبط"
+  ],
+  "matching photos": [
+    "matching photos",
+    "عکس مرتبط"
+  ],
+  "Writing response...": [
+    "Writing response...",
+    "در حال نوشتن پاسخ…"
+  ],
+  "Writing code into Web Dev Workspace files...": [
+    "Writing code into Web Dev Workspace files...",
+    "در حال نوشتن فایل‌های کد در فضای کاری ساخت وب…"
+  ],
+  "Open Workspace": [
+    "Open Workspace",
+    "باز کردن فضای کاری"
+  ],
+  "Web Dev Workspace:": [
+    "Web Dev Workspace:",
+    "فضای کاری ساخت وب:"
+  ],
+  "Project Files Generated": [
+    "Project Files Generated",
+    "فایل پروژه ساخته شد"
+  ],
+  "Open in Workspace Panel": [
+    "Open in Workspace Panel",
+    "باز کردن در پنل فضای کاری"
+  ],
+  "Presentation Slides:": [
+    "Presentation Slides:",
+    "اسلایدهای ارائه:"
+  ],
+  "Slides Ready": [
+    "Slides Ready",
+    "اسلاید آماده شد"
+  ],
+  "Open in Workspace": [
+    "Open in Workspace",
+    "باز کردن در فضای کاری"
+  ],
+  "Slides": [
+    "Slides",
+    "اسلایدها"
+  ],
+  "CANCELLED": [
+    "CANCELLED",
+    "لغوشده"
+  ],
+  "Generation stopped by user": [
+    "Generation stopped by user",
+    "ساخت پاسخ توسط کاربر متوقف شد"
+  ],
+  "Prompt / Completion tokens; — means the provider did not report usage": [
+    "Prompt / Completion tokens; — means the provider did not report usage",
+    "توکن درخواست / پاسخ؛ — یعنی ارائه‌دهنده مصرف را گزارش نکرده است"
+  ],
+  "tokens": [
+    "tokens",
+    "توکن"
+  ],
+  "Response latency": [
+    "Response latency",
+    "زمان پاسخ"
+  ],
+  "Branch conversation from here into a new chat": [
+    "Branch conversation from here into a new chat",
+    "ساخت گفتگوی جدید از این نقطه"
+  ],
+  "Branched into new chat!": [
+    "Branched into new chat!",
+    "گفتگوی جدید ساخته شد!"
+  ],
+  "Regenerate sibling reply": [
+    "Regenerate sibling reply",
+    "ساخت دوبارهٔ پاسخ هم‌سطح"
+  ],
+  "A dedicated workspace with its own system prompt, knowledge sources and focused chats.": [
+    "A dedicated workspace with its own system prompt, knowledge sources and focused chats.",
+    "فضای کاری مستقل با دستور سیستمی، منابع دانش و گفتگوهای متمرکز."
+  ],
+  "Project instructions active": [
+    "Project instructions active",
+    "دستورهای پروژه فعال است"
+  ],
+  "Project-only memory": [
+    "Project-only memory",
+    "حافظهٔ محدود به پروژه"
+  ],
+  "Persona instructions active": [
+    "Persona instructions active",
+    "دستورهای دستیار فعال است"
+  ],
+  "Temporary chat": [
+    "Temporary chat",
+    "گفتگوی موقت"
+  ],
+  "Nothing here is saved": [
+    "Nothing here is saved",
+    "اینجا چیزی ذخیره نمی‌شود"
+  ],
+  "Messages in this conversation are not written to your history or database. Reload or close the tab and they are gone.": [
+    "Messages in this conversation are not written to your history or database. Reload or close the tab and they are gone.",
+    "پیام‌های این گفتگو در تاریخچه یا دیتابیس نوشته نمی‌شوند. با بارگذاری مجدد یا بستن تب از بین می‌روند."
+  ],
+  "Pimx Agent AI": [
+    "Pimx Agent AI",
+    "PIMX Agent AI"
+  ],
+  "An agent that reasons in the open: it plans, searches the live web, reads what it finds, and shows you the trace while it works.": [
+    "An agent that reasons in the open: it plans, searches the live web, reads what it finds, and shows you the trace while it works.",
+    "ایجنتی که روند کار را نشان می‌دهد: برنامه‌ریزی می‌کند، وب را جست‌وجو می‌کند، منابع را می‌خواند و مسیر انجام کار را به شما نشان می‌دهد."
+  ],
+  "Providers": [
+    "Providers",
+    "ارائه‌دهندگان"
+  ],
+  "Models": [
+    "Models",
+    "مدل‌ها"
+  ],
+  "Draft Project Document": [
+    "Draft Project Document",
+    "نوشتن سند پروژه"
+  ],
+  "Analyze Project Knowledge": [
+    "Analyze Project Knowledge",
+    "تحلیل دانش پروژه"
+  ],
+  "Step-by-Step Problem Solving": [
+    "Step-by-Step Problem Solving",
+    "حل مسئله به‌صورت مرحله‌ای"
+  ],
+  "Create an Interactive Artifact": [
+    "Create an Interactive Artifact",
+    "ساخت خروجی تعاملی"
+  ],
+  "Open Canvas Document": [
+    "Open Canvas Document",
+    "باز کردن سند"
+  ],
+  "Ground with Sources": [
+    "Ground with Sources",
+    "اتصال به منابع"
+  ],
+  "AI reaction": [
+    "AI reaction",
+    "واکنش هوش مصنوعی"
+  ],
+  "Remove your reaction": [
+    "Remove your reaction",
+    "برداشتن واکنش شما"
+  ],
+  "React to message": [
+    "React to message",
+    "واکنش به پیام"
+  ],
+  "Choose one reaction": [
+    "Choose one reaction",
+    "یک واکنش انتخاب کنید"
+  ],
+  "100 reactions · choose one": [
+    "100 reactions · choose one",
+    "۱۰۰ واکنش · فقط یکی را انتخاب کنید"
+  ],
+  "Close reactions": [
+    "Close reactions",
+    "بستن واکنش‌ها"
+  ],
+  "Select AI Model": [
+    "Select AI Model",
+    "انتخاب مدل هوش مصنوعی"
+  ],
+  "Choose the primary model for your conversation. (To compare models side-by-side, use the &apos;Compare Models&apos; tool in Tools).": [
+    "Choose the primary model for your conversation. (To compare models side-by-side, use the &apos;Compare Models&apos; tool in Tools).",
+    "مدل اصلی گفتگو را انتخاب کنید. برای مقایسهٔ پاسخ‌ها کنار هم، ابزار «مقایسهٔ مدل‌ها» را فعال کنید."
+  ],
+  "Choose the primary model for your conversation. (To compare models side-by-side, use the 'Compare Models' tool in Tools).": [
+    "Choose the primary model for your conversation. (To compare models side-by-side, use the &apos;Compare Models&apos; tool in Tools).",
+    "مدل اصلی گفتگو را انتخاب کنید. برای مقایسهٔ پاسخ‌ها کنار هم، ابزار «مقایسهٔ مدل‌ها» را فعال کنید."
+  ],
+  "Manage Providers": [
+    "Manage Providers",
+    "مدیریت ارائه‌دهندگان"
+  ],
+  "Search by model name or provider (GPT-4o, Claude 3.7, Gemini 2.5, DeepSeek R1, Llama 3.3)...": [
+    "Search by model name or provider (GPT-4o, Claude 3.7, Gemini 2.5, DeepSeek R1, Llama 3.3)...",
+    "جست‌وجو با نام مدل یا ارائه‌دهنده (GPT-4o، Claude، Gemini، DeepSeek، Llama)…"
+  ],
+  "All Models": [
+    "All Models",
+    "همهٔ مدل‌ها"
+  ],
+  "⚡ Free Tier": [
+    "⚡ Free Tier",
+    "⚡ طرح رایگان"
+  ],
+  "🧠 Reasoning": [
+    "🧠 Reasoning",
+    "🧠 استدلال"
+  ],
+  "👁 Vision": [
+    "👁 Vision",
+    "👁 بینایی"
+  ],
+  "🛠 Tools": [
+    "🛠 Tools",
+    "🛠 ابزار"
+  ],
+  "No Models Configured": [
+    "No Models Configured",
+    "مدلی تنظیم نشده است"
+  ],
+  "No providers or API keys have been added yet. Add an API key to automatically import models.": [
+    "No providers or API keys have been added yet. Add an API key to automatically import models.",
+    "هنوز ارائه‌دهنده یا کلید API اضافه نشده است. با افزودن کلید، مدل‌ها را وارد کنید."
+  ],
+  "Configure Providers & Add API Keys": [
+    "Configure Providers & Add API Keys",
+    "تنظیم ارائه‌دهنده و افزودن کلید API"
+  ],
+  "No models match the selected search or filter criteria.": [
+    "No models match the selected search or filter criteria.",
+    "مدلی مطابق جست‌وجو یا فیلتر انتخابی نیست."
+  ],
+  "FREE": [
+    "FREE",
+    "رایگان"
+  ],
+  "Custom": [
+    "Custom",
+    "سفارشی"
+  ],
+  "Vision": [
+    "Vision",
+    "بینایی"
+  ],
+  "• Context:": [
+    "• Context:",
+    "• زمینه:"
+  ],
+  "Live Ping Model": [
+    "Live Ping Model",
+    "آزمایش زندهٔ مدل"
+  ],
+  "Select": [
+    "Select",
+    "انتخاب"
+  ],
+  "Click any model to select as active primary model": [
+    "Click any model to select as active primary model",
+    "برای انتخاب مدل اصلی روی آن کلیک کنید"
+  ],
+  "Loading shared conversation...": [
+    "Loading shared conversation...",
+    "در حال بارگذاری گفتگوی اشتراک‌گذاری‌شده…"
+  ],
+  "Conversation Not Found": [
+    "Conversation Not Found",
+    "گفتگو پیدا نشد"
+  ],
+  "This shared link may be invalid or expired.": [
+    "This shared link may be invalid or expired.",
+    "این لینک اشتراک معتبر نیست یا منقضی شده است."
+  ],
+  "Go to Home": [
+    "Go to Home",
+    "رفتن به خانه"
+  ],
+  "Go to App": [
+    "Go to App",
+    "رفتن به برنامه"
+  ],
+  "Shared snapshot • Continuing will create a private copy without altering original chat": [
+    "Shared snapshot • Continuing will create a private copy without altering original chat",
+    "نسخهٔ اشتراکی • ادامهٔ گفتگو یک نسخهٔ خصوصی می‌سازد و گفتگوی اصلی را تغییر نمی‌دهد"
+  ],
+  "Share Link": [
+    "Share Link",
+    "لینک اشتراک"
+  ],
+  "Opening copy...": [
+    "Opening copy...",
+    "در حال باز کردن نسخه…"
+  ],
+  "Continue this chat": [
+    "Continue this chat",
+    "ادامهٔ این گفتگو"
+  ],
+  "AI Assistant": [
+    "AI Assistant",
+    "دستیار هوش مصنوعی"
+  ],
+  "Type your response to branch & continue this chat in your workspace...": [
+    "Type your response to branch & continue this chat in your workspace...",
+    "برای ادامهٔ این گفتگو در فضای کاری خودتان پاسخ بنویسید…"
+  ],
+  "Forking...": [
+    "Forking...",
+    "در حال ساخت نسخه…"
+  ],
+  "Messages you send will be saved to your personal history. The original author will not see your changes.": [
+    "Messages you send will be saved to your personal history. The original author will not see your changes.",
+    "پیام شما در تاریخچهٔ شخصی ذخیره می‌شود. نویسندهٔ اصلی تغییرات شما را نمی‌بیند."
+  ],
+  "TEMPORARY CHAT": [
+    "TEMPORARY CHAT",
+    "گفتگوی موقت"
+  ],
+  "A little space, just for now.": [
+    "A little space, just for now.",
+    "فضایی کوچک، فقط برای همین لحظه."
+  ],
+  "Explore freely. This conversation and its generated files stay in this tab and won’t appear in your saved history.": [
+    "Explore freely. This conversation and its generated files stay in this tab and won’t appear in your saved history.",
+    "آزادانه بررسی کنید. این گفتگو و فایل‌های ساخته‌شده فقط در همین تب می‌مانند و در تاریخچه ذخیره نمی‌شوند."
+  ],
+  "No saved history": [
+    "No saved history",
+    "بدون تاریخچهٔ ذخیره‌شده"
+  ],
+  "Cleared on reload": [
+    "Cleared on reload",
+    "پاک شدن با بارگذاری مجدد"
+  ],
+  "Messages are still sent to your chosen AI provider to generate a response.": [
+    "Messages are still sent to your chosen AI provider to generate a response.",
+    "برای ساخت پاسخ، پیام‌ها همچنان به ارائه‌دهندهٔ مدل منتخب شما ارسال می‌شوند."
+  ],
+  "خلاصهٔ استدلال مدل": [
+    "Model reasoning summary",
+    "خلاصهٔ استدلال مدل"
+  ],
+  "Model reasoning summary": [
+    "Model reasoning summary",
+    "خلاصهٔ استدلال مدل"
+  ],
+  "Copy reasoning": [
+    "Copy reasoning",
+    "کپی خلاصهٔ استدلال"
+  ],
+  "در انتظار خلاصهٔ استدلال از مدل…": [
+    "Waiting for the model’s reasoning summary…",
+    "در انتظار خلاصهٔ استدلال از مدل…"
+  ],
+  "Waiting for the model’s reasoning summary…": [
+    "Waiting for the model’s reasoning summary…",
+    "در انتظار خلاصهٔ استدلال مدل…"
+  ],
+  "Connecting the ideas": [
+    "Connecting the ideas",
+    "ارتباط دادن ایده‌ها"
+  ],
+  "Searching the live web": [
+    "Searching the live web",
+    "جست‌وجوی زندهٔ وب"
+  ],
+  "Building your website": [
+    "Building your website",
+    "ساخت وب‌سایت شما"
+  ],
+  "Creating your presentation": [
+    "Creating your presentation",
+    "ساخت ارائهٔ شما"
+  ],
+  "Researching and connecting evidence": [
+    "Researching and connecting evidence",
+    "تحقیق و پیوند دادن شواهد"
+  ],
+  "Finding evidence in your documents": [
+    "Finding evidence in your documents",
+    "یافتن شواهد در اسناد شما"
+  ],
+  "Preparing a lesson for you": [
+    "Preparing a lesson for you",
+    "آماده کردن درس برای شما"
+  ],
+  "Testing opposing arguments": [
+    "Testing opposing arguments",
+    "بررسی استدلال‌های مخالف"
+  ],
+  "Generating independent model answers": [
+    "Generating independent model answers",
+    "ساخت پاسخ مستقل مدل‌ها"
+  ],
+  "Models working toward a shared answer": [
+    "Models working toward a shared answer",
+    "همکاری مدل‌ها برای پاسخ مشترک"
+  ],
+  "Enabled tool sequence": [
+    "Enabled tool sequence",
+    "ترتیب ابزارهای فعال"
+  ],
+  "در حال نوشتن پاسخ بر پایهٔ منابع": [
+    "Writing your answer from the evidence",
+    "در حال نوشتن پاسخ بر پایهٔ منابع"
+  ],
+  "Writing your answer from the evidence": [
+    "Writing your answer from the evidence",
+    "نوشتن پاسخ بر پایهٔ شواهد"
+  ],
+  "Searching the web…": [
+    "Searching the web…",
+    "در حال جست‌وجوی وب…"
+  ],
+  "more": [
+    "more",
+    "بیشتر"
+  ],
+  "Expand sidebar (Pimx Agent AI)": [
+    "Expand sidebar (Pimx Agent AI)",
+    "باز کردن نوار کناری PIMX Agent"
+  ],
+  "New chat (Ctrl+O)": [
+    "New chat (Ctrl+O)",
+    "گفتگوی جدید (Ctrl+O)"
+  ],
+  "Search chats (Ctrl+K)": [
+    "Search chats (Ctrl+K)",
+    "جست‌وجوی گفتگو (Ctrl+K)"
+  ],
+  "Recent conversations": [
+    "Recent conversations",
+    "گفتگوهای اخیر"
+  ],
+  "RECENTS": [
+    "RECENTS",
+    "اخیر"
+  ],
+  "Recents": [
+    "Recents",
+    "اخیر"
+  ],
+  "No conversations yet.": [
+    "No conversations yet.",
+    "هنوز گفتگویی ندارید."
+  ],
+  "PINNED": [
+    "PINNED",
+    "سنجاق‌شده"
+  ],
+  "Pinned": [
+    "Pinned",
+    "سنجاق‌شده"
+  ],
+  "No pinned chats.": [
+    "No pinned chats.",
+    "گفتگوی سنجاق‌شده‌ای ندارید."
+  ],
+  "Expand Sidebar": [
+    "Expand Sidebar",
+    "باز کردن نوار کناری"
+  ],
+  "Collapse Sidebar": [
+    "Collapse Sidebar",
+    "بستن نوار کناری"
+  ],
+  "New chat": [
+    "New chat",
+    "گفتگوی جدید"
+  ],
+  "Search conversations...": [
+    "Search conversations...",
+    "جست‌وجوی گفتگوها…"
+  ],
+  "Library": [
+    "Library",
+    "کتابخانه"
+  ],
+  "Projects": [
+    "Projects",
+    "پروژه‌ها"
+  ],
+  "Clear project filter": [
+    "Clear project filter",
+    "پاک کردن فیلتر پروژه"
+  ],
+  "Start New Chat": [
+    "Start New Chat",
+    "شروع گفتگوی جدید"
+  ],
+  "Workspace & Hub": [
+    "Workspace & Hub",
+    "فضای کاری و مرکز ابزارها"
+  ],
+  "Settings & Providers": [
+    "Settings & Providers",
+    "تنظیمات و ارائه‌دهندگان"
+  ],
+  "Configure": [
+    "Configure",
+    "تنظیم"
+  ],
+  "Deleting in": [
+    "Deleting in",
+    "حذف تا"
+  ],
+  "Undo deletion": [
+    "Undo deletion",
+    "لغو حذف"
+  ],
+  "Undo": [
+    "Undo",
+    "برگرداندن"
+  ],
+  "Delete immediately": [
+    "Delete immediately",
+    "حذف فوری"
+  ],
+  "Now": [
+    "Now",
+    "همین حالا"
+  ],
+  "AI is working in this chat": [
+    "AI is working in this chat",
+    "هوش مصنوعی در این گفتگو مشغول است"
+  ],
+  "Just finished": [
+    "Just finished",
+    "همین حالا تمام شد"
+  ],
+  "Options": [
+    "Options",
+    "گزینه‌ها"
+  ],
+  "Share": [
+    "Share",
+    "اشتراک‌گذاری"
+  ],
+  "Rename": [
+    "Rename",
+    "تغییر نام"
+  ],
+  "Unpin": [
+    "Unpin",
+    "برداشتن سنجاق"
+  ],
+  "Move to Project": [
+    "Move to Project",
+    "انتقال به پروژه"
+  ],
+  "Select Project": [
+    "Select Project",
+    "انتخاب پروژه"
+  ],
+  "General (No project)": [
+    "General (No project)",
+    "عمومی (بدون پروژه)"
+  ],
+  "No projects yet": [
+    "No projects yet",
+    "هنوز پروژه‌ای ندارید"
+  ],
+  "Create New Project": [
+    "Create New Project",
+    "ساخت پروژهٔ جدید"
+  ],
+  "Open Navigation Drawer": [
+    "Open Navigation Drawer",
+    "باز کردن منوی کناری"
+  ],
+  "Temporary chat is active (will not be saved)": [
+    "Temporary chat is active (will not be saved)",
+    "گفتگوی موقت فعال است (ذخیره نمی‌شود)"
+  ],
+  "Enable Temporary / Incognito Chat": [
+    "Enable Temporary / Incognito Chat",
+    "فعال کردن گفتگوی موقت / خصوصی"
+  ],
+  "Temporary": [
+    "Temporary",
+    "موقت"
+  ],
+  "Link Copied!": [
+    "Link Copied!",
+    "لینک کپی شد!"
+  ],
+  "LTR (Left to Right)": [
+    "LTR (Left to Right)",
+    "چپ به راست (LTR)"
+  ],
+  "RTL (Right to Left)": [
+    "RTL (Right to Left)",
+    "راست به چپ (RTL)"
+  ],
+  "Temporary Chat • Messages not saved to history": [
+    "Temporary Chat • Messages not saved to history",
+    "گفتگوی موقت • پیام‌ها در تاریخچه ذخیره نمی‌شوند"
+  ],
+  "Temporary Chat": [
+    "Temporary Chat",
+    "گفتگوی موقت"
+  ],
+  "Dismiss": [
+    "Dismiss",
+    "بستن"
+  ],
+  "Pip · PIMX companion": [
+    "Pip · PIMX companion",
+    "پیپ · همراه PIMX"
+  ],
+  "Close companion": [
+    "Close companion",
+    "بستن همراه"
+  ],
+  "Start a chat with Pip": [
+    "Start a chat with Pip",
+    "شروع گفتگو با پیپ"
+  ],
+  "Companion settings": [
+    "Companion settings",
+    "تنظیمات همراه"
+  ],
+  "Hide pet": [
+    "Hide pet",
+    "مخفی کردن همراه"
+  ],
+  "PIMX companion Pip": [
+    "PIMX companion Pip",
+    "پیپ، همراه PIMX"
+  ],
+  "PIMX on your home screen": [
+    "PIMX on your home screen",
+    "PIMX روی صفحهٔ اصلی دستگاه"
+  ],
+  "Installed": [
+    "Installed",
+    "نصب‌شده"
+  ],
+  "Install app": [
+    "Install app",
+    "نصب برنامه"
+  ],
+  "Use the same workspace on mobile as an installed app. Saved chats stay available on this device; AI and web search require a connection.": [
+    "Use the same workspace on mobile as an installed app. Saved chats stay available on this device; AI and web search require a connection.",
+    "همین فضای کاری را به‌صورت برنامه روی موبایل استفاده کنید. چت ذخیره‌شده روی همین دستگاه می‌ماند؛ هوش مصنوعی و جست‌وجوی وب به اتصال نیاز دارند."
+  ],
+  "iPhone / iPad: open in Safari → Share → Add to Home Screen. Android / desktop: use your browser’s Install app menu. Installation is available over HTTPS.": [
+    "iPhone / iPad: open in Safari → Share → Add to Home Screen. Android / desktop: use your browser’s Install app menu. Installation is available over HTTPS.",
+    "آیفون / آیپد: در Safari باز کنید ← اشتراک‌گذاری ← افزودن به صفحهٔ اصلی. اندروید / رایانه: از منوی نصب برنامهٔ مرورگر استفاده کنید. نصب روی HTTPS در دسترس است."
+  ],
+  "Resize workspace": [
+    "Resize workspace",
+    "تغییر اندازهٔ فضای کاری"
+  ],
+  "Make workspace smaller": [
+    "Make workspace smaller",
+    "کوچک‌تر کردن فضای کاری"
+  ],
+  "Make workspace larger": [
+    "Make workspace larger",
+    "بزرگ‌تر کردن فضای کاری"
+  ],
+  "Restore workspace size": [
+    "Restore workspace size",
+    "برگرداندن اندازهٔ فضای کاری"
+  ],
+  "Expand workspace": [
+    "Expand workspace",
+    "گسترش فضای کاری"
+  ],
+  "Minimize workspace": [
+    "Minimize workspace",
+    "کوچک کردن فضای کاری"
+  ],
+  "file": [
+    "file",
+    "فایل"
+  ],
+  "files": [
+    "files",
+    "فایل‌ها"
+  ],
+  "Browse, search, and manage all files, attachments, knowledge sources, and artifacts exchanged across your chats and projects.": [
+    "Browse, search, and manage all files, attachments, knowledge sources, and artifacts exchanged across your chats and projects.",
+    "همهٔ فایل‌ها، پیوست‌ها، منابع دانش و خروجی‌های گفتگوها و پروژه‌ها را مرور، جست‌وجو و مدیریت کنید."
+  ],
+  "Upload to Library": [
+    "Upload to Library",
+    "بارگذاری در کتابخانه"
+  ],
+  "All Files": [
+    "All Files",
+    "همهٔ فایل‌ها"
+  ],
+  "Images": [
+    "Images",
+    "عکس‌ها"
+  ],
+  "Documents": [
+    "Documents",
+    "اسناد"
+  ],
+  "Code & Artifacts": [
+    "Code & Artifacts",
+    "کد و خروجی‌ها"
+  ],
+  "Sources": [
+    "Sources",
+    "منابع"
+  ],
+  "Canvas Docs": [
+    "Canvas Docs",
+    "اسناد زنده"
+  ],
+  "All Projects": [
+    "All Projects",
+    "همهٔ پروژه‌ها"
+  ],
+  "Search files...": [
+    "Search files...",
+    "جست‌وجوی فایل‌ها…"
+  ],
+  "Grid View": [
+    "Grid View",
+    "نمای شبکه‌ای"
+  ],
+  "List View": [
+    "List View",
+    "نمای فهرستی"
+  ],
+  "No files found": [
+    "No files found",
+    "فایلی پیدا نشد"
+  ],
+  "Upload files in chats, create canvas documents, or import knowledge sources to populate your library.": [
+    "Upload files in chats, create canvas documents, or import knowledge sources to populate your library.",
+    "فایل را در گفتگو بارگذاری کنید، سند بسازید یا منبع دانش وارد کنید تا در کتابخانه نمایش داده شود."
+  ],
+  "Upload First File": [
+    "Upload First File",
+    "بارگذاری اولین فایل"
+  ],
+  "CODE": [
+    "CODE",
+    "کد"
+  ],
+  "SOURCE": [
+    "SOURCE",
+    "منبع"
+  ],
+  "In:": [
+    "In:",
+    "در:"
+  ],
+  "Library Direct": [
+    "Library Direct",
+    "بارگذاری مستقیم در کتابخانه"
+  ],
+  "Copy content": [
+    "Copy content",
+    "کپی محتوا"
+  ],
+  "Download file": [
+    "Download file",
+    "دریافت فایل"
+  ],
+  "Open Chat": [
+    "Open Chat",
+    "باز کردن گفتگو"
+  ],
+  "Name": [
+    "Name",
+    "نام"
+  ],
+  "Source": [
+    "Source",
+    "منبع"
+  ],
+  "Size": [
+    "Size",
+    "اندازه"
+  ],
+  "Actions": [
+    "Actions",
+    "عملیات"
+  ],
+  "No text preview available for this binary file.": [
+    "No text preview available for this binary file.",
+    "پیش‌نمایش متنی برای این فایل دودویی موجود نیست."
+  ],
+  "Direct Upload": [
+    "Direct Upload",
+    "بارگذاری مستقیم"
+  ],
+  "Copy Text": [
+    "Copy Text",
+    "کپی متن"
+  ],
+  "Dark Slate": [
+    "Dark Slate",
+    "خاکستری تیره"
+  ],
+  "Red": [
+    "Red",
+    "قرمز"
+  ],
+  "Orange": [
+    "Orange",
+    "نارنجی"
+  ],
+  "Amber": [
+    "Amber",
+    "کهربایی"
+  ],
+  "Green": [
+    "Green",
+    "سبز"
+  ],
+  "Sky": [
+    "Sky",
+    "آبی آسمانی"
+  ],
+  "Indigo": [
+    "Indigo",
+    "نیلی"
+  ],
+  "Purple": [
+    "Purple",
+    "بنفش"
+  ],
+  "Pink": [
+    "Pink",
+    "صورتی"
+  ],
+  "Delete project": [
+    "Delete project",
+    "حذف پروژه"
+  ],
+  "Edit Project": [
+    "Edit Project",
+    "ویرایش پروژه"
+  ],
+  "Workspace container with dedicated chats & standing instructions": [
+    "Workspace container with dedicated chats & standing instructions",
+    "فضای کاری شامل گفتگوهای اختصاصی و دستورهای ثابت"
+  ],
+  "Project Name": [
+    "Project Name",
+    "نام پروژه"
+  ],
+  "e.g. Web App Redesign, Research Paper, Python Bot...": [
+    "e.g. Web App Redesign, Research Paper, Python Bot...",
+    "مثلاً بازطراحی وب‌اپ، مقالهٔ پژوهشی یا ربات پایتون…"
+  ],
+  "Description (Optional)": [
+    "Description (Optional)",
+    "توضیحات (اختیاری)"
+  ],
+  "Brief overview of this workspace...": [
+    "Brief overview of this workspace...",
+    "شرح کوتاهی از این فضای کاری…"
+  ],
+  "Project Icon": [
+    "Project Icon",
+    "نماد پروژه"
+  ],
+  "Color Accent": [
+    "Color Accent",
+    "رنگ تأکیدی"
+  ],
+  "Memory Scope": [
+    "Memory Scope",
+    "محدودهٔ حافظه"
+  ],
+  "Default memory": [
+    "Default memory",
+    "حافظهٔ پیش‌فرض"
+  ],
+  "This project can access memory from outside chats, and vice versa.": [
+    "This project can access memory from outside chats, and vice versa.",
+    "این پروژه به حافظهٔ گفتگوهای دیگر دسترسی دارد و برعکس."
+  ],
+  "This project can only access its own memory. Its memory is hidden from outside chats.": [
+    "This project can only access its own memory. Its memory is hidden from outside chats.",
+    "این پروژه فقط به حافظهٔ خودش دسترسی دارد و حافظه‌اش از گفتگوهای بیرونی مخفی است."
+  ],
+  "Projects keep chats, files, and custom instructions in one place. Use them for ongoing work, or just to keep things tidy.": [
+    "Projects keep chats, files, and custom instructions in one place. Use them for ongoing work, or just to keep things tidy.",
+    "پروژه، گفتگو، فایل و دستور سفارشی را کنار هم نگه می‌دارد؛ برای کار ادامه‌دار یا مرتب کردن اطلاعات از آن استفاده کنید."
+  ],
+  "Custom Instructions (Project System Prompt)": [
+    "Custom Instructions (Project System Prompt)",
+    "دستورهای سفارشی (دستور سیستمی پروژه)"
+  ],
+  "Applied to all chats": [
+    "Applied to all chats",
+    "در تمام گفتگوها اعمال می‌شود"
+  ],
+  "e.g. Always respond with clean TypeScript code, follow strict architecture guidelines, prioritize Next.js App Router patterns, and keep responses concise and structured...": [
+    "e.g. Always respond with clean TypeScript code, follow strict architecture guidelines, prioritize Next.js App Router patterns, and keep responses concise and structured...",
+    "مثلاً با TypeScript تمیز پاسخ بده، معماری مشخص را رعایت کن، از Next.js App Router استفاده کن و پاسخ را کوتاه و ساختاریافته بنویس…"
+  ],
+  "Delete Project": [
+    "Delete Project",
+    "حذف پروژه"
+  ],
+  "Save & Start Chat": [
+    "Save & Start Chat",
+    "ذخیره و شروع گفتگو"
+  ],
+  "Save Changes": [
+    "Save Changes",
+    "ذخیرهٔ تغییرات"
+  ],
+  "Create Project": [
+    "Create Project",
+    "ساخت پروژه"
+  ],
+  "Projects Studio": [
+    "Projects Studio",
+    "استودیوی پروژه‌ها"
+  ],
+  "project": [
+    "project",
+    "پروژه"
+  ],
+  "projects": [
+    "projects",
+    "پروژه‌ها"
+  ],
+  "Organized AI workspaces with dedicated system instructions, curated knowledge sources, and scoped memory.": [
+    "Organized AI workspaces with dedicated system instructions, curated knowledge sources, and scoped memory.",
+    "فضاهای کاری هوشمند مرتب با دستور سیستمی اختصاصی، منابع منتخب و حافظهٔ مستقل."
+  ],
+  "Total Workspaces": [
+    "Total Workspaces",
+    "کل فضاهای کاری"
+  ],
+  "Linked Conversations": [
+    "Linked Conversations",
+    "گفتگوهای متصل"
+  ],
+  "Knowledge Files": [
+    "Knowledge Files",
+    "فایل‌های دانش"
+  ],
+  "Active Chats": [
+    "Active Chats",
+    "گفتگوهای فعال"
+  ],
+  "Knowledge Bases": [
+    "Knowledge Bases",
+    "پایگاه‌های دانش"
+  ],
+  "Isolated Memory": [
+    "Isolated Memory",
+    "حافظهٔ مستقل"
+  ],
+  "Search projects...": [
+    "Search projects...",
+    "جست‌وجوی پروژه‌ها…"
+  ],
+  "Studio Grid View": [
+    "Studio Grid View",
+    "نمای شبکه‌ای استودیو"
+  ],
+  "Executive List View": [
+    "Executive List View",
+    "نمای فهرستی"
+  ],
+  "No matching projects found": [
+    "No matching projects found",
+    "پروژهٔ مطابق پیدا نشد"
+  ],
+  "No projects created yet": [
+    "No projects created yet",
+    "هنوز پروژه‌ای ساخته نشده است"
+  ],
+  "Projects give your chats dedicated system prompts, custom instructions, and isolated document repositories.": [
+    "Projects give your chats dedicated system prompts, custom instructions, and isolated document repositories.",
+    "پروژه به گفتگوهای شما دستور سیستمی اختصاصی، دستور سفارشی و مخزن اسناد مستقل می‌دهد."
+  ],
+  "Clear search filter": [
+    "Clear search filter",
+    "پاک کردن فیلتر جست‌وجو"
+  ],
+  "Create your first project": [
+    "Create your first project",
+    "ساخت اولین پروژه"
+  ],
+  "Dedicated workspace with custom prompt instructions and attached documents.": [
+    "Dedicated workspace with custom prompt instructions and attached documents.",
+    "فضای کاری مستقل با دستور سفارشی و اسناد پیوست."
+  ],
+  "Shared Memory": [
+    "Shared Memory",
+    "حافظهٔ مشترک"
+  ],
+  "Instructions": [
+    "Instructions",
+    "دستورها"
+  ],
+  "Isolated": [
+    "Isolated",
+    "مستقل"
+  ],
+  "No description provided.": [
+    "No description provided.",
+    "توضیحاتی نوشته نشده است."
+  ],
+  "chats": [
+    "chats",
+    "گفتگوها"
+  ],
+  "Back to Projects Studio": [
+    "Back to Projects Studio",
+    "بازگشت به استودیوی پروژه‌ها"
+  ],
+  "🔒 Project-only memory": [
+    "🔒 Project-only memory",
+    "🔒 حافظهٔ محدود به پروژه"
+  ],
+  "🌐 Shared memory": [
+    "🌐 Shared memory",
+    "🌐 حافظهٔ مشترک"
+  ],
+  "Workspace container with customized instructions, source files, and dedicated chats.": [
+    "Workspace container with customized instructions, source files, and dedicated chats.",
+    "فضای کاری با دستورهای سفارشی، فایل منبع و گفتگوهای اختصاصی."
+  ],
+  "New chat in": [
+    "New chat in",
+    "گفتگوی جدید در"
+  ],
+  "Start a conversation with": [
+    "Start a conversation with",
+    "شروع گفتگو با"
+  ],
+  "instructions": [
+    "instructions",
+    "دستورها"
+  ],
+  "Chats (": [
+    "Chats (",
+    "گفتگوها ("
+  ],
+  "Sources & Files (": [
+    "Sources & Files (",
+    "منابع و فایل‌ها ("
+  ],
+  "Standing Instructions": [
+    "Standing Instructions",
+    "دستورهای ثابت"
+  ],
+  "No chats in": [
+    "No chats in",
+    "گفتگویی در"
+  ],
+  "yet": [
+    "yet",
+    "هنوز"
+  ],
+  "Chats created in this project will automatically inherit its custom instructions and sources.": [
+    "Chats created in this project will automatically inherit its custom instructions and sources.",
+    "گفتگوی این پروژه به‌صورت خودکار دستورها و منابع آن را دریافت می‌کند."
+  ],
+  "Start first chat": [
+    "Start first chat",
+    "شروع اولین گفتگو"
+  ],
+  "Uploaded sources are indexed and automatically available for RAG question answering in this project.": [
+    "Uploaded sources are indexed and automatically available for RAG question answering in this project.",
+    "منابع بارگذاری‌شده نمایه‌سازی می‌شوند و برای پاسخ به پرسش‌های این پروژه در دسترس‌اند."
+  ],
+  "Add Source": [
+    "Add Source",
+    "افزودن منبع"
+  ],
+  "Add Knowledge Source to": [
+    "Add Knowledge Source to",
+    "افزودن منبع دانش به"
+  ],
+  "Source Title (e.g. API Docs, Technical Spec, Guidelines)...": [
+    "Source Title (e.g. API Docs, Technical Spec, Guidelines)...",
+    "عنوان منبع (مثلاً مستندات API، مشخصات فنی، راهنما)…"
+  ],
+  "Paste documentation text, notes, or reference material here...": [
+    "Paste documentation text, notes, or reference material here...",
+    "متن مستندات، یادداشت یا مرجع را اینجا وارد کنید…"
+  ],
+  "Save Source": [
+    "Save Source",
+    "ذخیرهٔ منبع"
+  ],
+  "No sources in this project yet": [
+    "No sources in this project yet",
+    "هنوز منبعی در این پروژه نیست"
+  ],
+  "Add documents, code files, or reference text to give your chats project-specific knowledge.": [
+    "Add documents, code files, or reference text to give your chats project-specific knowledge.",
+    "سند، فایل کد یا متن مرجع اضافه کنید تا گفتگوها به دانش پروژه دسترسی داشته باشند."
+  ],
+  "Add First Source": [
+    "Add First Source",
+    "افزودن اولین منبع"
+  ],
+  "chunks": [
+    "chunks",
+    "بخش"
+  ],
+  "Project Standing System Prompt": [
+    "Project Standing System Prompt",
+    "دستور سیستمی ثابت پروژه"
+  ],
+  "Edit Instructions": [
+    "Edit Instructions",
+    "ویرایش دستورها"
+  ],
+  "No standing instructions configured for this project.": [
+    "No standing instructions configured for this project.",
+    "برای این پروژه دستور ثابتی تنظیم نشده است."
+  ],
+  "Search provider by name, ID or feature...": [
+    "Search provider by name, ID or feature...",
+    "جست‌وجوی ارائه‌دهنده با نام، شناسه یا ویژگی…"
+  ],
+  "Major AI": [
+    "Major AI",
+    "مدل‌های اصلی"
+  ],
+  "Fast & LPU": [
+    "Fast & LPU",
+    "سریع و LPU"
+  ],
+  "Local / Edge": [
+    "Local / Edge",
+    "محلی / دستگاه"
+  ],
+  "+ Add Provider": [
+    "+ Add Provider",
+    "+ افزودن ارائه‌دهنده"
+  ],
+  "Connect any OpenAI / Anthropic / Ollama compatible endpoint": [
+    "Connect any OpenAI / Anthropic / Ollama compatible endpoint",
+    "اتصال به هر درگاه سازگار با OpenAI، Anthropic یا Ollama"
+  ],
+  "Ready": [
+    "Ready",
+    "آماده"
+  ],
+  "No Keys": [
+    "No Keys",
+    "بدون کلید"
+  ],
+  "key": [
+    "key",
+    "کلید"
+  ],
+  "keys": [
+    "keys",
+    "کلیدها"
+  ],
+  "model": [
+    "model",
+    "مدل"
+  ],
+  "models": [
+    "models",
+    "مدل‌ها"
+  ],
+  "Quick Ping Test": [
+    "Quick Ping Test",
+    "آزمایش سریع اتصال"
+  ],
+  "Delete Custom Provider": [
+    "Delete Custom Provider",
+    "حذف ارائه‌دهندهٔ سفارشی"
+  ],
+  "Setup": [
+    "Setup",
+    "راه‌اندازی"
+  ],
+  "Provider Configuration": [
+    "Provider Configuration",
+    "تنظیم ارائه‌دهنده"
+  ],
+  "+ Add New Custom Provider...": [
+    "+ Add New Custom Provider...",
+    "+ افزودن ارائه‌دهندهٔ سفارشی…"
+  ],
+  "Please enter at least one API key before testing connection.": [
+    "Please enter at least one API key before testing connection.",
+    "پیش از آزمایش اتصال، حداقل یک کلید API وارد کنید."
+  ],
+  "Please enter a Provider Name first.": [
+    "Please enter a Provider Name first.",
+    "ابتدا نام ارائه‌دهنده را وارد کنید."
+  ],
+  "Endpoint reachable. Default standard models will be assigned.": [
+    "Endpoint reachable. Default standard models will be assigned.",
+    "درگاه در دسترس است. مدل‌های استاندارد پیش‌فرض اضافه می‌شوند."
+  ],
+  "Provider Name is required.": [
+    "Provider Name is required.",
+    "نام ارائه‌دهنده الزامی است."
+  ],
+  "Delete provider": [
+    "Delete provider",
+    "حذف ارائه‌دهنده"
+  ],
+  "All Providers": [
+    "All Providers",
+    "همهٔ ارائه‌دهندگان"
+  ],
+  "Add Custom Provider": [
+    "Add Custom Provider",
+    "افزودن ارائه‌دهندهٔ سفارشی"
+  ],
+  "New Provider": [
+    "New Provider",
+    "ارائه‌دهندهٔ جدید"
+  ],
+  "Custom Provider": [
+    "Custom Provider",
+    "ارائه‌دهندهٔ سفارشی"
+  ],
+  "Pre-configured Built-in": [
+    "Pre-configured Built-in",
+    "داخلی و از پیش تنظیم‌شده"
+  ],
+  "Connect any OpenAI / Anthropic / Ollama endpoint": [
+    "Connect any OpenAI / Anthropic / Ollama endpoint",
+    "اتصال به هر درگاه OpenAI، Anthropic یا Ollama"
+  ],
+  "Key": [
+    "Key",
+    "کلید"
+  ],
+  "Keys": [
+    "Keys",
+    "کلیدها"
+  ],
+  "Provider Settings & API Keys (": [
+    "Provider Settings & API Keys (",
+    "تنظیم ارائه‌دهنده و کلیدهای API ("
+  ],
+  "Models (": [
+    "Models (",
+    "مدل‌ها ("
+  ],
+  "Add Custom Model": [
+    "Add Custom Model",
+    "افزودن مدل سفارشی"
+  ],
+  "CONFIG": [
+    "CONFIG",
+    "تنظیم"
+  ],
+  "Connection Successful": [
+    "Connection Successful",
+    "اتصال موفق"
+  ],
+  "Connection Test Result": [
+    "Connection Test Result",
+    "نتیجهٔ آزمایش اتصال"
+  ],
+  "Models Imported": [
+    "Models Imported",
+    "مدل‌ها وارد شدند"
+  ],
+  "Model Import Notice": [
+    "Model Import Notice",
+    "اطلاع ورود مدل‌ها"
+  ],
+  "Changes Saved": [
+    "Changes Saved",
+    "تغییرات ذخیره شد"
+  ],
+  "Save Notice": [
+    "Save Notice",
+    "اطلاع ذخیره‌سازی"
+  ],
+  "Provider Name": [
+    "Provider Name",
+    "نام ارائه‌دهنده"
+  ],
+  "e.g. My Company vLLM or Local LMStudio": [
+    "e.g. My Company vLLM or Local LMStudio",
+    "مثلاً vLLM شرکت یا LMStudio محلی"
+  ],
+  "API Prefix (Base URL)": [
+    "API Prefix (Base URL)",
+    "پیشوند API (آدرس پایه)"
+  ],
+  "Locked (Pre-configured)": [
+    "Locked (Pre-configured)",
+    "قفل‌شده (از پیش تنظیم‌شده)"
+  ],
+  "Read-Only": [
+    "Read-Only",
+    "فقط خواندنی"
+  ],
+  "e.g. http://localhost:11434/v1 or https://my-proxy.com/v1": [
+    "e.g. http://localhost:11434/v1 or https://my-proxy.com/v1",
+    "مثلاً http://localhost:11434/v1 یا https://my-proxy.com/v1"
+  ],
+  "The Base URL for pre-configured built-in providers is locked and cannot be modified.": [
+    "The Base URL for pre-configured built-in providers is locked and cannot be modified.",
+    "آدرس پایهٔ ارائه‌دهندهٔ داخلی قفل است و قابل تغییر نیست."
+  ],
+  "Saved keys are bound to this endpoint. Remove its keys or create a new provider to change the endpoint.": [
+    "Saved keys are bound to this endpoint. Remove its keys or create a new provider to change the endpoint.",
+    "کلید ذخیره‌شده به این درگاه متصل است. برای تغییر درگاه، کلیدها را بردارید یا ارائه‌دهندهٔ جدید بسازید."
+  ],
+  "API Protocol / Format": [
+    "API Protocol / Format",
+    "پروتکل / قالب API"
+  ],
+  "OpenAI Compatible (Default)": [
+    "OpenAI Compatible (Default)",
+    "سازگار با OpenAI (پیش‌فرض)"
+  ],
+  "Standard /v1/chat/completions endpoint": [
+    "Standard /v1/chat/completions endpoint",
+    "درگاه استاندارد /v1/chat/completions"
+  ],
+  "Anthropic Messages Format": [
+    "Anthropic Messages Format",
+    "قالب پیام Anthropic"
+  ],
+  "Native /v1/messages endpoint": [
+    "Native /v1/messages endpoint",
+    "درگاه بومی /v1/messages"
+  ],
+  "API Key(s)": [
+    "API Key(s)",
+    "کلیدهای API"
+  ],
+  "One or multiple keys": [
+    "One or multiple keys",
+    "یک یا چند کلید"
+  ],
+  "Paste one key, or multiple keys (one per line, comma-separated, or sk-xxx [Label])": [
+    "Paste one key, or multiple keys (one per line, comma-separated, or sk-xxx [Label])",
+    "یک کلید یا چند کلید وارد کنید (هر خط یک کلید، جدا با کاما یا sk-xxx [برچسب])"
+  ],
+  "Enter one API key or paste multiple keys. Multiple keys within the same provider are pooled and managed automatically.": [
+    "Enter one API key or paste multiple keys. Multiple keys within the same provider are pooled and managed automatically.",
+    "می‌توانید چند کلید برای یک ارائه‌دهنده وارد کنید؛ کلیدها خودکار مدیریت و بین درخواست‌ها تقسیم می‌شوند."
+  ],
+  "Description": [
+    "Description",
+    "توضیحات"
+  ],
+  "e.g. Private RTX 4090 cluster or local LMStudio": [
+    "e.g. Private RTX 4090 cluster or local LMStudio",
+    "مثلاً خوشهٔ خصوصی RTX 4090 یا LMStudio محلی"
+  ],
+  "Provider Icon / Logo (Optional)": [
+    "Provider Icon / Logo (Optional)",
+    "نماد / لوگوی ارائه‌دهنده (اختیاری)"
+  ],
+  "Reset to default": [
+    "Reset to default",
+    "بازنشانی به پیش‌فرض"
+  ],
+  "Paste image URL (e.g. https://.../logo.png)": [
+    "Paste image URL (e.g. https://.../logo.png)",
+    "آدرس عکس را وارد کنید (مثلاً https://.../logo.png)"
+  ],
+  "Upload Image File": [
+    "Upload Image File",
+    "بارگذاری فایل عکس"
+  ],
+  "Supports PNG, SVG, JPG, WebP": [
+    "Supports PNG, SVG, JPG, WebP",
+    "پشتیبانی از PNG، SVG، JPG و WebP"
+  ],
+  "Testing Connection...": [
+    "Testing Connection...",
+    "در حال آزمایش اتصال…"
+  ],
+  "Test Connection": [
+    "Test Connection",
+    "آزمایش اتصال"
+  ],
+  "Importing Models...": [
+    "Importing Models...",
+    "در حال ورود مدل‌ها…"
+  ],
+  "Import Available Models": [
+    "Import Available Models",
+    "ورود مدل‌های موجود"
+  ],
+  "Saving securely...": [
+    "Saving securely...",
+    "ذخیرهٔ امن…"
+  ],
+  "Create Provider": [
+    "Create Provider",
+    "ساخت ارائه‌دهنده"
+  ],
+  "Configured Keys for": [
+    "Configured Keys for",
+    "کلیدهای تنظیم‌شده برای"
+  ],
+  "Active in failover & load balancing": [
+    "Active in failover & load balancing",
+    "فعال در جایگزینی اتصال و تقسیم بار"
+  ],
+  "No keys saved for": [
+    "No keys saved for",
+    "کلیدی ذخیره نشده برای"
+  ],
+  "yet.": [
+    "yet.",
+    "هنوز."
+  ],
+  "Enter key(s) in the API Key field above and click &quot;Save Changes&quot;.": [
+    "Enter key(s) in the API Key field above and click &quot;Save Changes&quot;.",
+    "کلید را در فیلد بالا وارد کنید و «ذخیرهٔ تغییرات» را بزنید."
+  ],
+  "Enter key(s) in the API Key field above and click \"Save Changes\".": [
+    "Enter key(s) in the API Key field above and click &quot;Save Changes&quot;.",
+    "کلید را در فیلد بالا وارد کنید و «ذخیرهٔ تغییرات» را بزنید."
+  ],
+  "Test": [
+    "Test",
+    "آزمایش"
+  ],
+  "Remove Key": [
+    "Remove Key",
+    "برداشتن کلید"
+  ],
+  "MODELS": [
+    "MODELS",
+    "مدل‌ها"
+  ],
+  "Search imported models...": [
+    "Search imported models...",
+    "جست‌وجوی مدل‌های واردشده…"
+  ],
+  "Re-import Models": [
+    "Re-import Models",
+    "ورود دوبارهٔ مدل‌ها"
+  ],
+  "Clear All": [
+    "Clear All",
+    "پاک کردن همه"
+  ],
+  "Test All Models": [
+    "Test All Models",
+    "آزمایش همهٔ مدل‌ها"
+  ],
+  "Enable All": [
+    "Enable All",
+    "فعال کردن همه"
+  ],
+  "Disable All": [
+    "Disable All",
+    "غیرفعال کردن همه"
+  ],
+  "Enable all models that passed tests and disable/hide all failed ones": [
+    "Enable all models that passed tests and disable/hide all failed ones",
+    "مدل‌های موفق را فعال و مدل‌های ناموفق را غیرفعال یا مخفی کنید"
+  ],
+  "Enable Active & Disable Failed": [
+    "Enable Active & Disable Failed",
+    "فعال کردن موفق‌ها و غیرفعال کردن ناموفق‌ها"
+  ],
+  "No models imported yet for": [
+    "No models imported yet for",
+    "هنوز مدلی وارد نشده برای"
+  ],
+  "Click &quot;Import Models&quot; to fetch models from this provider, or click &quot;Add Custom Model&quot; to manually specify a model.": [
+    "Click &quot;Import Models&quot; to fetch models from this provider, or click &quot;Add Custom Model&quot; to manually specify a model.",
+    "برای دریافت مدل‌ها «ورود مدل‌ها» را بزنید یا با «افزودن مدل سفارشی» یک مدل را دستی وارد کنید."
+  ],
+  "Click \"Import Models\" to fetch models from this provider, or click \"Add Custom Model\" to manually specify a model.": [
+    "Click &quot;Import Models&quot; to fetch models from this provider, or click &quot;Add Custom Model&quot; to manually specify a model.",
+    "برای دریافت مدل‌ها «ورود مدل‌ها» را بزنید یا با «افزودن مدل سفارشی» یک مدل را دستی وارد کنید."
+  ],
+  "Import Models": [
+    "Import Models",
+    "ورود مدل‌ها"
+  ],
+  "Manual": [
+    "Manual",
+    "دستی"
+  ],
+  "Disabled": [
+    "Disabled",
+    "غیرفعال"
+  ],
+  "k ctx": [
+    "k ctx",
+    "هزار توکن زمینه"
+  ],
+  "Free": [
+    "Free",
+    "رایگان"
+  ],
+  "UNTESTED": [
+    "UNTESTED",
+    "آزمایش‌نشده"
+  ],
+  "Passed (": [
+    "Passed (",
+    "موفق ("
+  ],
+  "ms)": [
+    "ms)",
+    "میلی‌ثانیه)"
+  ],
+  "Failed": [
+    "Failed",
+    "ناموفق"
+  ],
+  "View full error details": [
+    "View full error details",
+    "دیدن جزئیات کامل خطا"
+  ],
+  "Details": [
+    "Details",
+    "جزئیات"
+  ],
+  "Testing...": [
+    "Testing...",
+    "در حال آزمایش…"
+  ],
+  "Hide from picker": [
+    "Hide from picker",
+    "مخفی کردن در انتخاب‌گر"
+  ],
+  "Show in picker": [
+    "Show in picker",
+    "نمایش در انتخاب‌گر"
+  ],
+  "Delete model": [
+    "Delete model",
+    "حذف مدل"
+  ],
+  "Manual Model Specification": [
+    "Manual Model Specification",
+    "مشخصات دستی مدل"
+  ],
+  "Add any model identifier supported by this endpoint (e.g. fine-tunes or custom deployments).": [
+    "Add any model identifier supported by this endpoint (e.g. fine-tunes or custom deployments).",
+    "هر شناسهٔ مدل پشتیبانی‌شده توسط این درگاه را اضافه کنید (مثلاً مدل تنظیم‌شده یا استقرار سفارشی)."
+  ],
+  "Model ID (Upstream Identifier)": [
+    "Model ID (Upstream Identifier)",
+    "شناسهٔ مدل (شناسهٔ ارائه‌دهنده)"
+  ],
+  "e.g. llama-3.3-70b-instruct or gpt-4o-2024-08-06": [
+    "e.g. llama-3.3-70b-instruct or gpt-4o-2024-08-06",
+    "مثلاً llama-3.3-70b-instruct یا gpt-4o-2024-08-06"
+  ],
+  "Display Name": [
+    "Display Name",
+    "نام نمایشی"
+  ],
+  "e.g. Llama 3.3 70B Custom": [
+    "e.g. Llama 3.3 70B Custom",
+    "مثلاً Llama 3.3 70B سفارشی"
+  ],
+  "Context Window (Tokens)": [
+    "Context Window (Tokens)",
+    "پنجرهٔ زمینه (توکن)"
+  ],
+  "Max Output Tokens": [
+    "Max Output Tokens",
+    "حداکثر توکن خروجی"
+  ],
+  "Tools / Calls": [
+    "Tools / Calls",
+    "ابزار / فراخوانی"
+  ],
+  "Free Tier": [
+    "Free Tier",
+    "طرح رایگان"
+  ],
+  "Save & Test Custom Model": [
+    "Save & Test Custom Model",
+    "ذخیره و آزمایش مدل سفارشی"
+  ],
+  "Model Test Error Details": [
+    "Model Test Error Details",
+    "جزئیات خطای آزمایش مدل"
+  ],
+  "Model:": [
+    "Model:",
+    "مدل:"
+  ],
+  "Copy Error Message": [
+    "Copy Error Message",
+    "کپی پیام خطا"
+  ],
+  "لینک‌های اشتراک": [
+    "Shared links",
+    "لینک‌های اشتراک"
+  ],
+  "Shared links": [
+    "Shared links",
+    "لینک‌های اشتراک"
+  ],
+  "لینک‌ها پس از ۷ روز منقضی می‌شوند. لغو اشتراک، دسترسی عمومی را بلافاصله می‌بندد.": [
+    "Links expire after seven days. Revoking a share removes public access immediately.",
+    "لینک‌ها پس از ۷ روز منقضی می‌شوند. لغو اشتراک، دسترسی عمومی را بلافاصله می‌بندد."
+  ],
+  "Links expire after seven days. Revoking a share removes public access immediately.": [
+    "Links expire after seven days. Revoking a share removes public access immediately.",
+    "لینک‌ها پس از ۷ روز منقضی می‌شوند. لغو اشتراک، دسترسی عمومی را بلافاصله می‌بندد."
+  ],
+  "در حال بارگذاری…": [
+    "Loading…",
+    "در حال بارگذاری…"
+  ],
+  "لینک فعالی ندارید.": [
+    "You have no active links.",
+    "لینک فعالی ندارید."
+  ],
+  "You have no active links.": [
+    "You have no active links.",
+    "لینک فعالی ندارید."
+  ],
+  "لغو اشتراک": [
+    "Revoke share",
+    "لغو اشتراک"
+  ],
+  "Revoke share": [
+    "Revoke share",
+    "لغو اشتراک"
+  ],
+  "Personal defaults & output": [
+    "Personal defaults & output",
+    "پیش‌فرض شخصی و خروجی"
+  ],
+  "Reading, privacy & mobile app": [
+    "Reading, privacy & mobile app",
+    "خواندن، حریم خصوصی و برنامهٔ موبایل"
+  ],
+  "Execution & activity": [
+    "Execution & activity",
+    "اجرا و فعالیت"
+  ],
+  "Changes save automatically and apply to your next response.": [
+    "Changes save automatically and apply to your next response.",
+    "تغییرات خودکار ذخیره می‌شوند و در پاسخ بعدی اعمال می‌شوند."
+  ],
+  "Response language": [
+    "Response language",
+    "زبان پاسخ"
+  ],
+  "Answer length": [
+    "Answer length",
+    "طول پاسخ"
+  ],
+  "Writing tone": [
+    "Writing tone",
+    "لحن نوشتن"
+  ],
+  "Model for new chats": [
+    "Model for new chats",
+    "مدل گفتگوهای جدید"
+  ],
+  "Use selected conversation model": [
+    "Use selected conversation model",
+    "استفاده از مدل منتخب گفتگو"
+  ],
+  "Messages kept in model context": [
+    "Messages kept in model context",
+    "پیام‌های نگه‌داشته‌شده در زمینهٔ مدل"
+  ],
+  "Default slide count": [
+    "Default slide count",
+    "تعداد اسلاید پیش‌فرض"
+  ],
+  "Presentation theme": [
+    "Presentation theme",
+    "تم ارائه"
+  ],
+  "Include useful examples": [
+    "Include useful examples",
+    "افزودن مثال کاربردی"
+  ],
+  "Ask for practical examples alongside explanations.": [
+    "Ask for practical examples alongside explanations.",
+    "همراه توضیح، مثال کاربردی درخواست شود."
+  ],
+  "About you": [
+    "About you",
+    "دربارهٔ شما"
+  ],
+  "Your work, experience and interests…": [
+    "Your work, experience and interests…",
+    "کار، تجربه و علاقه‌های شما…"
+  ],
+  "How should the assistant respond?": [
+    "How should the assistant respond?",
+    "دستیار چگونه پاسخ بدهد؟"
+  ],
+  "Response preferences": [
+    "Response preferences",
+    "ترجیحات پاسخ"
+  ],
+  "Preferred format, depth, units and style…": [
+    "Preferred format, depth, units and style…",
+    "قالب، عمق، واحد و سبک ترجیحی…"
+  ],
+  "Chat line spacing": [
+    "Chat line spacing",
+    "فاصلهٔ خطوط چت"
+  ],
+  "Reasoning text size": [
+    "Reasoning text size",
+    "اندازهٔ متن استدلال"
+  ],
+  "Reasoning panel height": [
+    "Reasoning panel height",
+    "ارتفاع پنل استدلال"
+  ],
+  "Follow new messages": [
+    "Follow new messages",
+    "دنبال کردن پیام‌های جدید"
+  ],
+  "Scroll to the latest response when a new turn arrives.": [
+    "Scroll to the latest response when a new turn arrives.",
+    "با دریافت نوبت جدید، به آخرین پاسخ بروید."
+  ],
+  "Message reactions": [
+    "Message reactions",
+    "واکنش‌های پیام"
+  ],
+  "Show the 100-emoji picker and one selected reaction per message.": [
+    "Show the 100-emoji picker and one selected reaction per message.",
+    "نمایش انتخاب‌گر ۱۰۰ ایموجی با یک واکنش برای هر پیام."
+  ],
+  "AI reactions": [
+    "AI reactions",
+    "واکنش هوش مصنوعی"
+  ],
+  "Let your selected model choose a reaction to your message; uses a small extra request.": [
+    "Let your selected model choose a reaction to your message; uses a small extra request.",
+    "مدل منتخب شما برای پیام‌تان واکنش انتخاب کند؛ یک درخواست کوچک اضافه دارد."
+  ],
+  "PIMX companion": [
+    "PIMX companion",
+    "همراه PIMX"
+  ],
+  "A small animated pet follows real tool activity. Tap it to see your run or start a new chat.": [
+    "A small animated pet follows real tool activity. Tap it to see your run or start a new chat.",
+    "همراه کوچک و متحرک، فعالیت واقعی ابزار را دنبال می‌کند. برای دیدن اجرا یا شروع گفتگو روی آن بزنید."
+  ],
+  "Message timestamps": [
+    "Message timestamps",
+    "زمان پیام‌ها"
+  ],
+  "Show when each assistant reply was created.": [
+    "Show when each assistant reply was created.",
+    "نمایش زمان ساخت پاسخ دستیار."
+  ],
+  "Start new chats as temporary": [
+    "Start new chats as temporary",
+    "شروع گفتگوهای جدید به‌صورت موقت"
+  ],
+  "New chats and their generated files stay in this tab until reload.": [
+    "New chats and their generated files stay in this tab until reload.",
+    "گفتگوی جدید و فایل آن تا بارگذاری مجدد در همین تب می‌ماند."
+  ],
+  "Activity animation": [
+    "Activity animation",
+    "انیمیشن فعالیت"
+  ],
+  "Reasoning token budget": [
+    "Reasoning token budget",
+    "بودجهٔ توکن استدلال"
+  ],
+  "Maximum web sources": [
+    "Maximum web sources",
+    "حداکثر منابع وب"
+  ],
+  "Automatically detect creation requests": [
+    "Automatically detect creation requests",
+    "تشخیص خودکار درخواست ساخت"
+  ],
+  "“Build a website” and “make slides” activate the matching workspace.": [
+    "“Build a website” and “make slides” activate the matching workspace.",
+    "«وب‌سایت بساز» و «اسلاید بساز» فضای کاری مرتبط را فعال می‌کنند."
+  ],
+  "Show live tool activity": [
+    "Show live tool activity",
+    "نمایش فعالیت زندهٔ ابزار"
+  ],
+  "Animate thinking, web browsing, coding, presentations and model collaboration while they run.": [
+    "Animate thinking, web browsing, coding, presentations and model collaboration while they run.",
+    "نمایش انیمیشن تفکر، جست‌وجوی وب، کدنویسی، ارائه و همکاری مدل‌ها هنگام اجرا."
+  ],
+  "Web search by default": [
+    "Web search by default",
+    "جست‌وجوی وب به‌صورت پیش‌فرض"
+  ],
+  "Gather live sources before answering; requires internet access.": [
+    "Gather live sources before answering; requires internet access.",
+    "پیش از پاسخ منابع تازه دریافت شود؛ به اینترنت نیاز دارد."
+  ],
+  "Read source pages": [
+    "Read source pages",
+    "مطالعهٔ صفحات منبع"
+  ],
+  "Open the leading search results for deeper evidence, beyond snippets.": [
+    "Open the leading search results for deeper evidence, beyond snippets.",
+    "نتایج اصلی جست‌وجو برای مطالعهٔ شواهد بیشتر از خلاصه باز شوند."
+  ],
+  "Repair invalid generated output": [
+    "Repair invalid generated output",
+    "اصلاح خروجی تولیدشدهٔ نامعتبر"
+  ],
+  "Ask the same model once more when website files or slide data are missing.": [
+    "Ask the same model once more when website files or slide data are missing.",
+    "اگر فایل وب یا دادهٔ اسلاید ناقص بود، یک بار دیگر از همان مدل درخواست شود."
+  ],
+  "Open completed workspaces": [
+    "Open completed workspaces",
+    "باز کردن فضای کاری تکمیل‌شده"
+  ],
+  "Show the website preview, deck or research panel when its output is ready.": [
+    "Show the website preview, deck or research panel when its output is ready.",
+    "هنگام آماده شدن خروجی، پیش‌نمایش وب، اسلاید یا پنل تحقیق نمایش داده شود."
+  ],
+  "Reasoning summaries and supported budget controls depend on your provider and chosen model.": [
+    "Reasoning summaries and supported budget controls depend on your provider and chosen model.",
+    "خلاصهٔ استدلال و کنترل بودجه به ارائه‌دهنده و مدل منتخب شما بستگی دارد."
+  ],
+  "Theme & Styling": [
+    "Theme & Styling",
+    "تم و ظاهر"
+  ],
+  "Fonts & Worldwide Typography": [
+    "Fonts & Worldwide Typography",
+    "فونت و تایپوگرافی زبان‌ها"
+  ],
+  "Providers & API Keys": [
+    "Providers & API Keys",
+    "ارائه‌دهندگان و کلید API"
+  ],
+  "Models & Analytics": [
+    "Models & Analytics",
+    "مدل‌ها و تحلیل"
+  ],
+  "Pricing & Cost Calculator": [
+    "Pricing & Cost Calculator",
+    "قیمت و محاسبهٔ هزینه"
+  ],
+  "Prompt & Model Defaults": [
+    "Prompt & Model Defaults",
+    "پیش‌فرض دستور و مدل"
+  ],
+  "General & UI Display": [
+    "General & UI Display",
+    "تنظیمات عمومی و نمایش رابط"
+  ],
+  "Reasoning & Agent Mode": [
+    "Reasoning & Agent Mode",
+    "استدلال و حالت ایجنت"
+  ],
+  "Diagnostics & Logs": [
+    "Diagnostics & Logs",
+    "عیب‌یابی و گزارش‌ها"
+  ],
+  "Settings & Preferences": [
+    "Settings & Preferences",
+    "تنظیمات و ترجیحات"
+  ],
+  "Customize 18+ providers, 145 themes, global pricing & international fonts.": [
+    "Customize 18+ providers, 145 themes, global pricing & international fonts.",
+    "بیش از ۱۸ ارائه‌دهنده، ۱۴۵ تم، قیمت مدل‌ها و فونت‌های زبان‌های مختلف را تنظیم کنید."
+  ],
+  "Appearance": [
+    "Appearance",
+    "ظاهر"
+  ],
+  "Color Mode": [
+    "Color Mode",
+    "حالت رنگ"
+  ],
+  "Dark Mode": [
+    "Dark Mode",
+    "حالت تیره"
+  ],
+  "Light Mode": [
+    "Light Mode",
+    "حالت روشن"
+  ],
+  "System Default": [
+    "System Default",
+    "پیش‌فرض سیستم"
+  ],
+  "Creative Theme Presets (": [
+    "Creative Theme Presets (",
+    "تم‌های خلاقانه ("
+  ],
+  "Curated Themes)": [
+    "Curated Themes)",
+    "تم منتخب)"
+  ],
+  "Inspiring aesthetics across Cyberpunk, OLED Deep Black, Aurora Borealis, Obsidian Gold, and Wabi-Sabi styles.": [
+    "Inspiring aesthetics across Cyberpunk, OLED Deep Black, Aurora Borealis, Obsidian Gold, and Wabi-Sabi styles.",
+    "سبک‌های متنوع از سایبرپانک، مشکی OLED، شفق قطبی و طلایی تا وابی‌سابی."
+  ],
+  "of": [
+    "of",
+    "از"
+  ],
+  "themes": [
+    "themes",
+    "تم‌ها"
+  ],
+  "Search themes by name or style (e.g., Cyberpunk, Tokyo, Aurora, Gold, OLED)...": [
+    "Search themes by name or style (e.g., Cyberpunk, Tokyo, Aurora, Gold, OLED)...",
+    "جست‌وجوی تم با نام یا سبک (مثلاً سایبرپانک، توکیو، شفق، طلایی، OLED)…"
+  ],
+  "All Categories (": [
+    "All Categories (",
+    "همهٔ دسته‌ها ("
+  ],
+  "Accent Colors (": [
+    "Accent Colors (",
+    "رنگ‌های تأکیدی ("
+  ],
+  "Vibrant Accents)": [
+    "Vibrant Accents)",
+    "رنگ زنده)"
+  ],
+  "Highlight colors for buttons, indicators, and interactive elements across the platform.": [
+    "Highlight colors for buttons, indicators, and interactive elements across the platform.",
+    "رنگ تأکیدی دکمه‌ها، نشانگرها و عناصر تعاملی در سراسر برنامه."
+  ],
+  "accents": [
+    "accents",
+    "رنگ‌های تأکیدی"
+  ],
+  "Search accent colors (e.g., Neon, Cyan, Gold, Violet, Rose)...": [
+    "Search accent colors (e.g., Neon, Cyan, Gold, Violet, Rose)...",
+    "جست‌وجوی رنگ (مثلاً نئون، فیروزه‌ای، طلایی، بنفش، رز)…"
+  ],
+  "All (": [
+    "All (",
+    "همه ("
+  ],
+  "Typography": [
+    "Typography",
+    "تایپوگرافی"
+  ],
+  "Font Catalog -": [
+    "Font Catalog -",
+    "مجموعهٔ فونت —"
+  ],
+  "fonts": [
+    "fonts",
+    "فونت‌ها"
+  ],
+  "Font preferences are stored separately per language and remain active across sessions.": [
+    "Font preferences are stored separately per language and remain active across sessions.",
+    "ترجیحات فونت برای هر زبان جدا ذخیره می‌شوند و بین نشست‌ها حفظ می‌شوند."
+  ],
+  "Upload Custom Font": [
+    "Upload Custom Font",
+    "بارگذاری فونت سفارشی"
+  ],
+  "Search fonts by name (e.g., Inter, Montserrat, Roboto, Noto)...": [
+    "Search fonts by name (e.g., Inter, Montserrat, Roboto, Noto)...",
+    "جست‌وجوی فونت با نام (مثلاً Inter، Montserrat، Roboto، Noto)…"
+  ],
+  "Clear search": [
+    "Clear search",
+    "پاک کردن جست‌وجو"
+  ],
+  "Language:": [
+    "Language:",
+    "زبان:"
+  ],
+  "Search languages (A-Z)...": [
+    "Search languages (A-Z)...",
+    "جست‌وجوی زبان‌ها (A-Z)…"
+  ],
+  "Click any font to apply it for &quot;": [
+    "Click any font to apply it for &quot;",
+    "برای اعمال فونت روی «"
+  ],
+  "Click any font to apply it for \"": [
+    "Click any font to apply it for &quot;",
+    "برای اعمال فونت روی «"
+  ],
+  "&quot;.": [
+    "&quot;.",
+    "» کلیک کنید."
+  ],
+  "\".": [
+    "&quot;.",
+    "» کلیک کنید."
+  ],
+  "Page": [
+    "Page",
+    "صفحه"
+  ],
+  "No fonts found matching your criteria.": [
+    "No fonts found matching your criteria.",
+    "فونتی مطابق معیارهای شما نیست."
+  ],
+  "Clear Filters": [
+    "Clear Filters",
+    "پاک کردن فیلترها"
+  ],
+  "The quick brown fox jumps over the lazy dog 12345": [
+    "The quick brown fox jumps over the lazy dog 12345",
+    "این متن نمونه برای نمایش فونت است ۱۲۳۴۵"
+  ],
+  "⚡ Local Font": [
+    "⚡ Local Font",
+    "⚡ فونت محلی"
+  ],
+  "🌐 Web Font": [
+    "🌐 Web Font",
+    "🌐 فونت وب"
+  ],
+  "Active for": [
+    "Active for",
+    "فعال برای"
+  ],
+  "Click to activate": [
+    "Click to activate",
+    "برای فعال کردن کلیک کنید"
+  ],
+  "(Showing": [
+    "(Showing",
+    "(نمایش"
+  ],
+  "to": [
+    "to",
+    "تا"
+  ],
+  "fonts)": [
+    "fonts)",
+    "فونت)"
+  ],
+  "Previous": [
+    "Previous",
+    "قبلی"
+  ],
+  "Next": [
+    "Next",
+    "بعدی"
+  ],
+  "Providers & Models": [
+    "Providers & Models",
+    "ارائه‌دهندگان و مدل‌ها"
+  ],
+  "Provider & API Key Management": [
+    "Provider & API Key Management",
+    "مدیریت ارائه‌دهنده و کلید API"
+  ],
+  "Select any provider card to configure single or bulk API keys, test connection latency, and import models.": [
+    "Select any provider card to configure single or bulk API keys, test connection latency, and import models.",
+    "کارت ارائه‌دهنده را برای تنظیم کلید تکی یا گروهی، آزمایش زمان اتصال و ورود مدل‌ها انتخاب کنید."
+  ],
+  "All Models & Performance Analytics": [
+    "All Models & Performance Analytics",
+    "همهٔ مدل‌ها و تحلیل عملکرد"
+  ],
+  "Comprehensive catalogue of all models across all connected providers. Monitor usage, latency, tokens, and test connectivity.": [
+    "Comprehensive catalogue of all models across all connected providers. Monitor usage, latency, tokens, and test connectivity.",
+    "مجموعهٔ کامل مدل‌های ارائه‌دهندگان متصل؛ مصرف، زمان پاسخ، توکن و اتصال را بررسی کنید."
+  ],
+  "Testing Models...": [
+    "Testing Models...",
+    "در حال آزمایش مدل‌ها…"
+  ],
+  "Total Models": [
+    "Total Models",
+    "کل مدل‌ها"
+  ],
+  "companies,": [
+    "companies,",
+    "شرکت،"
+  ],
+  "connected": [
+    "connected",
+    "متصل"
+  ],
+  "Total Requests": [
+    "Total Requests",
+    "کل درخواست‌ها"
+  ],
+  "Across all conversations": [
+    "Across all conversations",
+    "در تمام گفتگوها"
+  ],
+  "Total Tokens": [
+    "Total Tokens",
+    "کل توکن‌ها"
+  ],
+  "k in /": [
+    "k in /",
+    "هزار ورودی /"
+  ],
+  "k out": [
+    "k out",
+    "هزار خروجی"
+  ],
+  "Estimated Cost": [
+    "Estimated Cost",
+    "هزینهٔ تخمینی"
+  ],
+  "Blended estimation": [
+    "Blended estimation",
+    "برآورد ترکیبی"
+  ],
+  "ALL": [
+    "ALL",
+    "همه"
+  ],
+  "All Types": [
+    "All Types",
+    "همهٔ انواع"
+  ],
+  "Search models...": [
+    "Search models...",
+    "جست‌وجوی مدل‌ها…"
+  ],
+  "No models in the catalogue yet.": [
+    "No models in the catalogue yet.",
+    "هنوز مدلی در مجموعه نیست."
+  ],
+  "Catalogue": [
+    "Catalogue",
+    "مجموعه"
+  ],
+  "Hidden": [
+    "Hidden",
+    "مخفی"
+  ],
+  "reqs •": [
+    "reqs •",
+    "درخواست •"
+  ],
+  "tok": [
+    "tok",
+    "توکن"
+  ],
+  "Connect this provider to run a live test": [
+    "Connect this provider to run a live test",
+    "برای آزمایش زنده این ارائه‌دهنده را متصل کنید"
+  ],
+  "Connect this provider to publish this model": [
+    "Connect this provider to publish this model",
+    "برای در دسترس کردن این مدل، ارائه‌دهنده را متصل کنید"
+  ],
+  "Calculate Token Cost with this Model": [
+    "Calculate Token Cost with this Model",
+    "محاسبهٔ هزینهٔ توکن با این مدل"
+  ],
+  "Pricing & Analytics": [
+    "Pricing & Analytics",
+    "قیمت و تحلیل"
+  ],
+  "Model Pricing & Cost Calculator": [
+    "Model Pricing & Cost Calculator",
+    "قیمت مدل‌ها و محاسبهٔ هزینه"
+  ],
+  "Detailed token usage analytics, real-time estimated inference cost, and industry model pricing catalog.": [
+    "Detailed token usage analytics, real-time estimated inference cost, and industry model pricing catalog.",
+    "تحلیل مصرف توکن، تخمین هزینهٔ پاسخ و مجموعهٔ قیمت مدل‌ها."
+  ],
+  "Total Token Usage & Estimated Cost": [
+    "Total Token Usage & Estimated Cost",
+    "کل مصرف توکن و هزینهٔ تخمینی"
+  ],
+  "Calculated across all stored conversation turns and messages": [
+    "Calculated across all stored conversation turns and messages",
+    "محاسبه‌شده از نوبت‌ها و پیام‌های گفتگوهای ذخیره‌شده"
+  ],
+  "Total Estimated Cost": [
+    "Total Estimated Cost",
+    "کل هزینهٔ تخمینی"
+  ],
+  "USD": [
+    "USD",
+    "دلار آمریکا"
+  ],
+  "Toman": [
+    "Toman",
+    "تومان"
+  ],
+  "Input Tokens (Prompt)": [
+    "Input Tokens (Prompt)",
+    "توکن ورودی (درخواست)"
+  ],
+  "% of total": [
+    "% of total",
+    "درصد از کل"
+  ],
+  "Output Tokens (Reply)": [
+    "Output Tokens (Reply)",
+    "توکن خروجی (پاسخ)"
+  ],
+  "Avg": [
+    "Avg",
+    "میانگین"
+  ],
+  "tokens / req": [
+    "tokens / req",
+    "توکن / درخواست"
+  ],
+  "Input (Prompt):": [
+    "Input (Prompt):",
+    "ورودی (درخواست):"
+  ],
+  "Output (Reply):": [
+    "Output (Reply):",
+    "خروجی (پاسخ):"
+  ],
+  "Prompt Tokens Ratio": [
+    "Prompt Tokens Ratio",
+    "نسبت توکن درخواست"
+  ],
+  "Completion Tokens Ratio": [
+    "Completion Tokens Ratio",
+    "نسبت توکن پاسخ"
+  ],
+  "Foundational Model Rates (per 1,000,000 Tokens)": [
+    "Foundational Model Rates (per 1,000,000 Tokens)",
+    "نرخ مدل‌های پایه (به ازای یک میلیون توکن)"
+  ],
+  "Search models or providers...": [
+    "Search models or providers...",
+    "جست‌وجوی مدل یا ارائه‌دهنده…"
+  ],
+  "context": [
+    "context",
+    "زمینه"
+  ],
+  "Input (Prompt)": [
+    "Input (Prompt)",
+    "ورودی (درخواست)"
+  ],
+  "Output (Reply)": [
+    "Output (Reply)",
+    "خروجی (پاسخ)"
+  ],
+  "Active in Calculator": [
+    "Active in Calculator",
+    "فعال در محاسبه‌گر"
+  ],
+  "Calculate with this Model": [
+    "Calculate with this Model",
+    "محاسبه با این مدل"
+  ],
+  "Interactive Token Cost Estimator": [
+    "Interactive Token Cost Estimator",
+    "تخمین تعاملی هزینهٔ توکن"
+  ],
+  "Active Target": [
+    "Active Target",
+    "هدف فعال"
+  ],
+  "Active Model:": [
+    "Active Model:",
+    "مدل فعال:"
+  ],
+  "Target Model": [
+    "Target Model",
+    "مدل هدف"
+  ],
+  "in / $": [
+    "in / $",
+    "ورودی / $"
+  ],
+  "out)": [
+    "out)",
+    "خروجی)"
+  ],
+  "Estimated Request Cost:": [
+    "Estimated Request Cost:",
+    "هزینهٔ تخمینی درخواست:"
+  ],
+  "in × $": [
+    "in × $",
+    "ورودی × $"
+  ],
+  "out × $": [
+    "out × $",
+    "خروجی × $"
+  ],
+  "Prompt Systems": [
+    "Prompt Systems",
+    "سامانهٔ دستورها"
+  ],
+  "Global System Prompt Directive": [
+    "Global System Prompt Directive",
+    "دستور سیستمی عمومی"
+  ],
+  "chars": [
+    "chars",
+    "نویسه"
+  ],
+  "Quick Presets:": [
+    "Quick Presets:",
+    "دستورهای آماده:"
+  ],
+  "Senior Architect": [
+    "Senior Architect",
+    "معمار ارشد"
+  ],
+  "Concise Expert": [
+    "Concise Expert",
+    "کارشناس مختصرگو"
+  ],
+  "Creative Writer": [
+    "Creative Writer",
+    "نویسندهٔ خلاق"
+  ],
+  "Socratic Mentor": [
+    "Socratic Mentor",
+    "مربی سقراطی"
+  ],
+  "Bilingual Tech Translator": [
+    "Bilingual Tech Translator",
+    "مترجم فنی دوزبانه"
+  ],
+  "Standing global instructions prepended across all models, chats, and tool modes...": [
+    "Standing global instructions prepended across all models, chats, and tool modes...",
+    "دستورهای عمومی که به تمام مدل‌ها، گفتگوها و حالت ابزار اضافه می‌شوند…"
+  ],
+  "Custom User Instructions (Personalization)": [
+    "Custom User Instructions (Personalization)",
+    "دستورهای سفارشی کاربر (شخصی‌سازی)"
+  ],
+  "What should models know about you to provide better answers?": [
+    "What should models know about you to provide better answers?",
+    "مدل برای پاسخ بهتر چه چیزی دربارهٔ شما بداند؟"
+  ],
+  "e.g. Senior TypeScript engineer based in Tehran, building AI web apps...": [
+    "e.g. Senior TypeScript engineer based in Tehran, building AI web apps...",
+    "مثلاً مهندس ارشد TypeScript در تهران که وب‌اپ هوش مصنوعی می‌سازد…"
+  ],
+  "How would you like AI models to format and phrase responses?": [
+    "How would you like AI models to format and phrase responses?",
+    "مدل پاسخ را با چه قالب و عبارتی بنویسد؟"
+  ],
+  "e.g. Direct, professional tone, omit polite conversational filler, provide runnable code snippets...": [
+    "e.g. Direct, professional tone, omit polite conversational filler, provide runnable code snippets...",
+    "مثلاً مستقیم و حرفه‌ای، بدون عبارت اضافی و همراه کد قابل اجرا…"
+  ],
+  "Inference Hyperparameters": [
+    "Inference Hyperparameters",
+    "پارامترهای تولید پاسخ"
+  ],
+  "Temperature": [
+    "Temperature",
+    "دما"
+  ],
+  "Deterministic": [
+    "Deterministic",
+    "قطعی"
+  ],
+  "Balanced": [
+    "Balanced",
+    "متعادل"
+  ],
+  "Creative": [
+    "Creative",
+    "خلاق"
+  ],
+  "Controls randomness: 0 for code/math, 1+ for creative tasks.": [
+    "Controls randomness: 0 for code/math, 1+ for creative tasks.",
+    "میزان تصادفی بودن را کنترل می‌کند: صفر برای کد و ریاضی، یک یا بیشتر برای خلاقیت."
+  ],
+  "Top-P Nucleus": [
+    "Top-P Nucleus",
+    "نمونه‌گیری Top-P"
+  ],
+  "Tokens comprising top p cumulative probability mass.": [
+    "Tokens comprising top p cumulative probability mass.",
+    "توکن‌هایی با مجموع احتمال تا مقدار p."
+  ],
+  "Frequency Penalty": [
+    "Frequency Penalty",
+    "جریمهٔ تکرار"
+  ],
+  "Penalizes repeated words based on frequency in text.": [
+    "Penalizes repeated words based on frequency in text.",
+    "واژهٔ تکراری را بر اساس تعداد تکرار در متن جریمه می‌کند."
+  ],
+  "Presence Penalty": [
+    "Presence Penalty",
+    "جریمهٔ حضور"
+  ],
+  "Encourages introducing novel subjects and vocabulary.": [
+    "Encourages introducing novel subjects and vocabulary.",
+    "مدل را به طرح موضوع و واژهٔ تازه تشویق می‌کند."
+  ],
+  "Default Reasoning Effort": [
+    "Default Reasoning Effort",
+    "تلاش استدلال پیش‌فرض"
+  ],
+  "Applies to o1/o3-mini & Claude 3.7 Sonnet thinking budgets.": [
+    "Applies to o1/o3-mini & Claude 3.7 Sonnet thinking budgets.",
+    "در مدل‌های پشتیبانی‌شده، بودجهٔ تفکر و استدلال را تنظیم می‌کند."
+  ],
+  "General": [
+    "General",
+    "عمومی"
+  ],
+  "UI Appearance & Typography Scale": [
+    "UI Appearance & Typography Scale",
+    "ظاهر رابط و اندازهٔ نوشته"
+  ],
+  "Message Bubble Style": [
+    "Message Bubble Style",
+    "سبک حباب پیام"
+  ],
+  "Modern Card": [
+    "Modern Card",
+    "کارت مدرن"
+  ],
+  "Glassmorphic": [
+    "Glassmorphic",
+    "شیشه‌ای"
+  ],
+  "Rounded Chat": [
+    "Rounded Chat",
+    "گفتگوی گرد"
+  ],
+  "Minimalist": [
+    "Minimalist",
+    "مینیمال"
+  ],
+  "Chat Text Size Scale": [
+    "Chat Text Size Scale",
+    "اندازهٔ متن گفتگو"
+  ],
+  "Compact (13px)": [
+    "Compact (13px)",
+    "فشرده (۱۳ پیکسل)"
+  ],
+  "Default (14px)": [
+    "Default (14px)",
+    "پیش‌فرض (۱۴ پیکسل)"
+  ],
+  "Large (16px)": [
+    "Large (16px)",
+    "بزرگ (۱۶ پیکسل)"
+  ],
+  "Smooth Streaming & Token Delivery": [
+    "Smooth Streaming & Token Delivery",
+    "دریافت روان متن و توکن"
+  ],
+  "Auto-Wrap Code Blocks": [
+    "Auto-Wrap Code Blocks",
+    "شکستن خودکار خطوط کد"
+  ],
+  "Play Audio Chime on Response Complete": [
+    "Play Audio Chime on Response Complete",
+    "پخش صدای کوتاه پس از تکمیل پاسخ"
+  ],
+  "Display Token Counts & Estimation": [
+    "Display Token Counts & Estimation",
+    "نمایش تعداد و تخمین توکن"
+  ],
+  "Display Live Request Cost ($ USD & Toman)": [
+    "Display Live Request Cost ($ USD & Toman)",
+    "نمایش زندهٔ هزینهٔ درخواست (دلار و تومان)"
+  ],
+  "Display Turn Latency (ms / s)": [
+    "Display Turn Latency (ms / s)",
+    "نمایش زمان پاسخ (میلی‌ثانیه / ثانیه)"
+  ],
+  "Display Model Header Line": [
+    "Display Model Header Line",
+    "نمایش سربرگ نام مدل"
+  ],
+  "Send Message on Enter Key": [
+    "Send Message on Enter Key",
+    "ارسال پیام با Enter"
+  ],
+  "Stream Upstream Responses via SSE": [
+    "Stream Upstream Responses via SSE",
+    "دریافت تدریجی پاسخ با SSE"
+  ],
+  "Render Live Markdown Formatting": [
+    "Render Live Markdown Formatting",
+    "نمایش زندهٔ قالب‌بندی Markdown"
+  ],
+  "Auto-Speak Assistant Replies (Text-to-Speech)": [
+    "Auto-Speak Assistant Replies (Text-to-Speech)",
+    "خواندن خودکار پاسخ دستیار (تبدیل متن به گفتار)"
+  ],
+  "Reduce Motion & Animations": [
+    "Reduce Motion & Animations",
+    "کاهش حرکت و انیمیشن"
+  ],
+  "Reasoning & Agent": [
+    "Reasoning & Agent",
+    "استدلال و ایجنت"
+  ],
+  "Reasoning Models, Thinking Effort & Autonomous Agent": [
+    "Reasoning Models, Thinking Effort & Autonomous Agent",
+    "مدل‌های استدلال، تلاش تفکر و ایجنت خودکار"
+  ],
+  "Fine-tune internal Chain-of-Thought deliberation budgets, tool calling permissions, search depth, and persistent memory.": [
+    "Fine-tune internal Chain-of-Thought deliberation budgets, tool calling permissions, search depth, and persistent memory.",
+    "بودجهٔ استدلال پشتیبانی‌شده، مجوز ابزار، عمق جست‌وجو و حافظهٔ پایدار را تنظیم کنید."
+  ],
+  "Web Search Engine Depth": [
+    "Web Search Engine Depth",
+    "عمق جست‌وجوی وب"
+  ],
+  "Quick Search": [
+    "Quick Search",
+    "جست‌وجوی سریع"
+  ],
+  "Deep Synthesis (Multi-query)": [
+    "Deep Synthesis (Multi-query)",
+    "جمع‌بندی عمیق (چند جست‌وجو)"
+  ],
+  "Autonomous Agent Max Steps": [
+    "Autonomous Agent Max Steps",
+    "حداکثر گام ایجنت خودکار"
+  ],
+  "Safety cap on multi-step tool execution loops per turn.": [
+    "Safety cap on multi-step tool execution loops per turn.",
+    "حد توقف اجرای چندمرحله‌ای ابزار در هر نوبت."
+  ],
+  "Extended Thinking / Reasoning Mode": [
+    "Extended Thinking / Reasoning Mode",
+    "حالت تفکر / استدلال گسترده"
+  ],
+  "Auto-Expand Thinking Blocks by Default": [
+    "Auto-Expand Thinking Blocks by Default",
+    "باز کردن پیش‌فرض بخش تفکر"
+  ],
+  "Autonomous Tool Calling Agent Mode": [
+    "Autonomous Tool Calling Agent Mode",
+    "حالت ایجنت با فراخوانی خودکار ابزار"
+  ],
+  "Cross-Turn Context Memory Recall": [
+    "Cross-Turn Context Memory Recall",
+    "یادآوری حافظه میان نوبت‌ها"
+  ],
+  "Persistent Stored Memories (": [
+    "Persistent Stored Memories (",
+    "حافظه‌های ذخیره‌شده ("
+  ],
+  "Locally encrypted": [
+    "Locally encrypted",
+    "رمزگذاری‌شدهٔ محلی"
+  ],
+  "No persistent memories recorded yet. Turn on memory recall to allow AI to remember personal preferences across chats.": [
+    "No persistent memories recorded yet. Turn on memory recall to allow AI to remember personal preferences across chats.",
+    "هنوز حافظه‌ای ذخیره نشده است. یادآوری را فعال کنید تا ترجیحات شخصی در گفتگوهای بعدی استفاده شوند."
+  ],
+  "Delete memory": [
+    "Delete memory",
+    "حذف حافظه"
+  ],
+  "Diagnostics": [
+    "Diagnostics",
+    "عیب‌یابی"
+  ],
+  "Runtime Execution Logs (": [
+    "Runtime Execution Logs (",
+    "گزارش‌های اجرای برنامه ("
+  ],
+  "Real-time telemetry of model dispatches, SSE streams, web search, connection tests, and errors.": [
+    "Real-time telemetry of model dispatches, SSE streams, web search, connection tests, and errors.",
+    "گزارش زندهٔ درخواست مدل، دریافت SSE، جست‌وجوی وب، آزمایش اتصال و خطا."
+  ],
+  "Ping Test Log": [
+    "Ping Test Log",
+    "گزارش آزمایش اتصال"
+  ],
+  "Copy Logs": [
+    "Copy Logs",
+    "کپی گزارش‌ها"
+  ],
+  "Filter by keyword or tag...": [
+    "Filter by keyword or tag...",
+    "فیلتر با واژه یا برچسب…"
+  ],
+  "No runtime logs found matching your filter.": [
+    "No runtime logs found matching your filter.",
+    "گزارشی مطابق فیلتر پیدا نشد."
+  ],
+  "Upload a font file from your device or import via web font URL": [
+    "Upload a font file from your device or import via web font URL",
+    "فایل فونت را از دستگاه بارگذاری کنید یا با آدرس فونت وب وارد کنید"
+  ],
+  "Choose font file from your computer": [
+    "Choose font file from your computer",
+    "انتخاب فایل فونت از رایانه"
+  ],
+  "Supported formats: .ttf, .woff2, .woff, .otf": [
+    "Supported formats: .ttf, .woff2, .woff, .otf",
+    "قالب‌های مجاز: .ttf، .woff2، .woff، .otf"
+  ],
+  "Or enter web font stylesheet specifications (Google Fonts / Web URL):": [
+    "Or enter web font stylesheet specifications (Google Fonts / Web URL):",
+    "یا مشخصات شیوه‌نامهٔ فونت وب را وارد کنید (Google Fonts / آدرس وب):"
+  ],
+  "Font Name (e.g., Geist, Space Grotesk, Outfit)...": [
+    "Font Name (e.g., Geist, Space Grotesk, Outfit)...",
+    "نام فونت (مثلاً Geist، Space Grotesk، Outfit)…"
+  ],
+  "Font Stylesheet URL (CSS URL - optional)...": [
+    "Font Stylesheet URL (CSS URL - optional)...",
+    "آدرس شیوه‌نامهٔ فونت (CSS، اختیاری)…"
+  ],
+  "Add": [
+    "Add",
+    "افزودن"
+  ],
+  "Your Custom Fonts (": [
+    "Your Custom Fonts (",
+    "فونت‌های سفارشی شما ("
+  ],
+  "CUSTOM": [
+    "CUSTOM",
+    "سفارشی"
+  ],
+  "Active Font": [
+    "Active Font",
+    "فونت فعال"
+  ],
+  "Delete font": [
+    "Delete font",
+    "حذف فونت"
+  ],
+  "پیامتان را بنویسید": [
+    "Write your message",
+    "پیامتان را بنویسید"
+  ],
+  "Write your message": [
+    "Write your message",
+    "پیام‌تان را بنویسید"
+  ],
+  "نام شما": [
+    "Your name",
+    "نام شما"
+  ],
+  "Your name": [
+    "Your name",
+    "نام شما"
+  ],
+  "پیام": [
+    "Message",
+    "پیام"
+  ],
+  "Message": [
+    "Message",
+    "پیام"
+  ],
+  "Website": [
+    "Website",
+    "وب‌سایت"
+  ],
+  "در حال ثبت پیام…": [
+    "Saving your message…",
+    "در حال ثبت پیام…"
+  ],
+  "Saving your message…": [
+    "Saving your message…",
+    "در حال ثبت پیام…"
+  ],
+  "ثبت پیام ←": [
+    "Send message ←",
+    "ثبت پیام ←"
+  ],
+  "Send message ←": [
+    "Send message ←",
+    "ارسال پیام ←"
+  ],
+  "پیام در صندوق داخلی سایت ثبت می‌شود. اطلاعات محرمانه یا کلید API را در پیام ننویسید.": [
+    "Your message is saved in the internal inbox. Do not include confidential information or API keys.",
+    "پیام در صندوق داخلی سایت ثبت می‌شود. اطلاعات محرمانه یا کلید API را در پیام ننویسید."
+  ],
+  "Your message is saved in the internal inbox. Do not include confidential information or API keys.": [
+    "Your message is saved in the internal inbox. Do not include confidential information or API keys.",
+    "پیام در صندوق داخلی ثبت می‌شود. اطلاعات محرمانه یا کلید API را در پیام ننویسید."
+  ],
+  "کد خطا: ۴۰۴ • صفحه پیدا نشد": [
+    "Error 404 • Page not found",
+    "کد خطا: ۴۰۴ • صفحه پیدا نشد"
+  ],
+  "Error 404 • Page not found": [
+    "Error 404 • Page not found",
+    "کد خطا: ۴۰۴ • صفحه پیدا نشد"
+  ],
+  "صفحه مورد نظر شما یافت نشد": [
+    "We couldn’t find that page",
+    "صفحه مورد نظر شما یافت نشد"
+  ],
+  "We couldn’t find that page": [
+    "We couldn’t find that page",
+    "صفحه مورد نظر شما یافت نشد"
+  ],
+  "ممکن است آدرس این گفتگو یا بخش تغییر کرده باشد، پاک شده باشد یا لینکی که وارد کرده‌اید اشتباه باشد.": [
+    "This conversation or page may have moved, been deleted, or the link may be incorrect.",
+    "ممکن است آدرس این گفتگو یا بخش تغییر کرده باشد، پاک شده باشد یا لینکی که وارد کرده‌اید اشتباه باشد."
+  ],
+  "This conversation or page may have moved, been deleted, or the link may be incorrect.": [
+    "This conversation or page may have moved, been deleted, or the link may be incorrect.",
+    "ممکن است آدرس این گفتگو یا بخش تغییر کرده باشد، پاک شده باشد یا لینکی که وارد کرده‌اید اشتباه باشد."
+  ],
+  "بازگشت به چت و صفحه اصلی": [
+    "Back to chats and home",
+    "بازگشت به چت و صفحه اصلی"
+  ],
+  "Back to chats and home": [
+    "Back to chats and home",
+    "بازگشت به چت و صفحه اصلی"
+  ],
+  "بارگذاری مجدد صفحه": [
+    "Reload page",
+    "بارگذاری مجدد صفحه"
+  ],
+  "Reload page": [
+    "Reload page",
+    "بارگذاری مجدد صفحه"
+  ],
+  "سامانه دستیار هوشمند Pimx Agent AI": [
+    "PIMX Agent AI assistant workspace",
+    "سامانه دستیار هوشمند Pimx Agent AI"
+  ],
+  "PIMX Agent AI assistant workspace": [
+    "PIMX Agent AI assistant workspace",
+    "سامانه دستیار هوشمند Pimx Agent AI"
+  ],
+  "شروع گفتگوی جدید": [
+    "Start a new conversation",
+    "شروع گفتگوی جدید"
+  ],
+  "Start a new conversation": [
+    "Start a new conversation",
+    "شروع گفتگوی جدید"
+  ],
+  "Interactive Artifact Sandbox": [
+    "Interactive Artifact Sandbox",
+    "محیط خروجی تعاملی"
+  ],
+  "Preview": [
+    "Preview",
+    "پیش‌نمایش"
+  ],
+  "Copy Code": [
+    "Copy Code",
+    "کپی کد"
+  ],
+  "Minimize Panel": [
+    "Minimize Panel",
+    "کوچک کردن پنل"
+  ],
+  "PREVIEW": [
+    "PREVIEW",
+    "پیش‌نمایش"
+  ],
+  "No Active Artifacts Yet": [
+    "No Active Artifacts Yet",
+    "هنوز خروجی فعالی نیست"
+  ],
+  "Ask AI in the chat to generate interactive code snippets, charts, SVG, or small React apps for you.": [
+    "Ask AI in the chat to generate interactive code snippets, charts, SVG, or small React apps for you.",
+    "در گفتگو از هوش مصنوعی بخواهید کد تعاملی، نمودار، SVG یا برنامهٔ کوچک React بسازد."
+  ],
+  "Kind:": [
+    "Kind:",
+    "نوع:"
+  ],
+  "• Lang:": [
+    "• Lang:",
+    "• زبان:"
+  ],
+  "Edit": [
+    "Edit",
+    "ویرایش"
+  ],
+  "Copy Markdown": [
+    "Copy Markdown",
+    "کپی Markdown"
+  ],
+  "Export Canvas Document": [
+    "Export Canvas Document",
+    "خروجی سند"
+  ],
+  "HTML Webpage": [
+    "HTML Webpage",
+    "صفحهٔ وب HTML"
+  ],
+  "Printable PDF": [
+    "Printable PDF",
+    "PDF قابل چاپ"
+  ],
+  "Plain Text": [
+    "Plain Text",
+    "متن ساده"
+  ],
+  "EDIT": [
+    "EDIT",
+    "ویرایش"
+  ],
+  "Write markdown here...": [
+    "Write markdown here...",
+    "Markdown را اینجا بنویسید…"
+  ],
+  "words": [
+    "words",
+    "واژه"
+  ],
+  "Opening preview…": [
+    "Opening preview…",
+    "در حال باز کردن پیش‌نمایش…"
+  ],
+  "Core Foundations & Mental Models": [
+    "Core Foundations & Mental Models",
+    "مبانی و مدل‌های ذهنی"
+  ],
+  "Key Architecture & Principles": [
+    "Key Architecture & Principles",
+    "معماری و اصول اصلی"
+  ],
+  "Deep-Dive: Mechanisms & Under the Hood": [
+    "Deep-Dive: Mechanisms & Under the Hood",
+    "بررسی عمیق سازوکارها و جزئیات"
+  ],
+  "Real-World Worked Examples & Case Studies": [
+    "Real-World Worked Examples & Case Studies",
+    "مثال حل‌شده و مطالعهٔ موردی واقعی"
+  ],
+  "Common Pitfalls, Antipatterns & Solutions": [
+    "Common Pitfalls, Antipatterns & Solutions",
+    "خطاهای رایج، الگوهای نامناسب و راه‌حل‌ها"
+  ],
+  "Mastery Synthesis & Capstone Challenge": [
+    "Mastery Synthesis & Capstone Challenge",
+    "جمع‌بندی تسلط و چالش نهایی"
+  ],
+  "Interactive Learning Studio": [
+    "Interactive Learning Studio",
+    "استودیوی یادگیری تعاملی"
+  ],
+  "Curriculum": [
+    "Curriculum",
+    "برنامهٔ درسی"
+  ],
+  "Recall Cards": [
+    "Recall Cards",
+    "کارت‌های مرور"
+  ],
+  "Notes": [
+    "Notes",
+    "یادداشت‌ها"
+  ],
+  "Active Track": [
+    "Active Track",
+    "مسیر فعال"
+  ],
+  "Save topic": [
+    "Save topic",
+    "ذخیرهٔ موضوع"
+  ],
+  "Edit topic": [
+    "Edit topic",
+    "ویرایش موضوع"
+  ],
+  "Enter learning topic...": [
+    "Enter learning topic...",
+    "موضوع یادگیری را وارد کنید…"
+  ],
+  "Progress": [
+    "Progress",
+    "پیشرفت"
+  ],
+  "Modules Done (": [
+    "Modules Done (",
+    "بخش‌های تکمیل‌شده ("
+  ],
+  "ROADMAP": [
+    "ROADMAP",
+    "نقشهٔ راه"
+  ],
+  "Syllabus & Lesson Modules": [
+    "Syllabus & Lesson Modules",
+    "سرفصل‌ها و بخش‌های درس"
+  ],
+  "AI Custom Roadmap": [
+    "AI Custom Roadmap",
+    "نقشهٔ راه سفارشی هوش مصنوعی"
+  ],
+  "Mark uncompleted": [
+    "Mark uncompleted",
+    "علامت‌گذاری به‌عنوان ناقص"
+  ],
+  "Mark completed": [
+    "Mark completed",
+    "علامت‌گذاری به‌عنوان کامل"
+  ],
+  "Completed": [
+    "Completed",
+    "تکمیل‌شده"
+  ],
+  "Click to start interactive masterclass": [
+    "Click to start interactive masterclass",
+    "برای شروع درس تعاملی کلیک کنید"
+  ],
+  "Launch Interactive Quiz Challenge": [
+    "Launch Interactive Quiz Challenge",
+    "شروع چالش آزمون تعاملی"
+  ],
+  "FLASHCARDS": [
+    "FLASHCARDS",
+    "کارت مرور"
+  ],
+  "Active recall flashcards stimulate memory retention. Click card to reveal core insights.": [
+    "Active recall flashcards stimulate memory retention. Click card to reveal core insights.",
+    "مرور فعال به حفظ مطالب کمک می‌کند. برای دیدن نکات اصلی روی کارت کلیک کنید."
+  ],
+  "Generate recall cards for your topic to begin.": [
+    "Generate recall cards for your topic to begin.",
+    "برای شروع، کارت مرور موضوع خودتان را بسازید."
+  ],
+  "Tap to reveal the answer": [
+    "Tap to reveal the answer",
+    "برای دیدن پاسخ روی کارت بزنید"
+  ],
+  "Generate New Flashcards with AI": [
+    "Generate New Flashcards with AI",
+    "ساخت کارت مرور جدید با هوش مصنوعی"
+  ],
+  "NOTES": [
+    "NOTES",
+    "یادداشت‌ها"
+  ],
+  "Personal Study Notes": [
+    "Personal Study Notes",
+    "یادداشت‌های شخصی مطالعه"
+  ],
+  "Save Notes": [
+    "Save Notes",
+    "ذخیرهٔ یادداشت‌ها"
+  ],
+  "Record key equations, takeaway insights, or questions to revisit...": [
+    "Record key equations, takeaway insights, or questions to revisit...",
+    "فرمول، نکتهٔ مهم یا پرسشی برای مرور بعدی بنویسید…"
+  ],
+  "Query planner": [
+    "Query planner",
+    "برنامه‌ریز پرسش"
+  ],
+  "Parallel web searches": [
+    "Parallel web searches",
+    "جست‌وجوهای هم‌زمان وب"
+  ],
+  "Source reader": [
+    "Source reader",
+    "خوانندهٔ منابع"
+  ],
+  "Synthesis model": [
+    "Synthesis model",
+    "مدل جمع‌بندی"
+  ],
+  "Proponent": [
+    "Proponent",
+    "موافق"
+  ],
+  "Opponent": [
+    "Opponent",
+    "مخالف"
+  ],
+  "Judge": [
+    "Judge",
+    "داور"
+  ],
+  "Multi-Model Dialectic Debate": [
+    "Multi-Model Dialectic Debate",
+    "مناظرهٔ استدلالی چند مدل"
+  ],
+  "Role-based arguments, rebuttals and a scored verdict": [
+    "Role-based arguments, rebuttals and a scored verdict",
+    "استدلال نقش‌ها، پاسخ متقابل و نتیجهٔ امتیازدهی‌شده"
+  ],
+  "Plan, search, read, cross-check and synthesize": [
+    "Plan, search, read, cross-check and synthesize",
+    "برنامه‌ریزی، جست‌وجو، مطالعه، بررسی متقابل و جمع‌بندی"
+  ],
+  "Latest verdict": [
+    "Latest verdict",
+    "آخرین نتیجهٔ داوری"
+  ],
+  "Latest research report": [
+    "Latest research report",
+    "آخرین گزارش تحقیق"
+  ],
+  "Download report": [
+    "Download report",
+    "دریافت گزارش"
+  ],
+  "Model roles": [
+    "Model roles",
+    "نقش مدل‌ها"
+  ],
+  "Research workflow": [
+    "Research workflow",
+    "مسیر تحقیق"
+  ],
+  "Standby": [
+    "Standby",
+    "آماده‌به‌کار"
+  ],
+  "Phase pipeline": [
+    "Phase pipeline",
+    "مسیر مراحل"
+  ],
+  "Stages": [
+    "Stages",
+    "مرحله‌ها"
+  ],
+  "Agents": [
+    "Agents",
+    "ایجنت‌ها"
+  ],
+  "Rounds": [
+    "Rounds",
+    "دورها"
+  ],
+  "Mode": [
+    "Mode",
+    "حالت"
+  ],
+  "Debate resolution or proposition": [
+    "Debate resolution or proposition",
+    "ادعا یا گزارهٔ مناظره"
+  ],
+  "Research objective and scope": [
+    "Research objective and scope",
+    "هدف و محدودهٔ تحقیق"
+  ],
+  "e.g. Resolved: monolithic architectures give Series-A startups more lifetime developer velocity than microservices.": [
+    "e.g. Resolved: monolithic architectures give Series-A startups more lifetime developer velocity than microservices.",
+    "مثلاً: معماری یکپارچه نسبت به میکروسرویس برای استارتاپ تازه، سرعت توسعهٔ بیشتری در بلندمدت ایجاد می‌کند."
+  ],
+  "e.g. Compare stateful edge compute architectures on Cloudflare Workers against AWS Lambda@Edge.": [
+    "e.g. Compare stateful edge compute architectures on Cloudflare Workers against AWS Lambda@Edge.",
+    "مثلاً: معماری پردازش لبهٔ دارای وضعیت در Cloudflare Workers را با AWS Lambda@Edge مقایسه کن."
+  ],
+  "Add a": [
+    "Add a",
+    "یک"
+  ],
+  "resolution": [
+    "resolution",
+    "گزاره"
+  ],
+  "research objective": [
+    "research objective",
+    "هدف تحقیق"
+  ],
+  "before dispatching the run.": [
+    "before dispatching the run.",
+    "پیش از شروع اجرا اضافه کنید."
+  ],
+  "The judge scores logic and evidence, so state the proposition as a claim to be tested.": [
+    "The judge scores logic and evidence, so state the proposition as a claim to be tested.",
+    "داور به منطق و شواهد امتیاز می‌دهد؛ گزاره را به‌صورت ادعای قابل بررسی بنویسید."
+  ],
+  "The lead agent turns this into search queries, so name the domain and the comparison you care about.": [
+    "The lead agent turns this into search queries, so name the domain and the comparison you care about.",
+    "ایجنت اصلی از این متن عبارت جست‌وجو می‌سازد؛ حوزه و مقایسهٔ مورد نظر را مشخص کنید."
+  ],
+  "Participant roles": [
+    "Participant roles",
+    "نقش شرکت‌کنندگان"
+  ],
+  "Proponent, affirmative stance": [
+    "Proponent, affirmative stance",
+    "موافق، مدافع ادعا"
+  ],
+  "Opponent, critique and skeptic": [
+    "Opponent, critique and skeptic",
+    "مخالف، منتقد و پرسشگر"
+  ],
+  "Neutral judge and scorekeeper": [
+    "Neutral judge and scorekeeper",
+    "داور بی‌طرف و امتیازدهنده"
+  ],
+  "Debate rounds": [
+    "Debate rounds",
+    "دورهای مناظره"
+  ],
+  "2 Rounds (Opening & Rebuttal)": [
+    "2 Rounds (Opening & Rebuttal)",
+    "دو دور (شروع و پاسخ متقابل)"
+  ],
+  "3 Rounds (Full Standard)": [
+    "3 Rounds (Full Standard)",
+    "سه دور (کامل و استاندارد)"
+  ],
+  "4 Rounds (In-Depth Cross-Exam)": [
+    "4 Rounds (In-Depth Cross-Exam)",
+    "چهار دور (بررسی عمیق)"
+  ],
+  "What the run will produce": [
+    "What the run will produce",
+    "خروجی این اجرا"
+  ],
+  "Executive summary and the core theses under test": [
+    "Executive summary and the core theses under test",
+    "خلاصهٔ مدیریتی و ادعاهای اصلی مورد بررسی"
+  ],
+  "Independent findings from three sub-vectors of the objective": [
+    "Independent findings from three sub-vectors of the objective",
+    "یافته‌های مستقل از سه بخش هدف تحقیق"
+  ],
+  "Adversarial critique of fallacies, weak citations and edge cases": [
+    "Adversarial critique of fallacies, weak citations and edge cases",
+    "نقد استدلال نادرست، ارجاع ضعیف و حالت‌های استثنایی"
+  ],
+  "A synthesised consensus with the recommended next steps": [
+    "A synthesised consensus with the recommended next steps",
+    "جمع‌بندی مشترک با قدم‌های بعدی پیشنهادی"
+  ],
+  "Model busy, wait for the current run": [
+    "Model busy, wait for the current run",
+    "مدل مشغول است؛ تا پایان اجرای فعلی صبر کنید"
+  ],
+  "Launch Multi-Model Debate": [
+    "Launch Multi-Model Debate",
+    "شروع مناظرهٔ چند مدل"
+  ],
+  "Launch Deep Research Pipeline": [
+    "Launch Deep Research Pipeline",
+    "شروع مسیر تحقیق عمیق"
+  ],
+  "Run dispatched to this conversation": [
+    "Run dispatched to this conversation",
+    "اجرا به این گفتگو فرستاده شد"
+  ],
+  "Live phases, sources and reasoning appear in the agent timeline on the message itself.": [
+    "Live phases, sources and reasoning appear in the agent timeline on the message itself.",
+    "مرحله‌ها، منابع و خلاصهٔ استدلال در مسیر فعالیت همان پیام ظاهر می‌شوند."
+  ],
+  "Prepare another run": [
+    "Prepare another run",
+    "آماده کردن اجرای دیگر"
+  ],
+  "Photo source": [
+    "Photo source",
+    "منبع عکس"
+  ],
+  "قدم بعدی، از اینجا شروع می‌شود.": [
+    "The next chapter starts here.",
+    "قدم بعدی، از اینجا شروع می‌شود."
+  ],
+  "The next chapter starts here.": [
+    "The next chapter starts here.",
+    "قدم بعدی از همین‌جا شروع می‌شود."
+  ],
+  "PIMX / STUDIO": [
+    "PIMX / STUDIO",
+    "PIMX / استودیو"
+  ],
+  "Slide editor": [
+    "Slide editor",
+    "ویرایشگر اسلاید"
+  ],
+  "Title": [
+    "Title",
+    "عنوان"
+  ],
+  "Slide title": [
+    "Slide title",
+    "عنوان اسلاید"
+  ],
+  "Subtitle": [
+    "Subtitle",
+    "زیرعنوان"
+  ],
+  "Slide subtitle": [
+    "Slide subtitle",
+    "زیرعنوان اسلاید"
+  ],
+  "Key points · one per line": [
+    "Key points · one per line",
+    "نکات اصلی · هر خط یک مورد"
+  ],
+  "Slide points": [
+    "Slide points",
+    "نکات اسلاید"
+  ],
+  "Speaker notes": [
+    "Speaker notes",
+    "یادداشت ارائه‌دهنده"
+  ],
+  "Photo direction": [
+    "Photo direction",
+    "موضوع عکس"
+  ],
+  "Search slide photos": [
+    "Search slide photos",
+    "جست‌وجوی عکس اسلاید"
+  ],
+  "Specific subject, e.g. solar panels": [
+    "Specific subject, e.g. solar panels",
+    "موضوع مشخص، مثلاً پنل خورشیدی"
+  ],
+  "Search photos": [
+    "Search photos",
+    "جست‌وجوی عکس"
+  ],
+  "Image": [
+    "Image",
+    "عکس"
+  ],
+  "Photo candidate": [
+    "Photo candidate",
+    "عکس پیشنهادی"
+  ],
+  "Upload photo": [
+    "Upload photo",
+    "بارگذاری عکس"
+  ],
+  "Upload slide photo": [
+    "Upload slide photo",
+    "بارگذاری عکس اسلاید"
+  ],
+  "Remove photo": [
+    "Remove photo",
+    "برداشتن عکس"
+  ],
+  "Presentation Slides": [
+    "Presentation Slides",
+    "اسلایدهای ارائه"
+  ],
+  "Your next idea": [
+    "Your next idea",
+    "ایدهٔ بعدی شما"
+  ],
+  "Give this slide a focus": [
+    "Give this slide a focus",
+    "برای این اسلاید یک موضوع مشخص کنید"
+  ],
+  "Presentation mode": [
+    "Presentation mode",
+    "حالت ارائه"
+  ],
+  "A stage for your next idea": [
+    "A stage for your next idea",
+    "صحنه‌ای برای ایدهٔ بعدی شما"
+  ],
+  "Ask for a presentation in chat, or start with a slide.": [
+    "Ask for a presentation in chat, or start with a slide.",
+    "در گفتگو ارائه بخواهید یا با یک اسلاید شروع کنید."
+  ],
+  "Create First Slide": [
+    "Create First Slide",
+    "ساخت اولین اسلاید"
+  ],
+  "Previous slide": [
+    "Previous slide",
+    "اسلاید قبلی"
+  ],
+  "Next slide": [
+    "Next slide",
+    "اسلاید بعدی"
+  ],
+  "Presentation title": [
+    "Presentation title",
+    "عنوان ارائه"
+  ],
+  "Present Fullscreen": [
+    "Present Fullscreen",
+    "ارائهٔ تمام‌صفحه"
+  ],
+  "Export Presentation (PPTX, PDF, Markdown)": [
+    "Export Presentation (PPTX, PDF, Markdown)",
+    "خروجی ارائه (PPTX، PDF، Markdown)"
+  ],
+  "Exporting...": [
+    "Exporting...",
+    "در حال خروجی گرفتن…"
+  ],
+  "Export": [
+    "Export",
+    "خروجی"
+  ],
+  "PowerPoint (.pptx)": [
+    "PowerPoint (.pptx)",
+    "PowerPoint (.pptx)"
+  ],
+  "Print / Save PDF (.pdf)": [
+    "Print / Save PDF (.pdf)",
+    "چاپ / ذخیرهٔ PDF (.pdf)"
+  ],
+  "Markdown (.md)": [
+    "Markdown (.md)",
+    "Markdown (.md)"
+  ],
+  "Copy Markdown Text": [
+    "Copy Markdown Text",
+    "کپی متن Markdown"
+  ],
+  "Midnight studio": [
+    "Midnight studio",
+    "استودیوی نیمه‌شب"
+  ],
+  "Clean editorial": [
+    "Clean editorial",
+    "تحریریهٔ روشن"
+  ],
+  "Electric cyan": [
+    "Electric cyan",
+    "فیروزه‌ای برقی"
+  ],
+  "Soft purple": [
+    "Soft purple",
+    "بنفش ملایم"
+  ],
+  "Edit slide": [
+    "Edit slide",
+    "ویرایش اسلاید"
+  ],
+  "Slide thumbnails": [
+    "Slide thumbnails",
+    "تصاویر کوچک اسلایدها"
+  ],
+  "slides - saved automatically": [
+    "slides - saved automatically",
+    "اسلاید — ذخیرهٔ خودکار"
+  ],
+  "Add Slide": [
+    "Add Slide",
+    "افزودن اسلاید"
+  ],
+  "Delete Slide": [
+    "Delete Slide",
+    "حذف اسلاید"
+  ],
+  "Chat with Sources (RAG)": [
+    "Chat with Sources (RAG)",
+    "گفتگو با منابع (RAG)"
+  ],
+  "Add Knowledge Source": [
+    "Add Knowledge Source",
+    "افزودن منبع دانش"
+  ],
+  "Paste Text / Markdown": [
+    "Paste Text / Markdown",
+    "چسباندن متن / Markdown"
+  ],
+  "Fetch Web URL": [
+    "Fetch Web URL",
+    "دریافت آدرس وب"
+  ],
+  "TEXT": [
+    "TEXT",
+    "متن"
+  ],
+  "Source Title / Document Name...": [
+    "Source Title / Document Name...",
+    "عنوان منبع / نام سند…"
+  ],
+  "Paste document text or content to index...": [
+    "Paste document text or content to index...",
+    "متن یا محتوای سند را برای نمایه‌سازی وارد کنید…"
+  ],
+  "Chunk & Index Document": [
+    "Chunk & Index Document",
+    "بخش‌بندی و نمایه‌سازی سند"
+  ],
+  "Scraping...": [
+    "Scraping...",
+    "در حال دریافت…"
+  ],
+  "Fetch": [
+    "Fetch",
+    "دریافت"
+  ],
+  "Indexed Sources (": [
+    "Indexed Sources (",
+    "منابع نمایه‌شده ("
+  ],
+  "chunks •": [
+    "chunks •",
+    "بخش •"
+  ],
+  "No sources indexed yet.": [
+    "No sources indexed yet.",
+    "هنوز منبعی نمایه نشده است."
+  ],
+  "Test Grounding Retrieval": [
+    "Test Grounding Retrieval",
+    "آزمایش بازیابی مستند"
+  ],
+  "Enter query to test TF-IDF retrieval...": [
+    "Enter query to test TF-IDF retrieval...",
+    "پرسش را برای آزمایش بازیابی TF-IDF وارد کنید…"
+  ],
+  "Score:": [
+    "Score:",
+    "امتیاز:"
+  ],
+  "Web Dev Project IDE": [
+    "Web Dev Project IDE",
+    "محیط توسعهٔ پروژهٔ وب"
+  ],
+  "Download Project as ZIP": [
+    "Download Project as ZIP",
+    "دریافت پروژه به‌صورت ZIP"
+  ],
+  "File": [
+    "File",
+    "فایل"
+  ],
+  "Live Run": [
+    "Live Run",
+    "اجرای زنده"
+  ],
+  "Editor": [
+    "Editor",
+    "ویرایشگر"
+  ],
+  "No Files Created Yet": [
+    "No Files Created Yet",
+    "هنوز فایلی ساخته نشده است"
+  ],
+  "Ask AI in the chat to write web, React, or HTML/CSS code for you, or create the first file manually.": [
+    "Ask AI in the chat to write web, React, or HTML/CSS code for you, or create the first file manually.",
+    "در گفتگو از هوش مصنوعی بخواهید کد وب، React یا HTML/CSS بنویسد؛ یا اولین فایل را دستی بسازید."
+  ],
+  "Create index.html": [
+    "Create index.html",
+    "ساخت index.html"
+  ],
+  "Load Sample Project": [
+    "Load Sample Project",
+    "بارگذاری پروژهٔ نمونه"
+  ],
+  "Files": [
+    "Files",
+    "فایل‌ها"
+  ],
+  "RUNNER": [
+    "RUNNER",
+    "اجراکننده"
+  ],
+  "All Assistants": [
+    "All Assistants",
+    "همهٔ دستیارها"
+  ],
+  "Coding": [
+    "Coding",
+    "کدنویسی"
+  ],
+  "Writing": [
+    "Writing",
+    "نوشتن"
+  ],
+  "Analysis": [
+    "Analysis",
+    "تحلیل"
+  ],
+  "Productivity": [
+    "Productivity",
+    "بهره‌وری"
+  ],
+  "Academic": [
+    "Academic",
+    "دانشگاهی"
+  ],
+  "All Facts": [
+    "All Facts",
+    "همهٔ نکات"
+  ],
+  "Preferences": [
+    "Preferences",
+    "ترجیحات"
+  ],
+  "Facts": [
+    "Facts",
+    "اطلاعات"
+  ],
+  "Background & Bio": [
+    "Background & Bio",
+    "پیشینه و معرفی"
+  ],
+  "Project Context": [
+    "Project Context",
+    "زمینهٔ پروژه"
+  ],
+  "Workspace & Assistants Hub": [
+    "Workspace & Assistants Hub",
+    "مرکز فضای کاری و دستیارها"
+  ],
+  "Configure tailored AI assistants, persistent personal memories, standing project constraints, and grounded knowledge bases.": [
+    "Configure tailored AI assistants, persistent personal memories, standing project constraints, and grounded knowledge bases.",
+    "دستیار سفارشی، حافظهٔ شخصی، محدودیت ثابت پروژه و پایگاه دانش مستند را تنظیم کنید."
+  ],
+  "PERSONAS": [
+    "PERSONAS",
+    "دستیارها"
+  ],
+  "Active In Current Chat": [
+    "Active In Current Chat",
+    "فعال در گفتگوی فعلی"
+  ],
+  "Detach / Revert to Default": [
+    "Detach / Revert to Default",
+    "جدا کردن / بازگشت به پیش‌فرض"
+  ],
+  "Edit Assistant": [
+    "Edit Assistant",
+    "ویرایش دستیار"
+  ],
+  "Search assistants by name, directives, or style...": [
+    "Search assistants by name, directives, or style...",
+    "جست‌وجوی دستیار با نام، دستور یا سبک…"
+  ],
+  "Create Assistant": [
+    "Create Assistant",
+    "ساخت دستیار"
+  ],
+  "Edit Assistant Profile & Hyperparameters": [
+    "Edit Assistant Profile & Hyperparameters",
+    "ویرایش پروفایل و پارامترهای دستیار"
+  ],
+  "Build Custom Assistant": [
+    "Build Custom Assistant",
+    "ساخت دستیار سفارشی"
+  ],
+  "Avatar / Symbol": [
+    "Avatar / Symbol",
+    "آواتار / نماد"
+  ],
+  "Assistant Name": [
+    "Assistant Name",
+    "نام دستیار"
+  ],
+  "e.g. Lead React Architect, Bioethics Scholar...": [
+    "e.g. Lead React Architect, Bioethics Scholar...",
+    "مثلاً معمار ارشد React، پژوهشگر اخلاق زیستی…"
+  ],
+  "Short Description": [
+    "Short Description",
+    "توضیح کوتاه"
+  ],
+  "Brief role and mission statement...": [
+    "Brief role and mission statement...",
+    "شرح کوتاه نقش و مأموریت…"
+  ],
+  "Category": [
+    "Category",
+    "دسته"
+  ],
+  "Response Style Guide": [
+    "Response Style Guide",
+    "راهنمای سبک پاسخ"
+  ],
+  "Default / Balanced": [
+    "Default / Balanced",
+    "پیش‌فرض / متعادل"
+  ],
+  "Ultra Concise & Direct": [
+    "Ultra Concise & Direct",
+    "بسیار کوتاه و مستقیم"
+  ],
+  "Exhaustive & Detailed": [
+    "Exhaustive & Detailed",
+    "کامل و مفصل"
+  ],
+  "Socratic Inquiry": [
+    "Socratic Inquiry",
+    "پرسش سقراطی"
+  ],
+  "Formal & Academic": [
+    "Formal & Academic",
+    "رسمی و دانشگاهی"
+  ],
+  "Pin Specific Model (Optional)": [
+    "Pin Specific Model (Optional)",
+    "انتخاب مدل ثابت (اختیاری)"
+  ],
+  "Inherit Chat / Global Model": [
+    "Inherit Chat / Global Model",
+    "استفاده از مدل گفتگو / عمومی"
+  ],
+  "Top-P": [
+    "Top-P",
+    "Top-P"
+  ],
+  "Max Tokens": [
+    "Max Tokens",
+    "حداکثر توکن"
+  ],
+  "Reasoning Effort:": [
+    "Reasoning Effort:",
+    "تلاش استدلال:"
+  ],
+  "Auto-enable live web search for this persona": [
+    "Auto-enable live web search for this persona",
+    "جست‌وجوی زندهٔ وب برای این دستیار خودکار فعال شود"
+  ],
+  "System Instructions & Persona Directives": [
+    "System Instructions & Persona Directives",
+    "دستورهای سیستمی و نقش دستیار"
+  ],
+  "Markdown supported": [
+    "Markdown supported",
+    "پشتیبانی از Markdown"
+  ],
+  "You are an expert in... Follow these principles: 1. ..., 2. ...": [
+    "You are an expert in... Follow these principles: 1. ..., 2. ...",
+    "تو متخصصِ ... هستی. این اصول را رعایت کن: ۱. ...، ۲. ..."
+  ],
+  "Delete Assistant": [
+    "Delete Assistant",
+    "حذف دستیار"
+  ],
+  "Temp:": [
+    "Temp:",
+    "دما:"
+  ],
+  "Style:": [
+    "Style:",
+    "سبک:"
+  ],
+  "OFF": [
+    "OFF",
+    "خاموش"
+  ],
+  "Reasoning:": [
+    "Reasoning:",
+    "استدلال:"
+  ],
+  "Web Search": [
+    "Web Search",
+    "جست‌وجوی وب"
+  ],
+  "Active In Chat": [
+    "Active In Chat",
+    "فعال در گفتگو"
+  ],
+  "Activate for This Chat": [
+    "Activate for This Chat",
+    "فعال کردن برای این گفتگو"
+  ],
+  "Start New Dedicated Chat": [
+    "Start New Dedicated Chat",
+    "شروع گفتگوی اختصاصی جدید"
+  ],
+  "MEMORY": [
+    "MEMORY",
+    "حافظه"
+  ],
+  "Cross-Conversation Persistent Memory": [
+    "Cross-Conversation Persistent Memory",
+    "حافظهٔ پایدار میان گفتگوها"
+  ],
+  "When enabled, stored facts and preferences are automatically injected quietly into relevant prompts.": [
+    "When enabled, stored facts and preferences are automatically injected quietly into relevant prompts.",
+    "با فعال بودن حافظه، نکته‌ها و ترجیحات ذخیره‌شده خودکار به درخواست مرتبط اضافه می‌شوند."
+  ],
+  "Memory Enabled": [
+    "Memory Enabled",
+    "حافظه فعال است"
+  ],
+  "Memory Paused": [
+    "Memory Paused",
+    "حافظه متوقف است"
+  ],
+  "Store Personal Knowledge Fact or Technical Preference": [
+    "Store Personal Knowledge Fact or Technical Preference",
+    "ذخیرهٔ نکتهٔ شخصی یا ترجیح فنی"
+  ],
+  "e.g. Always generate TypeScript with strict type inference; I work mainly on Next.js...": [
+    "e.g. Always generate TypeScript with strict type inference; I work mainly on Next.js...",
+    "مثلاً همیشه TypeScript با نوع‌دهی دقیق بنویس؛ کار اصلی من Next.js است…"
+  ],
+  "Fact": [
+    "Fact",
+    "اطلاعات"
+  ],
+  "Preference": [
+    "Preference",
+    "ترجیح"
+  ],
+  "Instruction": [
+    "Instruction",
+    "دستور"
+  ],
+  "Project": [
+    "Project",
+    "پروژه"
+  ],
+  "Store Fact": [
+    "Store Fact",
+    "ذخیرهٔ نکته"
+  ],
+  "Filter stored memory facts...": [
+    "Filter stored memory facts...",
+    "فیلتر نکات ذخیره‌شده…"
+  ],
+  "No memory facts match your criteria.": [
+    "No memory facts match your criteria.",
+    "نکته‌ای مطابق معیارها نیست."
+  ],
+  "High Priority": [
+    "High Priority",
+    "اولویت بالا"
+  ],
+  "Unpin fact": [
+    "Unpin fact",
+    "برداشتن سنجاق نکته"
+  ],
+  "Pin fact to prompt header": [
+    "Pin fact to prompt header",
+    "سنجاق کردن نکته به ابتدای دستور"
+  ],
+  "Edit fact": [
+    "Edit fact",
+    "ویرایش نکته"
+  ],
+  "Delete fact": [
+    "Delete fact",
+    "حذف نکته"
+  ],
+  "PROJECTS": [
+    "PROJECTS",
+    "پروژه‌ها"
+  ],
+  "Create Standing Project Rules & Boundaries": [
+    "Create Standing Project Rules & Boundaries",
+    "ساخت قوانین و محدودهٔ ثابت پروژه"
+  ],
+  "Project Name...": [
+    "Project Name...",
+    "نام پروژه…"
+  ],
+  "Short Description...": [
+    "Short Description...",
+    "توضیح کوتاه…"
+  ],
+  "Standing Project Rules, Conventions, Constraints...": [
+    "Standing Project Rules, Conventions, Constraints...",
+    "قانون، قرارداد و محدودیت ثابت پروژه…"
+  ],
+  "Save Project": [
+    "Save Project",
+    "ذخیرهٔ پروژه"
+  ],
+  "No projects created yet.": [
+    "No projects created yet.",
+    "هنوز پروژه‌ای ساخته نشده است."
+  ],
+  "Linked to Current Chat": [
+    "Linked to Current Chat",
+    "متصل به گفتگوی فعلی"
+  ],
+  "Rules:": [
+    "Rules:",
+    "قوانین:"
+  ],
+  "Unlink": [
+    "Unlink",
+    "قطع اتصال"
+  ],
+  "Link to Chat": [
+    "Link to Chat",
+    "اتصال به گفتگو"
+  ],
+  "KNOWLEDGE": [
+    "KNOWLEDGE",
+    "دانش"
+  ],
+  "Create Grounded Knowledge Base Container": [
+    "Create Grounded Knowledge Base Container",
+    "ساخت پایگاه دانش مستند"
+  ],
+  "Knowledge Base Name...": [
+    "Knowledge Base Name...",
+    "نام پایگاه دانش…"
+  ],
+  "Description or Domain...": [
+    "Description or Domain...",
+    "توضیح یا حوزه…"
+  ],
+  "Save Knowledge Base": [
+    "Save Knowledge Base",
+    "ذخیرهٔ پایگاه دانش"
+  ],
+  "Add Text Document to Knowledge Base": [
+    "Add Text Document to Knowledge Base",
+    "افزودن سند متنی به پایگاه دانش"
+  ],
+  "Document Title (e.g. Architecture Guide v2)...": [
+    "Document Title (e.g. Architecture Guide v2)...",
+    "عنوان سند (مثلاً راهنمای معماری نسخهٔ ۲)…"
+  ],
+  "Paste reference text, specifications, or notes to index into RAG vector chunks...": [
+    "Paste reference text, specifications, or notes to index into RAG vector chunks...",
+    "متن مرجع، مشخصات یا یادداشت را برای نمایه‌سازی در RAG وارد کنید…"
+  ],
+  "Index Document": [
+    "Index Document",
+    "نمایه‌سازی سند"
+  ],
+  "No knowledge bases configured yet.": [
+    "No knowledge bases configured yet.",
+    "هنوز پایگاه دانشی تنظیم نشده است."
+  ],
+  "document": [
+    "document",
+    "سند"
+  ],
+  "Attached (Active RAG)": [
+    "Attached (Active RAG)",
+    "متصل (RAG فعال)"
+  ],
+  "Detach from Chat": [
+    "Detach from Chat",
+    "جدا کردن از گفتگو"
+  ],
+  "Attach to Chat (RAG)": [
+    "Attach to Chat (RAG)",
+    "اتصال به گفتگو (RAG)"
+  ],
+  "Add Doc": [
+    "Add Doc",
+    "افزودن سند"
+  ],
+  "Delete Knowledge Base": [
+    "Delete Knowledge Base",
+    "حذف پایگاه دانش"
+  ],
+  "Close dialog": [
+    "Close dialog",
+    "بستن پنجره"
+  ],
+  "Internet connection lost!": [
+    "Internet connection lost!",
+    "اتصال اینترنت قطع شد!"
+  ],
+  "Please check your internet connection, Wi-Fi, or VPN.": [
+    "Please check your internet connection, Wi-Fi, or VPN.",
+    "اتصال اینترنت، Wi-Fi یا VPN را بررسی کنید."
+  ],
+  "Retry connection": [
+    "Retry connection",
+    "آزمایش دوبارهٔ اتصال"
+  ],
+  "Your internet connection has been successfully restored.": [
+    "Your internet connection has been successfully restored.",
+    "اتصال اینترنت شما دوباره برقرار شد."
+  ],
+  "PIMX AI Logo": [
+    "PIMX AI Logo",
+    "لوگوی PIMX AI"
+  ],
+  "Agent Suite": [
+    "Agent Suite",
+    "مجموعهٔ ایجنت"
+  ],
+  "AI Provider": [
+    "AI Provider",
+    "ارائه‌دهندهٔ هوش مصنوعی"
+  ],
+  "Real-time Voice Input": [
+    "Real-time Voice Input",
+    "ورودی صوتی زنده"
+  ],
+  "Listening... Speak your prompt naturally.": [
+    "Listening... Speak your prompt naturally.",
+    "در حال شنیدن… درخواست‌تان را طبیعی بیان کنید."
+  ],
+  "Click \"Start Recording\" to begin speaking.": [
+    "Click \"Start Recording\" to begin speaking.",
+    "برای شروع صحبت، «شروع ضبط» را بزنید."
+  ],
+  "Pause Recording": [
+    "Pause Recording",
+    "توقف ضبط"
+  ],
+  "Start Recording": [
+    "Start Recording",
+    "شروع ضبط"
+  ],
+  "Send to Model": [
+    "Send to Model",
+    "ارسال به مدل"
+  ],
+  "مدیریت سایت": [
+    "Site administration",
+    "مدیریت سایت"
+  ],
+  "Site administration": [
+    "Site administration",
+    "مدیریت سایت"
+  ],
+  "PIMX / CONTACT": [
+    "PIMX / CONTACT",
+    "PIMX / تماس"
+  ],
+  "از شما می‌شنویم.": [
+    "We’re listening.",
+    "از شما می‌شنویم."
+  ],
+  "We’re listening.": [
+    "We’re listening.",
+    "از شما می‌شنویم."
+  ],
+  "برای پیشنهاد، بازخورد یا گزارش مشکل از این فرم استفاده کنید. آدرس ایمیل عمومی در این سایت منتشر نمی‌شود.": [
+    "Send feedback or report an issue here, or email pimxagent@gmail.com.",
+    "برای پیشنهاد، بازخورد یا گزارش مشکل از این فرم استفاده کنید. آدرس ایمیل عمومی در این سایت منتشر نمی‌شود."
+  ],
+  "Send feedback or report an issue here, or email pimxagent@gmail.com.": [
+    "Send feedback or report an issue here, or email pimxagent@gmail.com.",
+    "برای پیشنهاد، بازخورد یا گزارش مشکل از این فرم استفاده کنید. آدرس ایمیل عمومی در این سایت منتشر نمی‌شود."
+  ],
+  "پیام‌ها در صندوق داخلی سایت ثبت می‌شوند؛ اطلاعات ورود یا کلیدهای API را ارسال نکنید.": [
+    "Messages are stored in the internal inbox. Do not send login credentials or API keys.",
+    "پیام‌ها در صندوق داخلی سایت ثبت می‌شوند؛ اطلاعات ورود یا کلیدهای API را ارسال نکنید."
+  ],
+  "Messages are stored in the internal inbox. Do not send login credentials or API keys.": [
+    "Messages are stored in the internal inbox. Do not send login credentials or API keys.",
+    "پیام‌ها در صندوق داخلی سایت ثبت می‌شوند؛ اطلاعات ورود یا کلیدهای API را ارسال نکنید."
+  ],
+  "خطای غیرمنتظره در اجرای برنامه": [
+    "Something unexpected happened",
+    "خطای غیرمنتظره در اجرای برنامه"
+  ],
+  "Something unexpected happened": [
+    "Something unexpected happened",
+    "خطای غیرمنتظره در اجرای برنامه"
+  ],
+  "سیستم در رندر بخش جاری با مشکل فنی مواجه شد. داده‌های گفتگوهای شما محفوظ است و می‌توانید با تلاش مجدد ادامه دهید.": [
+    "This part of the app could not be displayed. Try again to continue.",
+    "سیستم در رندر بخش جاری با مشکل فنی مواجه شد. داده‌های گفتگوهای شما محفوظ است و می‌توانید با تلاش مجدد ادامه دهید."
+  ],
+  "This part of the app could not be displayed. Try again to continue.": [
+    "This part of the app could not be displayed. Try again to continue.",
+    "سیستم در رندر بخش جاری با مشکل فنی مواجه شد. داده‌های گفتگوهای شما محفوظ است و می‌توانید با تلاش مجدد ادامه دهید."
+  ],
+  "تلاش مجدد (بارگذاری مجدد کامپوننت)": [
+    "Try again",
+    "تلاش مجدد (بارگذاری مجدد کامپوننت)"
+  ],
+  "بازگشت به صفحه اصلی": [
+    "Back to home",
+    "بازگشت به صفحه اصلی"
+  ],
+  "Back to home": [
+    "Back to home",
+    "بازگشت به صفحه اصلی"
+  ],
+  "مشاهده جزئیات فنی خطا (برای گزارش یا عیب‌یابی)": [
+    "Technical details for reporting a problem",
+    "مشاهده جزئیات فنی خطا (برای گزارش یا عیب‌یابی)"
+  ],
+  "Technical details for reporting a problem": [
+    "Technical details for reporting a problem",
+    "مشاهده جزئیات فنی خطا (برای گزارش یا عیب‌یابی)"
+  ],
+  "Error details": [
+    "Error details",
+    "جزئیات خطا"
+  ],
+  "Unknown application error": [
+    "Unknown application error",
+    "خطای ناشناختهٔ برنامه"
+  ],
+  "خطای بحرانی در بارگذاری سیستم": [
+    "The app could not start",
+    "خطای بحرانی در بارگذاری سیستم"
+  ],
+  "The app could not start": [
+    "The app could not start",
+    "خطای بحرانی در بارگذاری سیستم"
+  ],
+  "ارتباط اولیه برنامه با مشکل مواجه شد. لطفاً برای راه‌اندازی مجدد برنامه روی دکمه زیر کلیک کنید.": [
+    "The initial connection failed. Restart the app to try again.",
+    "ارتباط اولیه برنامه با مشکل مواجه شد. لطفاً برای راه‌اندازی مجدد برنامه روی دکمه زیر کلیک کنید."
+  ],
+  "The initial connection failed. Restart the app to try again.": [
+    "The initial connection failed. Restart the app to try again.",
+    "ارتباط اولیه برنامه با مشکل مواجه شد. لطفاً برای راه‌اندازی مجدد برنامه روی دکمه زیر کلیک کنید."
+  ],
+  "راه‌اندازی مجدد سیستم": [
+    "Restart app",
+    "راه‌اندازی مجدد سیستم"
+  ],
+  "Restart app": [
+    "Restart app",
+    "راه‌اندازی مجدد سیستم"
+  ],
+  "PIMX / AGENT": [
+    "PIMX / AGENT",
+    "PIMX / ایجنت"
+  ],
+  "From an idea": [
+    "From an idea",
+    "از یک ایده"
+  ],
+  "to something real.": [
+    "to something real.",
+    "تا یک نتیجهٔ واقعی."
+  ],
+  "DEEP RESEARCH": [
+    "DEEP RESEARCH",
+    "تحقیق عمیق"
+  ],
+  "WEB DEV": [
+    "WEB DEV",
+    "ساخت وب"
+  ],
+  "SLIDE STUDIO": [
+    "SLIDE STUDIO",
+    "استودیوی اسلاید"
+  ],
+  "حساب شما آماده است.": [
+    "Your account is ready.",
+    "حساب شما آماده است."
+  ],
+  "Your account is ready.": [
+    "Your account is ready.",
+    "حساب شما آماده است."
+  ],
+  "از پیام شما ممنونیم.": [
+    "Thank you for your message.",
+    "از پیام شما ممنونیم."
+  ],
+  "Thank you for your message.": [
+    "Thank you for your message.",
+    "از پیام شما ممنونیم."
+  ],
+  "از همراهی شما ممنونیم.": [
+    "Thanks for being here.",
+    "از همراهی شما ممنونیم."
+  ],
+  "Thanks for being here.": [
+    "Thanks for being here.",
+    "از همراهی شما ممنونیم."
+  ],
+  "اکنون می‌توانید مدل خودتان را وصل کنید و اولین پروژه را شروع کنید.": [
+    "Connect your chosen model and start your first project.",
+    "اکنون می‌توانید مدل خودتان را وصل کنید و اولین پروژه را شروع کنید."
+  ],
+  "Connect your chosen model and start your first project.": [
+    "Connect your chosen model and start your first project.",
+    "اکنون می‌توانید مدل خودتان را وصل کنید و اولین پروژه را شروع کنید."
+  ],
+  "پیام در صندوق داخلی سایت ثبت شد.": [
+    "Your message has been saved in the internal inbox.",
+    "پیام در صندوق داخلی سایت ثبت شد."
+  ],
+  "Your message has been saved in the internal inbox.": [
+    "Your message has been saved in the internal inbox.",
+    "پیام در صندوق داخلی سایت ثبت شد."
+  ],
+  "برای ادامه به صفحهٔ اصلی برگردید.": [
+    "Head back to the homepage to continue.",
+    "برای ادامه به صفحهٔ اصلی برگردید."
+  ],
+  "Head back to the homepage to continue.": [
+    "Head back to the homepage to continue.",
+    "برای ادامه به صفحهٔ اصلی برگردید."
+  ],
+  "ورود به فضای کاری ←": [
+    "Open my workspace ←",
+    "ورود به فضای کاری ←"
+  ],
+  "Open my workspace ←": [
+    "Open my workspace ←",
+    "ورود به فضای کاری ←"
+  ],
+  "بازگشت به صفحهٔ اصلی ←": [
+    "Back to home ←",
+    "بازگشت به صفحهٔ اصلی ←"
+  ],
+  "Back to home ←": [
+    "Back to home ←",
+    "بازگشت به صفحهٔ اصلی ←"
+  ],
+  "Search": [
+    "Search",
+    "جست‌وجو"
+  ],
+  "Think": [
+    "Think",
+    "تفکر"
+  ],
+  "Canvas": [
+    "Canvas",
+    "سند"
+  ],
+  "Web Dev": [
+    "Web Dev",
+    "ساخت وب"
+  ],
+  "Learn": [
+    "Learn",
+    "یادگیری"
+  ],
+  "Debate": [
+    "Debate",
+    "مناظره"
+  ],
+  "Model Council": [
+    "Model Council",
+    "شورای مدل‌ها"
+  ],
+  "Real-time live web browsing & instant source citations": [
+    "Real-time live web browsing & instant source citations",
+    "جست‌وجوی زندهٔ وب و ارجاع فوری به منابع"
+  ],
+  "Extended step-by-step deep reasoning & structured logic": [
+    "Extended step-by-step deep reasoning & structured logic",
+    "استدلال عمیق مرحله‌ای و منطق ساختاریافته"
+  ],
+  "Living interactive document creator, markdown & rich exports": [
+    "Living interactive document creator, markdown & rich exports",
+    "ساخت سند زنده و تعاملی، Markdown و خروجی‌های متنوع"
+  ],
+  "Interactive presentation decks with PDF & PowerPoint export": [
+    "Interactive presentation decks with PDF & PowerPoint export",
+    "ارائهٔ تعاملی با خروجی PDF و PowerPoint"
+  ],
+  "Interactive HTML, React, CSS & JS sandbox with ZIP export": [
+    "Interactive HTML, React, CSS & JS sandbox with ZIP export",
+    "محیط تعاملی HTML، React، CSS و JS با خروجی ZIP"
+  ],
+  "Autonomous multi-step research, web synthesis & report generation": [
+    "Autonomous multi-step research, web synthesis & report generation",
+    "تحقیق خودکار چندمرحله‌ای، جمع‌بندی وب و ساخت گزارش"
+  ],
+  "Grounding & semantic search across your uploaded documents": [
+    "Grounding & semantic search across your uploaded documents",
+    "پاسخ مستند و جست‌وجوی معنایی در اسناد بارگذاری‌شده"
+  ],
+  "Socratic dialogue, interactive testing & mastery breakdowns": [
+    "Socratic dialogue, interactive testing & mastery breakdowns",
+    "گفتگوی سقراطی، آزمون تعاملی و تحلیل تسلط"
+  ],
+  "Multi-agent adversarial debate, opposing views & consensus": [
+    "Multi-agent adversarial debate, opposing views & consensus",
+    "مناظرهٔ چندایجنتی، دیدگاه مخالف و توافق"
+  ],
+  "Run 1 to 4 models side-by-side with split screen comparison": [
+    "Run 1 to 4 models side-by-side with split screen comparison",
+    "اجرای یک تا چهار مدل کنار هم با مقایسهٔ صفحهٔ تقسیم‌شده"
+  ],
+  "Multi-model collaborative consensus: Models brainstorm & synthesize optimal answer": [
+    "Multi-model collaborative consensus: Models brainstorm & synthesize optimal answer",
+    "توافق مشترک چند مدل: همفکری و جمع‌بندی بهترین پاسخ"
+  ],
+  "Match my message": [
+    "Match my message",
+    "مطابق زبان پیام من"
+  ],
+  "Concise": [
+    "Concise",
+    "کوتاه"
+  ],
+  "Detailed": [
+    "Detailed",
+    "مفصل"
+  ],
+  "Natural": [
+    "Natural",
+    "طبیعی"
+  ],
+  "Professional": [
+    "Professional",
+    "حرفه‌ای"
+  ],
+  "Friendly": [
+    "Friendly",
+    "دوستانه"
+  ],
+  "Modern dark": [
+    "Modern dark",
+    "مدرن تیره"
+  ],
+  "Clean light": [
+    "Clean light",
+    "روشن ساده"
+  ],
+  "Cyberpunk": [
+    "Cyberpunk",
+    "سایبرپانک"
+  ],
+  "Minimal purple": [
+    "Minimal purple",
+    "بنفش مینیمال"
+  ],
+  "Immersive": [
+    "Immersive",
+    "فراگیر"
+  ],
+  "Compact": [
+    "Compact",
+    "فشرده"
+  ],
+  "Select an option...": [
+    "Select an option...",
+    "گزینه‌ای انتخاب کنید…"
+  ],
+  "Other": [
+    "Other",
+    "سایر"
+  ],
+  "Low": [
+    "Low",
+    "کم"
+  ],
+  "Medium": [
+    "Medium",
+    "متوسط"
+  ],
+  "High": [
+    "High",
+    "زیاد"
+  ],
+  "Auto": [
+    "Auto",
+    "خودکار"
+  ],
+  "None": [
+    "None",
+    "هیچ‌کدام"
+  ],
+  "Default": [
+    "Default",
+    "پیش‌فرض"
+  ],
+  "Normal": [
+    "Normal",
+    "معمولی"
+  ],
+  "LOW": [
+    "LOW",
+    "کم"
+  ],
+  "MEDIUM": [
+    "MEDIUM",
+    "متوسط"
+  ],
+  "HIGH": [
+    "HIGH",
+    "زیاد"
+  ],
+  "ON": [
+    "ON",
+    "روشن"
+  ],
+  "فارسی": [
+    "Persian",
+    "فارسی"
+  ],
+  "Turn off {0}": [
+    "Turn off {0}",
+    "غیرفعال کردن {0}"
+  ],
+  "Turn on {0}": [
+    "Turn on {0}",
+    "فعال کردن {0}"
+  ],
+  "Not combinable with {0}": [
+    "Not combinable with {0}",
+    "با {0} قابل ترکیب نیست"
+  ],
+  "Close {0}": [
+    "Close {0}",
+    "بستن {0}"
+  ],
+  "Delete {0}": [
+    "Delete {0}",
+    "حذف {0}"
+  ],
+  "Slide {0}": [
+    "Slide {0}",
+    "اسلاید {0}"
+  ],
+  "Edit {0}": [
+    "Edit {0}",
+    "ویرایش {0}"
+  ],
+  "Remove {0}": [
+    "Remove {0}",
+    "برداشتن {0}"
+  ],
+  "Enable {0}": [
+    "Enable {0}",
+    "فعال کردن {0}"
+  ],
+  "Disable {0}": [
+    "Disable {0}",
+    "غیرفعال کردن {0}"
+  ],
+  "{0} selected": [
+    "{0} selected",
+    "{0} انتخاب‌شده"
+  ],
+  "Model busy": [
+    "Model busy",
+    "مدل مشغول است"
+  ],
+  "Email or password is incorrect.": [
+    "Email or password is incorrect.",
+    "ایمیل یا گذرواژه نادرست است."
+  ],
+  "An account could not be created with these details. Try signing in.": [
+    "An account could not be created with these details. Try signing in.",
+    "ساخت حساب با این مشخصات ممکن نیست. ورود به حساب را امتحان کنید."
+  ],
+  "This username is already taken. Choose another.": [
+    "This username is already taken. Choose another.",
+    "این نام کاربری قبلاً انتخاب شده است. نام دیگری وارد کنید."
+  ],
+  "Enter a username, birth year and matching passwords.": [
+    "Enter a username, birth year and matching passwords.",
+    "نام کاربری، سال تولد و گذرواژه‌های یکسان وارد کنید."
+  ],
+  "This reset link has expired or has already been used. Request a new one.": [
+    "This reset link has expired or has already been used. Request a new one.",
+    "این لینک منقضی شده یا قبلاً استفاده شده است. لینک جدید درخواست کنید."
+  ],
+  "The current password is incorrect.": [
+    "The current password is incorrect.",
+    "گذرواژهٔ فعلی نادرست است."
+  ],
+  "Enter a new password and a matching confirmation.": [
+    "Enter a new password and a matching confirmation.",
+    "گذرواژهٔ جدید و تکرار یکسان آن را وارد کنید."
+  ],
+  "Sign in to continue.": [
+    "Sign in to continue.",
+    "برای ادامه وارد حساب شوید."
+  ],
+  "The request could not be completed.": [
+    "The request could not be completed.",
+    "درخواست انجام نشد."
+  ],
+  "Unable to complete this request.": [
+    "Unable to complete this request.",
+    "انجام این درخواست ممکن نیست."
+  ],
+  "Copied to clipboard": [
+    "Copied to clipboard",
+    "در کلیپ‌بورد کپی شد"
+  ],
+  "Privacy choices": [
+    "Privacy choices",
+    "انتخاب حریم خصوصی"
+  ],
+  "MODEL COUNCIL": [
+    "MODEL COUNCIL",
+    "شورای مدل‌ها"
+  ],
+  "THINK BIGGER": [
+    "THINK BIGGER",
+    "بزرگ‌تر فکر کنید"
+  ],
+  "Prompt": [
+    "Prompt",
+    "دستور"
+  ],
+  "Agent": [
+    "Agent",
+    "ایجنت"
+  ],
+  "Tokens": [
+    "Tokens",
+    "توکن‌ها"
+  ],
+  "Download {0}": [
+    "Download {0}",
+    "دریافت {0}"
+  ],
+  "Active Assistant: {0}. Click to view in Workspace Hub.": [
+    "Active Assistant: {0}. Click to view in Workspace Hub.",
+    "دستیار فعال: {0}. برای دیدن در مرکز فضای کاری کلیک کنید."
+  ],
+  "Attached Knowledge Base: {0} (RAG grounded)": [
+    "Attached Knowledge Base: {0} (RAG grounded)",
+    "پایگاه دانش متصل: {0} (پاسخ مستند با RAG)"
+  ],
+  "Brainstorm with {0}": [
+    "Brainstorm with {0}",
+    "همفکری با {0}"
+  ],
+  "React {0}": [
+    "React {0}",
+    "واکنش {0}"
+  ],
+  "Pinned chats ({0})": [
+    "Pinned chats ({0})",
+    "گفتگوهای سنجاق‌شده ({0})"
+  ],
+  "Project: {0}": [
+    "Project: {0}",
+    "پروژه: {0}"
+  ],
+  "Switch layout direction to {0}": [
+    "Switch layout direction to {0}",
+    "تغییر جهت چیدمان به {0}"
+  ],
+  "Open Workspace Panel ({0})": [
+    "Open Workspace Panel ({0})",
+    "باز کردن پنل فضای کاری ({0})"
+  ],
+  "Delete “{0}”? Conversations stay in your chat history.": [
+    "Delete “{0}”? Conversations stay in your chat history.",
+    "«{0}» حذف شود؟ گفتگوها در تاریخچه باقی می‌مانند."
+  ],
+  "Delete “{0}”? Its conversations will remain in your chat history, outside this project.": [
+    "Delete “{0}”? Its conversations will remain in your chat history, outside this project.",
+    "«{0}» حذف شود؟ گفتگوهای آن بیرون از این پروژه در تاریخچه باقی می‌مانند."
+  ],
+  "Ask anything in {0}...": [
+    "Ask anything in {0}...",
+    "هر سؤالی دربارهٔ {0} بپرسید…"
+  ],
+  "Remove {0}, its stored keys and its models?": [
+    "Remove {0}, its stored keys and its models?",
+    "{0}، کلیدهای ذخیره‌شده و مدل‌های آن حذف شوند؟"
+  ],
+  "Dark Background: {0}": [
+    "Dark Background: {0}",
+    "پس‌زمینهٔ تیره: {0}"
+  ],
+  "Dark Surface: {0}": [
+    "Dark Surface: {0}",
+    "سطح تیره: {0}"
+  ],
+  "Light Background: {0}": [
+    "Light Background: {0}",
+    "پس‌زمینهٔ روشن: {0}"
+  ],
+  "Theme Accent: {0} / {1}": [
+    "Theme Accent: {0} / {1}",
+    "رنگ تأکیدی تم: {0} / {1}"
+  ],
+  "Use photo: {0}": [
+    "Use photo: {0}",
+    "استفاده از عکس: {0}"
+  ],
+  "Go to slide {0}": [
+    "Go to slide {0}",
+    "رفتن به اسلاید {0}"
+  ],
+  "Assistants & Personas ({0})": [
+    "Assistants & Personas ({0})",
+    "دستیارها و نقش‌ها ({0})"
+  ],
+  "Long-Term Memory ({0})": [
+    "Long-Term Memory ({0})",
+    "حافظهٔ بلندمدت ({0})"
+  ],
+  "Projects ({0})": [
+    "Projects ({0})",
+    "پروژه‌ها ({0})"
+  ],
+  "Knowledge Bases ({0})": [
+    "Knowledge Bases ({0})",
+    "پایگاه‌های دانش ({0})"
+  ],
+  "s": [
+    "s",
+    "ثانیه"
+  ],
+  "k": [
+    "k",
+    "هزار"
+  ],
+  "full": [
+    "full",
+    "کامل"
+  ],
+  "v": [
+    "v",
+    "نسخه"
+  ],
+  "Incompatible with active {0}": [
+    "Incompatible with active {0}",
+    "با ابزار فعال {0} سازگار نیست"
+  ],
+  "A request body is required.": [
+    "A request body is required.",
+    "محتوای درخواست ارسال نشده است."
+  ],
+  "A valid URL is required.": [
+    "A valid URL is required.",
+    "یک آدرس معتبر وارد کنید."
+  ],
+  "Administrator access is required.": [
+    "Administrator access is required.",
+    "دسترسی مدیر لازم است."
+  ],
+  "An explicit bound record owner is required.": [
+    "An explicit bound record owner is required.",
+    "مالک رکورد مشخص نشده است."
+  ],
+  "Complete the verification challenge.": [
+    "Complete the verification challenge.",
+    "تأیید امنیتی را انجام دهید."
+  ],
+  "Cross-origin credential redirects are not allowed.": [
+    "Cross-origin credential redirects are not allowed.",
+    "انتقال کلید به دامنهٔ دیگر مجاز نیست."
+  ],
+  "Cross-site requests are not allowed.": [
+    "Cross-site requests are not allowed.",
+    "درخواست از سایت دیگر مجاز نیست."
+  ],
+  "Email delivery is not configured yet. Please contact support.": [
+    "Email delivery is not configured yet. Please contact support.",
+    "ارسال ایمیل هنوز تنظیم نشده است. با پشتیبانی تماس بگیرید."
+  ],
+  "Enter a provider endpoint.": [
+    "Enter a provider endpoint.",
+    "آدرس سرویس ارائه‌دهنده را وارد کنید."
+  ],
+  "Form verification is not configured. Please try again later.": [
+    "Form verification is not configured. Please try again later.",
+    "تأیید امنیتی فرم هنوز تنظیم نشده است. کمی بعد تلاش کنید."
+  ],
+  "Invalid credential id.": [
+    "Invalid credential id.",
+    "شناسهٔ کلید معتبر نیست."
+  ],
+  "Not found.": [
+    "Not found.",
+    "پیدا نشد."
+  ],
+  "Private chats are stored only in your browser. Use encrypted database export to move them.": [
+    "Private chats are stored only in your browser. Use encrypted database export to move them.",
+    "چت خصوصی فقط در مرورگر شما ذخیره می‌شود. برای انتقال، خروجی رمزگذاری‌شدهٔ دیتابیس بگیرید."
+  ],
+  "Private network addresses are not allowed.": [
+    "Private network addresses are not allowed.",
+    "آدرس شبکهٔ خصوصی مجاز نیست."
+  ],
+  "Provider credential not found.": [
+    "Provider credential not found.",
+    "کلید ارائه‌دهنده پیدا نشد."
+  ],
+  "Provider endpoints must not contain query credentials.": [
+    "Provider endpoints must not contain query credentials.",
+    "آدرس ارائه‌دهنده نباید شامل کلید در پارامترها باشد."
+  ],
+  "Saved provider fields cannot be overridden.": [
+    "Saved provider fields cannot be overridden.",
+    "فیلدهای ارائه‌دهندهٔ ذخیره‌شده قابل بازنویسی نیستند."
+  ],
+  "Search query is too long.": [
+    "Search query is too long.",
+    "عبارت جست‌وجو بیش از حد طولانی است."
+  ],
+  "Send JSON using application/json.": [
+    "Send JSON using application/json.",
+    "درخواست را با قالب JSON ارسال کنید."
+  ],
+  "Send a preview form.": [
+    "Send a preview form.",
+    "فرم پیش‌نمایش را ارسال کنید."
+  ],
+  "Shared conversation not found or expired.": [
+    "Shared conversation not found or expired.",
+    "گفتگوی اشتراک‌گذاری‌شده پیدا نشد یا منقضی شده است."
+  ],
+  "Shared conversation not found.": [
+    "Shared conversation not found.",
+    "گفتگوی اشتراک‌گذاری‌شده پیدا نشد."
+  ],
+  "The JSON request is invalid.": [
+    "The JSON request is invalid.",
+    "ساختار درخواست JSON معتبر نیست."
+  ],
+  "The email could not be delivered. Please try again shortly.": [
+    "The email could not be delivered. Please try again shortly.",
+    "ارسال ایمیل انجام نشد. کمی بعد دوباره تلاش کنید."
+  ],
+  "The photo URL is too long.": [
+    "The photo URL is too long.",
+    "آدرس عکس بیش از حد طولانی است."
+  ],
+  "The photo is empty.": [
+    "The photo is empty.",
+    "فایل عکس خالی است."
+  ],
+  "The preview form is invalid.": [
+    "The preview form is invalid.",
+    "فرم پیش‌نمایش معتبر نیست."
+  ],
+  "The source page is too large.": [
+    "The source page is too large.",
+    "حجم صفحهٔ منبع بیش از حد مجاز است."
+  ],
+  "The source returned an invalid redirect.": [
+    "The source returned an invalid redirect.",
+    "منبع به یک آدرس نامعتبر منتقل شد."
+  ],
+  "This photo could not be downloaded.": [
+    "This photo could not be downloaded.",
+    "دریافت این عکس ممکن نشد."
+  ],
+  "This photo is too large.": [
+    "This photo is too large.",
+    "حجم این عکس بیش از حد مجاز است."
+  ],
+  "This preview is too large.": [
+    "This preview is too large.",
+    "حجم پیش‌نمایش بیش از حد مجاز است."
+  ],
+  "This request is too large.": [
+    "This request is too large.",
+    "حجم درخواست بیش از حد مجاز است."
+  ],
+  "This request origin is not allowed.": [
+    "This request origin is not allowed.",
+    "مبدأ این درخواست مجاز نیست."
+  ],
+  "This submission could not be verified.": [
+    "This submission could not be verified.",
+    "تأیید این درخواست ممکن نشد."
+  ],
+  "Too many attempts. Please try again later.": [
+    "Too many attempts. Please try again later.",
+    "تعداد تلاش‌ها بیش از حد مجاز است. کمی بعد دوباره تلاش کنید."
+  ],
+  "Too many source redirects.": [
+    "Too many source redirects.",
+    "تعداد انتقال آدرس منبع بیش از حد مجاز است."
+  ],
+  "URL credentials and unsupported schemes are not allowed.": [
+    "URL credentials and unsupported schemes are not allowed.",
+    "آدرس دارای اطلاعات ورود یا پروتکل پشتیبانی‌نشده مجاز نیست."
+  ],
+  "Use a PNG, JPEG or WebP photo.": [
+    "Use a PNG, JPEG or WebP photo.",
+    "از عکس PNG، JPEG یا WebP استفاده کنید."
+  ],
+  "Use an HTTPS endpoint.": [
+    "Use an HTTPS endpoint.",
+    "از آدرس سرویس HTTPS استفاده کنید."
+  ],
+  "Use the built-in endpoint or create a custom provider.": [
+    "Use the built-in endpoint or create a custom provider.",
+    "از آدرس داخلی استفاده کنید یا یک ارائه‌دهندهٔ سفارشی بسازید."
+  ],
+  "Verification expired or failed. Please try again.": [
+    "Verification expired or failed. Please try again.",
+    "تأیید امنیتی منقضی شد یا موفق نبود. دوباره تلاش کنید."
+  ],
+  "Verification is unavailable. Please try again.": [
+    "Verification is unavailable. Please try again.",
+    "سرویس تأیید در دسترس نیست. دوباره تلاش کنید."
+  ],
+  "Check {0}.": [
+    "Check {0}.",
+    "فیلدهای {0} را بررسی کنید."
+  ],
+  "username": [
+    "username",
+    "نام کاربری"
+  ],
+  "birthYear": [
+    "birthYear",
+    "سال تولد"
+  ],
+  "email": [
+    "email",
+    "ایمیل"
+  ],
+  "password": [
+    "password",
+    "گذرواژه"
+  ],
+  "confirmPassword": [
+    "confirmPassword",
+    "تکرار گذرواژه"
+  ],
+  "newPassword": [
+    "newPassword",
+    "گذرواژهٔ جدید"
+  ],
+  "request fields": [
+    "request fields",
+    "درخواست"
+  ]
+}

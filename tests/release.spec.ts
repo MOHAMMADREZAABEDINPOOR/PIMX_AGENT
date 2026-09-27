@@ -1,0 +1,38 @@
+import {test,expect,type Page} from '@playwright/test';
+import {readFileSync,readdirSync} from 'node:fs';
+import {localRecord} from './browser-database';
+const origin='http://localhost:3010',headers={Origin:origin},password='Transfer fixture passphrase 2026';
+async function savedState(page:Page,id:string){const raw=await localRecord(page,id);return page.evaluate(async({raw,id})=>{const {key:encoded}=await(await fetch('/api/workspace?key=1')).json(),decode=(s:string)=>Uint8Array.from(atob(s),c=>c.charCodeAt(0)),key=await crypto.subtle.importKey('raw',decode(encoded),'AES-GCM',false,['decrypt']),envelope=JSON.parse(raw);return JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:decode(envelope.iv),additionalData:new TextEncoder().encode(id)},key,decode(envelope.data))));},{raw,id});}
+
+test('encrypted database export restores chats and generated files in a separate browser',async({browser,page})=>{
+ const email='transfer-release@example.invalid';let response=await page.request.post('/api/auth/login',{headers,data:{email,password}});if(!response.ok())response=await page.request.post('/api/auth/signup',{headers,data:{email,password,confirmPassword:password,username:'transfer_release',birthYear:1995}});expect(response.ok()).toBe(true);const id=(await response.json()).user.id,now=Date.now();
+ await page.addInitScript(data=>{localStorage.setItem('pimx_cookie_consent','rejected');localStorage.setItem('pimx_agent_v1_store',JSON.stringify(data));},{chats:[{id:'transfer-chat',title:'A portable idea',modelIds:[],toolMode:'NONE',activeTools:[],createdAt:now,updatedAt:now}],messages:{'transfer-chat':[{id:'transfer-message',chatId:'transfer-chat',role:'user',content:'private-transfer-marker',state:'DONE',createdAt:now}]},webFiles:{'transfer-chat':[{path:'index.html',content:'<h1>private-generated-marker</h1>'}]},settings:{aiReactions:false}});
+ await page.goto('/');await expect(page.locator('#composer-input')).toBeVisible();await expect.poll(()=>localRecord(page,id)).toBeTruthy();
+ await page.goto('/account');await page.locator('.database-transfer input[name="passphrase"]').fill(password);await page.locator('input[name="confirmPassphrase"]').fill(password);
+ const downloaded=page.waitForEvent('download');await page.getByRole('button',{name:'Export chat database',exact:true}).click();const download=await downloaded,path=(await download.path())!,raw=readFileSync(path,'utf8');expect(JSON.parse(raw).format).toBe('PIMX-CHAT-DATABASE');expect(raw).not.toContain('private-transfer-marker');expect(raw).not.toContain('private-generated-marker');
+ const target=await browser.newContext({storageState:await page.context().storageState()});
+ try{const other=await target.newPage();await other.goto('/account');await expect(other.getByRole('button',{name:'Upload chat database',exact:true})).toBeEnabled();
+ await other.locator('.database-transfer input[name="passphrase"]').fill('An incorrect transfer passphrase');await other.locator('input[name="database"]').setInputFiles(path);await other.getByRole('button',{name:'Upload chat database',exact:true}).click();await expect(other.locator('.database-transfer [role="alert"]')).toContainText('incorrect');
+ await other.locator('.database-transfer input[name="passphrase"]').fill(password);await other.getByRole('button',{name:'Upload chat database',exact:true}).click();await other.getByRole('button',{name:'Import database',exact:true}).click();await expect(other.locator('#composer-input')).toBeVisible();
+ const state=await savedState(other,id);expect(state.messages['transfer-chat'][0].content).toBe('private-transfer-marker');expect(state.webFiles['transfer-chat'][0].content).toContain('private-generated-marker');expect(JSON.parse(await localRecord(other,id)).v).toBe(2);expect((await(await other.request.get('/api/workspace')).json()).state).toBeNull();
+ }finally{await target.close();}
+});
+test('password recovery sends a styled email and consumes its reset link once',async({request})=>{
+ const username='reset_'+Date.now(),email=username+'@example.invalid';const created=await request.post('/api/auth/signup',{headers,data:{email,username,birthYear:1995,password,confirmPassword:password}});expect(created.ok()).toBe(true);expect((await created.json()).emailSent).toBe(true);
+ const recovery=await request.post('/api/auth/forgot-password',{headers,data:{email,locale:'fa'}});expect(recovery.status()).toBe(202);
+ let mail='';await expect.poll(()=>{mail=readdirSync('.data/test-mail').map(name=>readFileSync('.data/test-mail/'+name,'utf8')).find(text=>text.includes(email)&&text.includes('/fa/reset-password'))||'';return mail.length;}).toBeGreaterThan(0);
+ const decoded=mail.replace(/=\r?\n/g,'').replace(/=([0-9A-F]{2})/g,(_m,hex)=>String.fromCharCode(parseInt(hex,16))),token=decoded.match(/reset-password\?token=([A-Za-z0-9_-]+)/)?.[1];expect(token).toBeTruthy();expect(decoded).toContain('dir="rtl"');expect(decoded).toContain('PIMX AGENT');
+ const nextPassword='A new recovery fixture passphrase';expect((await request.post('/api/auth/reset-password',{headers,data:{token,password:nextPassword,confirmPassword:nextPassword}})).ok()).toBe(true);
+ expect((await(await request.get('/api/auth/session')).json()).user).toBeNull();expect((await request.get('/api/workspace')).status()).toBe(401);expect((await request.post('/api/auth/reset-password',{headers,data:{token,password:nextPassword,confirmPassword:nextPassword}})).status()).toBe(400);
+ expect((await request.post('/api/auth/login',{headers,data:{email,password}})).status()).toBe(401);expect((await request.post('/api/auth/login',{headers,data:{email,password:nextPassword}})).ok()).toBe(true);expect((await request.delete('/api/account',{headers,data:{password:nextPassword}})).ok()).toBe(true);
+});
+test('English default, Persian navigation, theme photographs and product film work',async({page})=>{
+ await page.addInitScript(()=>localStorage.setItem('pimx_cookie_consent','rejected'));await page.goto('/');await expect(page.locator('html')).toHaveAttribute('lang','en');await expect(page.locator('.product-stage img')).toHaveAttribute('src','/media/pimx-workspace-dark.webp');
+ await page.getByRole('button',{name:'Toggle theme'}).click();await expect(page.locator('.product-stage img')).toHaveAttribute('src','/media/pimx-workspace-light.webp');
+ await page.getByRole('button',{name:'فارسی',exact:true}).click();await expect(page.locator('html')).toHaveAttribute('dir','rtl');await expect(page.locator('h1')).toContainText('ایده');await page.getByRole('link',{name:'شروع کنید',exact:true}).click();await expect(page.locator('input[name="username"]')).toBeVisible();await expect(page.locator('.site-form')).toContainText('سال تولد');
+ await page.goto('/');await page.getByRole('button',{name:'پخش ویدیو',exact:true}).click();await expect.poll(()=>page.locator('video').evaluate((video:HTMLVideoElement)=>video.currentTime)).toBeGreaterThan(0);expect(await page.locator('video').evaluate((video:HTMLVideoElement)=>video.duration)).toBeGreaterThan(14);
+});
+test('the installed shell shows Persian offline guidance for a Persian route',async({page,context})=>{
+ await page.addInitScript(()=>localStorage.setItem('pimx_cookie_consent','rejected'));await page.goto('/fa/');await page.evaluate(async()=>{await navigator.serviceWorker.ready;});await expect.poll(()=>page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(true);
+ await context.setOffline(true);await page.goto('/fa/offline-probe',{waitUntil:'domcontentloaded'});await expect(page.locator('html')).toHaveAttribute('lang','fa');await expect(page.locator('h1')).toHaveText('لحظه‌ای بدون اینترنت.');await expect(page.getByRole('link',{name:'تلاش دوباره'})).toHaveAttribute('href','/fa/');
+});

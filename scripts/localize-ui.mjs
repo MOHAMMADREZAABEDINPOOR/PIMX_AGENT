@@ -1,0 +1,19 @@
+import ts from 'typescript';
+import {readFileSync,readdirSync,writeFileSync} from 'node:fs';
+const skip=['Welcome','SiteFrame','AuthForm','LegalPage','DatabaseTransfer','SecureWorkspace','AccountSettings','AdminInbox','CookieConsent'];
+const attrs=new Set(['title','placeholder','aria-label','alt','label','description','emptyMessage','confirmLabel']);
+const files=[];function scan(dir){for(const e of readdirSync(dir,{withFileTypes:true})){const file=dir+'/'+e.name;if(e.isDirectory()){if(file!=='components/i18n')scan(file);}else if(file.endsWith('.tsx')&&!skip.some(name=>file.endsWith('/'+name+'.tsx'))&&file!=='app/global-error.tsx')files.push(file);}}scan('components');scan('app');
+const inventory=new Set(JSON.parse(readFileSync('artifacts/i18n/inventory.json','utf8')).map(i=>i.source));
+let changed=0;
+for(const file of files){const source=readFileSync(file,'utf8'),ast=ts.createSourceFile(file,source,ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX),edits=[],hooks=new Set();let usedText=false,usedHook=false;
+const insert=(start,end,text)=>edits.push({start,end,text});const visible=text=>inventory.has(text.replace(/\s+/g,' ').trim())&&/[A-Za-z\u0600-\u06ff]/.test(text);
+function fnFor(node){for(let p=node.parent;p;p=p.parent){if((ts.isFunctionDeclaration(p)||ts.isFunctionExpression(p)||ts.isArrowFunction(p))&&p.body&&ts.isBlock(p.body)){let name=p.name?.getText(ast);if(!name&&ts.isVariableDeclaration(p.parent))name=p.parent.name.getText(ast);if(name&&/^[A-Z]/.test(name))return p;}}}
+function childExpression(node){if(ts.isStringLiteral(node)||ts.isNoSubstitutionTemplateLiteral(node)){if(visible(node.text)){insert(node.getStart(ast),node.end,`<UiText source={${JSON.stringify(node.text)}}/>`);usedText=true;}return;}if(ts.isConditionalExpression(node)){childExpression(node.whenTrue);childExpression(node.whenFalse);return;}if(ts.isBinaryExpression(node)&&node.operatorToken.kind===ts.SyntaxKind.PlusToken){childExpression(node.left);childExpression(node.right);return;}if(ts.isPropertyAccessExpression(node)&&['label','description','desc','hint','subtitle','displayLabel'].includes(node.name.text)){insert(node.getStart(ast),node.end,`<UiText source={${node.getText(ast)}}/>`);usedText=true;}}
+function visit(node){if(ts.isJsxText(node)&&visible(node.text)){const raw=node.text,trimmed=raw.replace(/\s+/g,' ').trim(),decoded=trimmed.replace(/&quot;/g,'"').replace(/&amp;/g,'&').replace(/&apos;|&#39;/g,"'").replace(/&lt;/g,'<').replace(/&gt;/g,'>');insert(node.getStart(ast),node.end,`${/^\s/.test(raw)?' ':''}<UiText source={${JSON.stringify(decoded)}}/>${/\s$/.test(raw)?' ':''}`);usedText=true;return;}
+ if(ts.isJsxAttribute(node)&&attrs.has(node.name.getText(ast))&&node.initializer){const fn=fnFor(node);if(fn){const value=ts.isStringLiteral(node.initializer)?JSON.stringify(node.initializer.text):ts.isJsxExpression(node.initializer)&&node.initializer.expression?node.initializer.expression.getText(ast):undefined;if(value){insert(node.initializer.getStart(ast),node.initializer.end,`{$t(${value})}`);hooks.add(fn);usedHook=true;return;}}}
+ if(ts.isJsxExpression(node)&&(ts.isJsxElement(node.parent)||ts.isJsxFragment(node.parent))&&node.expression){childExpression(node.expression);}
+ ts.forEachChild(node,visit);
+}visit(ast);
+if(!edits.length)continue;for(const fn of hooks)insert(fn.body.getStart(ast)+1,fn.body.getStart(ast)+1,'\n  const $t=useT();');const names=[usedText?'UiText':null,usedHook?'useT':null].filter(Boolean);const imports=ast.statements.filter(ts.isImportDeclaration);const at=imports.length?imports.at(-1).end:source.indexOf(';')+1;insert(at,at,`\nimport {${names.join(',')}} from '@/components/i18n/LocaleProvider';`);
+for(const edit of edits.sort((a,b)=>b.start-a.start))source;let output=source;for(const edit of edits.sort((a,b)=>b.start-a.start))output=output.slice(0,edit.start)+edit.text+output.slice(edit.end);writeFileSync(file,output);changed++;
+}console.log(`Localized JSX in ${changed} files.`);

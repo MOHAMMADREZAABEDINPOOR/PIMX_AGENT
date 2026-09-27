@@ -1,0 +1,16 @@
+import { NextRequest } from 'next/server';
+import { z } from 'zod';
+import { query } from '@/lib/server/database';
+import { verifyPassword,hashPassword,unseal } from '@/lib/server/encryption';
+import { requireUser,checkOrigin,issueSession } from '@/lib/server/session';
+import { sessionCookie } from '@/lib/server/config';
+import { rateLimit } from '@/lib/server/rate-limit';
+import { readJson } from '@/lib/server/validation';
+import { apiFailure,HttpError,privateJson } from '@/lib/server/errors';
+import {mailConfigured,sendAccountEmail} from '@/lib/server/mail';
+import {recordAuthEvent} from '@/lib/server/telemetry';
+const schema=z.object({password:z.string().min(12).max(128),newPassword:z.string().min(12).max(128).optional(),confirmPassword:z.string().min(12).max(128).optional(),locale:z.enum(['en','fa']).optional()}).strict();
+export async function GET(request:NextRequest){try{const user=await requireUser(request),[row]=await query('SELECT username,profile,created_at,last_login FROM app_users WHERE id=?',[user.id]);const profile=row.profile?JSON.parse(unseal(String(row.profile),`profile:${user.id}`)):{};return privateJson({user:{...user,username:row.username,email:profile.email,birthYear:profile.birthYear,createdAt:row.created_at,lastLogin:row.last_login},emailConfigured:mailConfigured()});}catch(error){return apiFailure(error);}}
+async function reauthenticate(request:NextRequest){checkOrigin(request);const user=await requireUser(request);await rateLimit(`account:${user.id}`,6,15*60*1000);const input=await readJson(request,schema,2048);const [record]=await query('SELECT password_hash FROM app_users WHERE id=?',[user.id]);if(!record || !await verifyPassword(input.password,String(record.password_hash)))throw new HttpError(401,'The current password is incorrect.');return {user,input};}
+export async function PATCH(request:NextRequest){try{const {user,input}=await reauthenticate(request);if(!input.newPassword||input.newPassword!==input.confirmPassword)throw new HttpError(400,'Enter a new password and a matching confirmation.');await query('UPDATE app_users SET password_hash=? WHERE id=?',[await hashPassword(input.newPassword),user.id]);await query('DELETE FROM app_sessions WHERE user_id=?',[user.id]);await query('DELETE FROM app_password_resets WHERE user_id=?',[user.id]);await recordAuthEvent(request,user.id,'PASSWORD_CHANGED');const [row]=await query('SELECT profile FROM app_users WHERE id=?',[user.id]);let emailSent=false;if(row.profile&&mailConfigured()){const profile=JSON.parse(unseal(String(row.profile),`profile:${user.id}`));try{await sendAccountEmail(profile.email,'changed',input.locale||profile.locale||'en',user.displayName);emailSent=true;}catch{}}const {token,options}=await issueSession(user.id);const response=privateJson({ok:true,emailSent});response.cookies.set(sessionCookie(),token,options);return response;}catch(error){return apiFailure(error);}}
+export async function DELETE(request:NextRequest){try{const {user}=await reauthenticate(request);await query('DELETE FROM app_users WHERE id=?',[user.id]);const response=privateJson({ok:true});response.cookies.set(sessionCookie(),'',{httpOnly:true,secure:sessionCookie().startsWith('__Host-'),path:'/',sameSite:'lax',maxAge:0});return response;}catch(error){return apiFailure(error);}}

@@ -1,0 +1,1391 @@
+@font-face {
+  font-family: 'B Arabics Style';
+  src: url('/fonts/persian/B-Arabics-Style.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Arash';
+  src: url('/fonts/persian/B-Arash.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Aria';
+  src: url('/fonts/persian/B-Aria.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Arshia';
+  src: url('/fonts/persian/B-Arshia.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Aseman Italic';
+  src: url('/fonts/persian/B-Aseman-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Aseman';
+  src: url('/fonts/persian/B-Aseman.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Badkonak';
+  src: url('/fonts/persian/B-Badkonak.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Badr Bold';
+  src: url('/fonts/persian/B-Badr-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Badr';
+  src: url('/fonts/persian/B-Badr.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Baran Italic';
+  src: url('/fonts/persian/B-Baran-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Baran Outline Italic';
+  src: url('/fonts/persian/B-Baran-Outline-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Baran Outline';
+  src: url('/fonts/persian/B-Baran-Outline.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Baran';
+  src: url('/fonts/persian/B-Baran.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Bardiya Bold';
+  src: url('/fonts/persian/B-Bardiya-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Bardiya';
+  src: url('/fonts/persian/B-Bardiya.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Cheshmeh Bold';
+  src: url('/fonts/persian/B-Cheshmeh-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Cheshmeh';
+  src: url('/fonts/persian/B-Cheshmeh.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Chini';
+  src: url('/fonts/persian/B-Chini.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Compset Bold';
+  src: url('/fonts/persian/B-Compset-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Compset';
+  src: url('/fonts/persian/B-Compset.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Davat';
+  src: url('/fonts/persian/B-Davat.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Elham';
+  src: url('/fonts/persian/B-Elham.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Elm Bold';
+  src: url('/fonts/persian/B-Elm-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Elm Italic';
+  src: url('/fonts/persian/B-Elm-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Elm';
+  src: url('/fonts/persian/B-Elm.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Esfehan Bold';
+  src: url('/fonts/persian/B-Esfehan-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Fantezy';
+  src: url('/fonts/persian/B-Fantezy.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Farnaz';
+  src: url('/fonts/persian/B-Farnaz.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Ferdosi';
+  src: url('/fonts/persian/B-Ferdosi.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Haleh Bold';
+  src: url('/fonts/persian/B-Haleh-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Haleh';
+  src: url('/fonts/persian/B-Haleh.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Hamid';
+  src: url('/fonts/persian/B-Hamid.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Helal';
+  src: url('/fonts/persian/B-Helal.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Homa';
+  src: url('/fonts/persian/B-Homa.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Jadid Bold';
+  src: url('/fonts/persian/B-Jadid-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Jalal Bold';
+  src: url('/fonts/persian/B-Jalal-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Jalal';
+  src: url('/fonts/persian/B-Jalal.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Johar';
+  src: url('/fonts/persian/B-Johar.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Kaj';
+  src: url('/fonts/persian/B-Kaj.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Kamran Bold';
+  src: url('/fonts/persian/B-Kamran-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Kamran Outline';
+  src: url('/fonts/persian/B-Kamran-Outline.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Kamran';
+  src: url('/fonts/persian/B-Kamran.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Karim Bold';
+  src: url('/fonts/persian/B-Karim-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Karim';
+  src: url('/fonts/persian/B-Karim.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Kaveh';
+  src: url('/fonts/persian/B-Kaveh.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Kidnap';
+  src: url('/fonts/persian/B-Kidnap.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Koodak Bold';
+  src: url('/fonts/persian/B-Koodak-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Koodak Outline';
+  src: url('/fonts/persian/B-Koodak-Outline.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Kourosh';
+  src: url('/fonts/persian/B-Kourosh.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Lotus Bold';
+  src: url('/fonts/persian/B-Lotus-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Lotus';
+  src: url('/fonts/persian/B-Lotus.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Mahsa';
+  src: url('/fonts/persian/B-Mahsa.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Mah';
+  src: url('/fonts/persian/B-Mah.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Majid Shadow';
+  src: url('/fonts/persian/B-Majid-Shadow.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Mashhad Bold Italic';
+  src: url('/fonts/persian/B-Mashhad-Bold-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Mashhad Bold';
+  src: url('/fonts/persian/B-Mashhad-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Mashhad Italic';
+  src: url('/fonts/persian/B-Mashhad-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Mashhad';
+  src: url('/fonts/persian/B-Mashhad.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Masjed';
+  src: url('/fonts/persian/B-Masjed.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Medad';
+  src: url('/fonts/persian/B-Medad.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Mehr Bold';
+  src: url('/fonts/persian/B-Mehr-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Mitra Bold';
+  src: url('/fonts/persian/B-Mitra-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Mitra';
+  src: url('/fonts/persian/B-Mitra.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Moj';
+  src: url('/fonts/persian/B-Moj.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Morvarid';
+  src: url('/fonts/persian/B-Morvarid.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Narenj';
+  src: url('/fonts/persian/B-Narenj.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Narm';
+  src: url('/fonts/persian/B-Narm.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Nasim Bold';
+  src: url('/fonts/persian/B-Nasim-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Nazanin Bold';
+  src: url('/fonts/persian/B-Nazanin-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Nazanin Outline';
+  src: url('/fonts/persian/B-Nazanin-Outline.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Nazanin';
+  src: url('/fonts/persian/B-Nazanin.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Niki Bold';
+  src: url('/fonts/persian/B-Niki-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Niki Border Italic';
+  src: url('/fonts/persian/B-Niki-Border-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Niki Outline Italic';
+  src: url('/fonts/persian/B-Niki-Outline-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Niki Outline';
+  src: url('/fonts/persian/B-Niki-Outline.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Niki Shadow Italic';
+  src: url('/fonts/persian/B-Niki-Shadow-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Niki Shadow';
+  src: url('/fonts/persian/B-Niki-Shadow.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Nikoo Italic';
+  src: url('/fonts/persian/B-Nikoo-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Nikoo';
+  src: url('/fonts/persian/B-Nikoo.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Paatch Bold';
+  src: url('/fonts/persian/B-Paatch-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Paatch';
+  src: url('/fonts/persian/B-Paatch.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Rose';
+  src: url('/fonts/persian/B-Rose.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Roya Bold';
+  src: url('/fonts/persian/B-Roya-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Roya';
+  src: url('/fonts/persian/B-Roya.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Sahar';
+  src: url('/fonts/persian/B-Sahar.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Sahra';
+  src: url('/fonts/persian/B-Sahra.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Sara';
+  src: url('/fonts/persian/B-Sara.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Sepideh Outline';
+  src: url('/fonts/persian/B-Sepideh-Outline.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Sepideh';
+  src: url('/fonts/persian/B-Sepideh.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Setareh Bold';
+  src: url('/fonts/persian/B-Setareh-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Setareh';
+  src: url('/fonts/persian/B-Setareh.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Shadi';
+  src: url('/fonts/persian/B-Shadi.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Shiraz Italic';
+  src: url('/fonts/persian/B-Shiraz-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Shiraz';
+  src: url('/fonts/persian/B-Shiraz.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Siavash';
+  src: url('/fonts/persian/B-Siavash.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Sina Bold';
+  src: url('/fonts/persian/B-Sina-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Sooreh Bold';
+  src: url('/fonts/persian/B-Sooreh-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Sooreh';
+  src: url('/fonts/persian/B-Sooreh.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Sorkhpust';
+  src: url('/fonts/persian/B-Sorkhpust.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Tabssom';
+  src: url('/fonts/persian/B-Tabssom.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Tanab';
+  src: url('/fonts/persian/B-Tanab.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Tawfig Outline';
+  src: url('/fonts/persian/B-Tawfig-Outline.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Tehran Italic';
+  src: url('/fonts/persian/B-Tehran-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Tehran';
+  src: url('/fonts/persian/B-Tehran.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Tir';
+  src: url('/fonts/persian/B-Tir.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Titr Bold';
+  src: url('/fonts/persian/B-Titr-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Traffic Bold';
+  src: url('/fonts/persian/B-Traffic-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Traffic';
+  src: url('/fonts/persian/B-Traffic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Vahid Bold';
+  src: url('/fonts/persian/B-Vahid-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Vosta Italic';
+  src: url('/fonts/persian/B-Vosta-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Vosta';
+  src: url('/fonts/persian/B-Vosta.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Yagut Bold';
+  src: url('/fonts/persian/B-Yagut-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Yagut';
+  src: url('/fonts/persian/B-Yagut.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Yas Bold';
+  src: url('/fonts/persian/B-Yas-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Yas';
+  src: url('/fonts/persian/B-Yas.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Yekan';
+  src: url('/fonts/persian/B-Yekan.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Zaman';
+  src: url('/fonts/persian/B-Zaman.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Zar Bold';
+  src: url('/fonts/persian/B-Zar-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Zar';
+  src: url('/fonts/persian/B-Zar.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'B Ziba';
+  src: url('/fonts/persian/B-Ziba.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRAban';
+  src: url('/fonts/persian/SCICT-IRAban.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRAmir';
+  src: url('/fonts/persian/SCICT-IRAmir.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRArshia';
+  src: url('/fonts/persian/SCICT-IRArshia.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRBadrBold';
+  src: url('/fonts/persian/SCICT-IRBadrBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRBadrIranic';
+  src: url('/fonts/persian/SCICT-IRBadrIranic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRBadr';
+  src: url('/fonts/persian/SCICT-IRBadr.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRCompsetBold';
+  src: url('/fonts/persian/SCICT-IRCompsetBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRCompsetIranic';
+  src: url('/fonts/persian/SCICT-IRCompsetIranic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRCompset';
+  src: url('/fonts/persian/SCICT-IRCompset.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRDastNevis';
+  src: url('/fonts/persian/SCICT-IRDastNevis.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRDavat';
+  src: url('/fonts/persian/SCICT-IRDavat.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRElham';
+  src: url('/fonts/persian/SCICT-IRElham.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IREntezar';
+  src: url('/fonts/persian/SCICT-IREntezar.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRFarnaz';
+  src: url('/fonts/persian/SCICT-IRFarnaz.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRFerdosi';
+  src: url('/fonts/persian/SCICT-IRFerdosi.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRHoma';
+  src: url('/fonts/persian/SCICT-IRHoma.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRJadid';
+  src: url('/fonts/persian/SCICT-IRJadid.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRKamran';
+  src: url('/fonts/persian/SCICT-IRKamran.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRKhorasan';
+  src: url('/fonts/persian/SCICT-IRKhorasan.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRKoodak';
+  src: url('/fonts/persian/SCICT-IRKoodak.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRLotusBold';
+  src: url('/fonts/persian/SCICT-IRLotusBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRLotusIranic';
+  src: url('/fonts/persian/SCICT-IRLotusIranic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRLotus';
+  src: url('/fonts/persian/SCICT-IRLotus.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRMaryam';
+  src: url('/fonts/persian/SCICT-IRMaryam.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRMashhad';
+  src: url('/fonts/persian/SCICT-IRMashhad.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRMehr';
+  src: url('/fonts/persian/SCICT-IRMehr.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRMitraBold';
+  src: url('/fonts/persian/SCICT-IRMitraBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRMitraIranic';
+  src: url('/fonts/persian/SCICT-IRMitraIranic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRMitra';
+  src: url('/fonts/persian/SCICT-IRMitra.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRMomtaz';
+  src: url('/fonts/persian/SCICT-IRMomtaz.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRNarges';
+  src: url('/fonts/persian/SCICT-IRNarges.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRNaskh';
+  src: url('/fonts/persian/SCICT-IRNaskh.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRNazaninBold';
+  src: url('/fonts/persian/SCICT-IRNazaninBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRNazaninIranic';
+  src: url('/fonts/persian/SCICT-IRNazaninIranic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRNazanin';
+  src: url('/fonts/persian/SCICT-IRNazanin.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRNazliBold';
+  src: url('/fonts/persian/SCICT-IRNazliBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRNazli';
+  src: url('/fonts/persian/SCICT-IRNazli.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRPooya';
+  src: url('/fonts/persian/SCICT-IRPooya.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRRoyaBold';
+  src: url('/fonts/persian/SCICT-IRRoyaBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRRoyaIranic';
+  src: url('/fonts/persian/SCICT-IRRoyaIranic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRRoya';
+  src: url('/fonts/persian/SCICT-IRRoya.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRShiraz';
+  src: url('/fonts/persian/SCICT-IRShiraz.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRSina';
+  src: url('/fonts/persian/SCICT-IRSina.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRTabassom';
+  src: url('/fonts/persian/SCICT-IRTabassom.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRTehran';
+  src: url('/fonts/persian/SCICT-IRTehran.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRTerafikBold';
+  src: url('/fonts/persian/SCICT-IRTerafikBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRTerafikIranic';
+  src: url('/fonts/persian/SCICT-IRTerafikIranic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRTerafik';
+  src: url('/fonts/persian/SCICT-IRTerafik.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRTitr';
+  src: url('/fonts/persian/SCICT-IRTitr.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRYakoutBold';
+  src: url('/fonts/persian/SCICT-IRYakoutBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRYakoutIranic';
+  src: url('/fonts/persian/SCICT-IRYakoutIranic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRYakout';
+  src: url('/fonts/persian/SCICT-IRYakout.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRYekanBold';
+  src: url('/fonts/persian/SCICT-IRYekanBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRYekan';
+  src: url('/fonts/persian/SCICT-IRYekan.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRZarBold';
+  src: url('/fonts/persian/SCICT-IRZarBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRZarIranic';
+  src: url('/fonts/persian/SCICT-IRZarIranic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRZar';
+  src: url('/fonts/persian/SCICT-IRZar.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SCICT IRZeytoon';
+  src: url('/fonts/persian/SCICT-IRZeytoon.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FarsiWeb Elham';
+  src: url('/fonts/persian/FarsiWeb-Elham.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FarsiWeb Homa';
+  src: url('/fonts/persian/FarsiWeb-Homa.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FarsiWeb Koodak';
+  src: url('/fonts/persian/FarsiWeb-Koodak.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FarsiWeb Nazlib';
+  src: url('/fonts/persian/FarsiWeb-Nazlib.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FarsiWeb Nazli';
+  src: url('/fonts/persian/FarsiWeb-Nazli.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FarsiWeb Royab';
+  src: url('/fonts/persian/FarsiWeb-Royab.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FarsiWeb Roya';
+  src: url('/fonts/persian/FarsiWeb-Roya.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FarsiWeb Terafikb';
+  src: url('/fonts/persian/FarsiWeb-Terafikb.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FarsiWeb Terafik';
+  src: url('/fonts/persian/FarsiWeb-Terafik.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FarsiWeb Titr';
+  src: url('/fonts/persian/FarsiWeb-Titr.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Aseman Italic';
+  src: url('/fonts/persian/MRT-2-Aseman-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Aseman';
+  src: url('/fonts/persian/MRT-2-Aseman.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Baran Italic';
+  src: url('/fonts/persian/MRT-2-Baran-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Baran Outline Italic';
+  src: url('/fonts/persian/MRT-2-Baran-Outline-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Baran Outline';
+  src: url('/fonts/persian/MRT-2-Baran-Outline.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Baran';
+  src: url('/fonts/persian/MRT-2-Baran.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Bardiya Bold';
+  src: url('/fonts/persian/MRT-2-Bardiya-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Bardiya';
+  src: url('/fonts/persian/MRT-2-Bardiya.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Davat';
+  src: url('/fonts/persian/MRT-2-Davat.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Elham';
+  src: url('/fonts/persian/MRT-2-Elham.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Elm Border';
+  src: url('/fonts/persian/MRT-2-Elm-Border.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Elm Italic';
+  src: url('/fonts/persian/MRT-2-Elm-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Elm';
+  src: url('/fonts/persian/MRT-2-Elm.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Esfehan Bold';
+  src: url('/fonts/persian/MRT-2-Esfehan-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Hamid';
+  src: url('/fonts/persian/MRT-2-Hamid.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Helal';
+  src: url('/fonts/persian/MRT-2-Helal.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Kaj';
+  src: url('/fonts/persian/MRT-2-Kaj.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Kamran Bold';
+  src: url('/fonts/persian/MRT-2-Kamran-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Kamran Outline';
+  src: url('/fonts/persian/MRT-2-Kamran-Outline.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Kamran';
+  src: url('/fonts/persian/MRT-2-Kamran.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Karim Bold';
+  src: url('/fonts/persian/MRT-2-Karim-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Karim';
+  src: url('/fonts/persian/MRT-2-Karim.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Mah';
+  src: url('/fonts/persian/MRT-2-Mah.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Mehr Bold';
+  src: url('/fonts/persian/MRT-2-Mehr-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Narenj';
+  src: url('/fonts/persian/MRT-2-Narenj.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Niki Border Italic';
+  src: url('/fonts/persian/MRT-2-Niki-Border-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Niki Border';
+  src: url('/fonts/persian/MRT-2-Niki-Border.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Niki Outline Italic';
+  src: url('/fonts/persian/MRT-2-Niki-Outline-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Niki Outline';
+  src: url('/fonts/persian/MRT-2-Niki-Outline.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Niki Shadow Italic';
+  src: url('/fonts/persian/MRT-2-Niki-Shadow-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Niki Shadow';
+  src: url('/fonts/persian/MRT-2-Niki-Shadow.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Nikoo Italic';
+  src: url('/fonts/persian/MRT-2-Nikoo-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Nikoo';
+  src: url('/fonts/persian/MRT-2-Nikoo.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Rose';
+  src: url('/fonts/persian/MRT-2-Rose.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Sahar';
+  src: url('/fonts/persian/MRT-2-Sahar.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Sara';
+  src: url('/fonts/persian/MRT-2-Sara.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Sepideh Outline';
+  src: url('/fonts/persian/MRT-2-Sepideh-Outline.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Sepideh';
+  src: url('/fonts/persian/MRT-2-Sepideh.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Setareh';
+  src: url('/fonts/persian/MRT-2-Setareh.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Shadi';
+  src: url('/fonts/persian/MRT-2-Shadi.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Shiraz Italic';
+  src: url('/fonts/persian/MRT-2-Shiraz-Italic.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Shiraz';
+  src: url('/fonts/persian/MRT-2-Shiraz.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Titr Bold';
+  src: url('/fonts/persian/MRT-2-Titr-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MRT 2 Zaman';
+  src: url('/fonts/persian/MRT-2-Zaman.ttf') format('truetype');
+  font-display: swap;
+}

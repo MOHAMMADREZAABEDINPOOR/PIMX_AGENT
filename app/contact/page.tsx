@@ -1,0 +1,5 @@
+import {SiteFrame} from '@/components/site/SiteFrame';
+import {ContactForm} from '@/components/site/ContactForm';
+import {localizedMetadata,getLocale} from '@/lib/i18n/server';
+export const generateMetadata=()=>localizedMetadata(['Contact us','تماس با ما'],['Contact support at pimxagent@gmail.com or use our feedback form.','با pimxagent@gmail.com یا فرم بازخورد ارتباط بگیرید.'],'/contact');
+export default async function Contact(){const fa=(await getLocale())==='fa';return <SiteFrame><div className="auth-layout"><section className="auth-story"><span className="site-eyebrow">{fa?'PIMX / تماس':'PIMX / CONTACT'}</span><h1>{fa?'از شما می‌شنویم.':'We’re listening.'}</h1><p>{fa?'برای پیشنهاد، بازخورد یا گزارش مشکل از فرم یا ایمیل زیر استفاده کنید.':'Share an idea, send feedback or report an issue using this form or our email.'}</p><a className="text-link" href="mailto:pimxagent@gmail.com">pimxagent@gmail.com</a><p>{fa?'پیام‌ها در صندوق داخلی ثبت می‌شوند؛ اطلاعات ورود یا کلید API را ارسال نکنید.':'Messages are saved in the internal inbox. Please do not send passwords or API keys.'}</p></section><ContactForm/></div></SiteFrame>;}

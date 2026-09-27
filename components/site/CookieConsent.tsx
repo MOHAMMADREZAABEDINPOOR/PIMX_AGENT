@@ -1,0 +1,12 @@
+'use client';
+import Link from 'next/link';
+import {useEffect,useState,useSyncExternalStore} from 'react';
+import {usePathname} from 'next/navigation';
+import {useLocale} from '@/components/i18n/LocaleProvider';
+import {localizedHref} from '@/lib/i18n/text';
+const subscribe=(callback:()=>void)=>{window.addEventListener('pimx-consent',callback);window.addEventListener('storage',callback);return()=>{window.removeEventListener('pimx-consent',callback);window.removeEventListener('storage',callback);};};
+const snapshot=()=>localStorage.getItem('pimx_cookie_consent');
+export function CookieConsent(){const locale=useLocale(),fa=locale==='fa',c=(en:string,faText:string)=>fa?faText:en,consent=useSyncExternalStore(subscribe,snapshot,()=>null),[opened,setOpened]=useState(false),pathname=usePathname();const choose=(value:string)=>{localStorage.setItem('pimx_cookie_consent',value);window.dispatchEvent(new Event('pimx-consent'));setOpened(false);};
+useEffect(()=>{if(consent!=='accepted')return;const path=pathname.replace(/^\/fa(?=\/|$)/,'')||'/';if(!['/','/login','/signup','/privacy','/terms','/contact','/thank-you','/forgot-password'].includes(path))return;let visitor=localStorage.getItem('pimx_visitor');if(!visitor){visitor=crypto.randomUUID();localStorage.setItem('pimx_visitor',visitor);}void fetch('/api/analytics',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({path,visitor})}).catch(()=>{});},[consent,pathname]);
+if(consent&&!opened)return <button className="cookie-preferences" onClick={()=>setOpened(true)} aria-label={c('Cookie settings','تنظیمات کوکی')}>{c('Cookie settings','تنظیمات کوکی')}</button>;
+return <aside className="cookie-banner" dir={fa?'rtl':'ltr'} aria-label={c('Privacy choices','انتخاب حریم خصوصی')}><div><b>{c('Your privacy, your choice','حریم خصوصی، به انتخاب شما')}</b><p>{c('Session cookies are essential for sign-in. Optional analytics records visits, device type and approximate location; your chat text and API keys are excluded.','کوکی نشست برای ورود لازم است. آمار اختیاری شامل بازدید، نوع دستگاه و موقعیت تقریبی است؛ متن چت و کلید API ثبت نمی‌شود.')} <Link href={localizedHref('/privacy',locale)}>{c('Details','جزئیات')}</Link></p></div><div className="cookie-actions"><button onClick={()=>choose('rejected')}>{c('Essential only','فقط موارد ضروری')}</button><button onClick={()=>choose('accepted')}>{c('Accept optional analytics','پذیرش آمار اختیاری')}</button></div></aside>;}

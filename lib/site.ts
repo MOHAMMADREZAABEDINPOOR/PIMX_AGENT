@@ -1,0 +1,3 @@
+import type { Metadata } from 'next';
+export const siteUrl=process.env.APP_URL || 'https://pimxagent.pages.dev';
+export function pageMetadata(title:string,description:string,path:string,privatePage=false,locale:'en'|'fa'='en'):Metadata{return {title,description,alternates:{canonical:path,languages:{en:path.replace(/^\/fa(?=\/|$)/,'') || '/',fa:'/fa'+(path.replace(/^\/fa(?=\/|$)/,'') || '/')}},robots:privatePage?{index:false,follow:false}:undefined,openGraph:{title,description,url:path,siteName:'PIMX Agent',locale:locale==='fa'?'fa_IR':'en_US',type:'website',images:[{url:'/opengraph-image',width:1200,height:630,alt:'PIMX Agent — Research. Create. Together.'}]},twitter:{card:'summary_large_image',title,description,images:['/opengraph-image']}};}
