@@ -116,7 +116,7 @@ export function VoiceModal() {
         {/* Top bar */}
         <div className="w-full flex items-center justify-between">
           <div className="flex items-center gap-2 text-xs font-semibold text-muted">
-            <Sparkles className="w-4 h-4 text-purple-400" />
+            <Sparkles className="w-4 h-4 text-accent" />
             <span><UiText source={"Real-time Voice Input"}/></span>
           </div>
           <button onClick={handleClose} className="p-1 rounded-lg opacity-70 hover:opacity-100">

@@ -116,7 +116,7 @@ export function ProviderCardGrid({ onOpenConfig, onAddNewCustom }: ProviderCardG
               <button
                 key={cat.id}
                 onClick={() => setFilterCategory(cat.id)}
-                style={isActive ? { backgroundColor: 'var(--accent-color)', color: '#ffffff' } : undefined}
+                style={isActive ? { backgroundColor: 'var(--accent-color)', color: 'var(--accent-contrast)' } : undefined}
                 className={`px-2.5 py-1 rounded-lg transition-all cursor-pointer whitespace-nowrap ${
                   isActive
                     ? 'font-medium shadow-xs'

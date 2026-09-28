@@ -1,25 +1,11 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect,useSyncExternalStore } from 'react';
 import { useAppStore } from '@/lib/store/useAppStore';
 import { getPresetById } from '@/lib/theme/presets';
-import { getAccentById } from '@/lib/theme/accents';
+import { resolveAccent,applyAccentTokens } from '@/lib/theme/appearance';
+import { persistPublicAccent } from '@/lib/client/appearance';
 import { getFontFamily, getFontItem } from '@/lib/theme/fonts';
-
-function hexToRgbValues(hex: string): { r: number; g: number; b: number; str: string } {
-  let clean = hex.replace('#', '').trim();
-  if (clean.length === 3) {
-    clean = clean.split('').map((c) => c + c).join('');
-  }
-  const num = parseInt(clean, 16);
-  if (isNaN(num) || clean.length !== 6) {
-    return { r: 139, g: 92, b: 246, str: '139, 92, 246' };
-  }
-  const r = (num >> 16) & 255;
-  const g = (num >> 8) & 255;
-  const b = num & 255;
-  return { r, g, b, str: `${r}, ${g}, ${b}` };
-}
 
 function hexToHsl(hex: string): { h: number; s: number; l: number } {
   let c = hex.replace('#', '').trim();
@@ -96,8 +82,12 @@ function sanitizeThemeColor(hex: string, role: 'bg' | 'surface', isDark: boolean
   return hex;
 }
 
+const subscribeSystemTheme=(callback:()=>void)=>{const media=window.matchMedia('(prefers-color-scheme: dark)');media.addEventListener('change',callback);return()=>media.removeEventListener('change',callback);};
+const systemThemeSnapshot=()=>window.matchMedia('(prefers-color-scheme: dark)').matches;
+
 export function ThemeApplier() {
   const { settings, customFonts } = useAppStore();
+  const systemDark=useSyncExternalStore(subscribeSystemTheme,systemThemeSnapshot,()=>false);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -190,13 +180,12 @@ export function ThemeApplier() {
     }
 
     const preset = getPresetById(settings.themePreset);
-    const accent = getAccentById(settings.accent);
     const isDark =
       settings.themeMode === 'DARK'
         ? true
         : settings.themeMode === 'LIGHT'
         ? false
-        : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        : systemDark;
 
     const root = document.documentElement;
 
@@ -230,10 +219,10 @@ export function ThemeApplier() {
       border = isDark ? 'rgba(255, 255, 255, 0.12)' : 'rgba(0, 0, 0, 0.1)';
     }
 
-    const defaultPresetAccent = isDark ? (preset.darkAccent || accent.dark) : (preset.lightAccent || accent.light);
-    const accentHex = settings.customAccentHex || defaultPresetAccent;
+    const accentHex = resolveAccent(settings,isDark);
+    persistPublicAccent(resolveAccent(settings,false),resolveAccent(settings,true));
 
-    const rgb = hexToRgbValues(accentHex);
+    applyAccentTokens(root,accentHex,isDark);
 
     // Primary CSS Variables used across components
     root.style.setProperty('--bg-color', bg);
@@ -241,22 +230,12 @@ export function ThemeApplier() {
     root.style.setProperty('--text-color', text);
     root.style.setProperty('--text-muted', textMuted);
     root.style.setProperty('--border-color', border);
-    root.style.setProperty('--accent-color', accentHex);
-    root.style.setProperty('--accent-rgb', rgb.str);
-    const luminance = (rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000;
-    root.style.setProperty('--accent-contrast', luminance > 165 ? '#09090b' : '#ffffff');
-    root.style.setProperty('--accent-subtle', `rgba(${rgb.str}, ${isDark ? 0.18 : 0.14})`);
-    root.style.setProperty('--accent-border', `rgba(${rgb.str}, ${isDark ? 0.42 : 0.35})`);
-    root.style.setProperty('--accent-ring', `rgba(${rgb.str}, 0.35)`);
 
     // Complementary aliases
     root.style.setProperty('--bg-base', bg);
     root.style.setProperty('--bg-surface', surface);
     root.style.setProperty('--text-main', text);
     root.style.setProperty('--border-subtle', border);
-    root.style.setProperty('--accent-primary', accentHex);
-    root.style.setProperty('--accent-primary-rgb', rgb.str);
-    root.style.setProperty('--accent-glow', `0 0 24px rgba(${rgb.str}, ${isDark ? 0.4 : 0.25})`);
 
     root.style.colorScheme = isDark ? 'dark' : 'light';
     root.dataset.reduceMotion = String(settings.reduceMotion);
@@ -358,7 +337,7 @@ export function ThemeApplier() {
     } else {
       root.classList.remove('dark');
     }
-  }, [settings, customFonts]);
+  }, [settings, customFonts,systemDark]);
 
   return null;
 }

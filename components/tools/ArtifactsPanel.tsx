@@ -88,14 +88,14 @@ export function ArtifactsPanel({ onClose }: { onClose: () => void }) {
             <button
               onClick={() => setViewMode('PREVIEW')}
               className={`px-2 py-0.5 rounded-md font-medium transition-all cursor-pointer ${
-                viewMode === 'PREVIEW' ? 'bg-purple-500/20 text-purple-700 dark:text-purple-300 font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
+                viewMode === 'PREVIEW' ? 'bg-accent/20 text-accent dark:text-accent font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
               }`}
             >
                <UiText source={"Preview"}/> </button>
             <button
               onClick={() => setViewMode('CODE')}
               className={`px-2 py-0.5 rounded-md font-medium transition-all cursor-pointer ${
-                viewMode === 'CODE' ? 'bg-purple-500/20 text-purple-700 dark:text-purple-300 font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
+                viewMode === 'CODE' ? 'bg-accent/20 text-accent dark:text-accent font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
               }`}
             >
                <UiText source={"Code"}/> </button>

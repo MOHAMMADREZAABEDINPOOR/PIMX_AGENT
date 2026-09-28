@@ -198,7 +198,7 @@ btn?.addEventListener('click', () => {
               <button
                 onClick={() => setActiveTab('RUNNER')}
                 className={`px-2 py-0.5 rounded-md font-medium transition-all flex items-center gap-1 cursor-pointer ${
-                  activeTab === 'RUNNER' ? 'bg-purple-500/20 text-purple-700 dark:text-purple-300 font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
+                  activeTab === 'RUNNER' ? 'bg-accent/20 text-accent dark:text-accent font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
                 }`}
               >
                 <Play className="w-3 h-3 text-emerald-500" />
@@ -207,7 +207,7 @@ btn?.addEventListener('click', () => {
               <button
                 onClick={() => setActiveTab('CODE')}
                 className={`px-2 py-0.5 rounded-md font-medium transition-all cursor-pointer ${
-                  activeTab === 'CODE' ? 'bg-purple-500/20 text-purple-700 dark:text-purple-300 font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
+                  activeTab === 'CODE' ? 'bg-accent/20 text-accent dark:text-accent font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
                 }`}
               >
                  <UiText source={"Editor"}/> </button>
@@ -277,7 +277,7 @@ btn?.addEventListener('click', () => {
                 }}
                 className={`w-full flex items-center gap-1.5 px-2 py-1.5 rounded-lg text-xs text-left truncate transition-colors cursor-pointer ${
                   activeFilePath === f.path && activeTab === 'CODE'
-                    ? 'bg-purple-500/20 text-purple-700 dark:text-purple-300 font-semibold shadow-2xs'
+                    ? 'bg-accent/20 text-accent dark:text-accent font-semibold shadow-2xs'
                     : 'hover:bg-black/5 dark:hover:bg-white/5 opacity-70 hover:opacity-100 text-neutral-800 dark:text-neutral-200'
                 }`}
               >

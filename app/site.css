@@ -71,3 +71,5 @@
 .footer-cookie-settings:hover { text-decoration: underline; }
 .cookie-close { float: inline-end; width: 28px; height: 28px; margin-inline-start: 8px; border-radius: 8px; cursor: pointer; font-size: 20px; }
 .cookie-close:hover { background: #f0eaf7; }
+
+.cookie-actions button:last-child { background: var(--accent-color); color: var(--accent-contrast); }

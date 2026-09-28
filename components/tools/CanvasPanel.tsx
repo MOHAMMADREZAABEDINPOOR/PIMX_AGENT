@@ -130,7 +130,7 @@ export function CanvasPanel({ onClose }: { onClose: () => void }) {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             onBlur={handleSave}
-            className="bg-transparent font-semibold text-xs border-b border-transparent focus:border-purple-500 focus:outline-none w-full truncate text-neutral-900 dark:text-white"
+            className="bg-transparent font-semibold text-xs border-b border-transparent focus:border-accent focus:outline-none w-full truncate text-neutral-900 dark:text-white"
           />
         </div>
 
@@ -139,14 +139,14 @@ export function CanvasPanel({ onClose }: { onClose: () => void }) {
             <button
               onClick={() => setMode('EDIT')}
               className={`px-2 py-0.5 rounded-md font-medium transition-all cursor-pointer ${
-                mode === 'EDIT' ? 'bg-purple-500/20 text-purple-700 dark:text-purple-300 font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
+                mode === 'EDIT' ? 'bg-accent/20 text-accent dark:text-accent font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
               }`}
             >
                <UiText source={"Edit"}/> </button>
             <button
               onClick={() => setMode('PREVIEW')}
               className={`px-2 py-0.5 rounded-md font-medium transition-all cursor-pointer ${
-                mode === 'PREVIEW' ? 'bg-purple-500/20 text-purple-700 dark:text-purple-300 font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
+                mode === 'PREVIEW' ? 'bg-accent/20 text-accent dark:text-accent font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
               }`}
             >
                <UiText source={"Preview"}/> </button>

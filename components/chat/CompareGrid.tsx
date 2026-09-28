@@ -199,7 +199,7 @@ export function CompareGrid({ messages }: CompareGridProps) {
                   </div>
                 ) : msg.state === 'STREAMING' ? (
                   <div className="flex items-center gap-2 py-4 text-xs text-muted font-medium animate-pulse">
-                    <span className="w-2 h-2 rounded-full bg-purple-500 animate-ping" />
+                    <span className="w-2 h-2 rounded-full bg-accent animate-ping" />
                     <span><UiText source={"Generating response..."}/></span>
                   </div>
                 ) : (

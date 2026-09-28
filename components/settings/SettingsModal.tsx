@@ -548,7 +548,7 @@ export function SettingsModal() {
           <div className="flex items-center gap-3">
             <div
               className="w-8 h-8 rounded-xl flex items-center justify-center text-white font-bold shadow-md"
-              style={{ backgroundColor: 'var(--accent-color)' }}
+              style={{ backgroundColor: 'var(--accent-color)',color:'var(--accent-contrast)' }}
             >
               ⚙
             </div>
@@ -681,7 +681,7 @@ export function SettingsModal() {
                         onClick={() => setSelectedThemeGroup('ALL')}
                         style={selectedThemeGroup === 'ALL' ? {
                           backgroundColor: 'var(--accent-color)',
-                          color: '#ffffff'
+                          color: 'var(--accent-contrast)'
                         } : undefined}
                         className={`px-2.5 py-1 rounded-lg text-[11px] font-medium transition-all shrink-0 cursor-pointer ${
                           selectedThemeGroup === 'ALL'
@@ -701,7 +701,7 @@ export function SettingsModal() {
                             onClick={() => setSelectedThemeGroup(grp)}
                             style={isGrpActive ? {
                               backgroundColor: 'var(--accent-color)',
-                              color: '#ffffff'
+                              color: 'var(--accent-contrast)'
                             } : undefined}
                             className={`px-2.5 py-1 rounded-lg text-[11px] font-medium transition-all shrink-0 cursor-pointer ${
                               isGrpActive
@@ -724,18 +724,7 @@ export function SettingsModal() {
                         <button
                           key={t.id}
                           onClick={() => {
-                            const isDark =
-                              settings.themeMode === 'DARK'
-                                ? true
-                                : settings.themeMode === 'LIGHT'
-                                ? false
-                                : typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches;
-                            const themeAccent = isDark ? (t.darkAccent || t.lightAccent) : (t.lightAccent || t.darkAccent);
-                            updateSettings({
-                              themePreset: t.id,
-                              customAccentHex: themeAccent,
-                              accent: t.id,
-                            });
+                            updateSettings({themePreset:t.id,...(!ACCENT_PRESETS.some(item=>item.id===settings.accent)?{accent:'VIOLET',customAccentHex:''}:{})});
                           }}
                           style={isSelected ? {
                             backgroundColor: 'rgba(var(--accent-rgb), 0.15)',
@@ -844,7 +833,7 @@ export function SettingsModal() {
                         onClick={() => setSelectedAccentGroup('ALL')}
                         style={selectedAccentGroup === 'ALL' ? {
                           backgroundColor: 'var(--accent-color)',
-                          color: '#ffffff'
+                          color: 'var(--accent-contrast)'
                         } : undefined}
                         className={`px-2.5 py-1 rounded-lg text-[11px] font-medium transition-all shrink-0 cursor-pointer ${
                           selectedAccentGroup === 'ALL'
@@ -864,7 +853,7 @@ export function SettingsModal() {
                             onClick={() => setSelectedAccentGroup(grp.id)}
                             style={isGrpActive ? {
                               backgroundColor: 'var(--accent-color)',
-                              color: '#ffffff'
+                              color: 'var(--accent-contrast)'
                             } : undefined}
                             className={`px-2.5 py-1 rounded-lg text-[11px] font-medium transition-all shrink-0 cursor-pointer ${
                               isGrpActive
@@ -959,7 +948,7 @@ export function SettingsModal() {
                     <button
                       type="button"
                       onClick={() => setIsCustomFontModalOpen(true)}
-                      style={{ backgroundColor: 'var(--accent-color)', color: '#ffffff' }}
+                      style={{ backgroundColor: 'var(--accent-color)', color: 'var(--accent-contrast)' }}
                       className="px-3.5 py-2 rounded-xl hover:opacity-90 text-white font-medium text-xs flex items-center gap-2 shadow-xs transition-all cursor-pointer"
                     >
                       <Plus className="w-4 h-4" />
@@ -1069,7 +1058,7 @@ export function SettingsModal() {
                                     }}
                                     style={isSelected ? {
                                       backgroundColor: 'var(--accent-color)',
-                                      color: '#ffffff'
+                                      color: 'var(--accent-contrast)'
                                     } : undefined}
                                     className={`w-full px-2.5 py-2 rounded-xl text-xs transition-all flex items-center justify-between cursor-pointer ${
                                       isSelected
@@ -1300,7 +1289,7 @@ export function SettingsModal() {
                         setBatchTesting(false);
                       }}
                       disabled={batchTesting}
-                      style={{ backgroundColor: 'var(--accent-color)', color: '#ffffff' }}
+                      style={{ backgroundColor: 'var(--accent-color)', color: 'var(--accent-contrast)' }}
                       className="px-3 py-1.5 rounded-xl hover:opacity-90 disabled:opacity-50 text-white text-xs font-medium flex items-center gap-1.5 transition-all shadow-xs cursor-pointer"
                     >
                       <Zap className={`w-3.5 h-3.5 ${batchTesting ? 'animate-spin' : ''}`} />
@@ -1389,7 +1378,7 @@ export function SettingsModal() {
                           style={capabilityFilter === cap ? {
                             backgroundColor: 'var(--accent-color)',
                             borderColor: 'var(--accent-color)',
-                            color: '#ffffff'
+                            color: 'var(--accent-contrast)'
                           } : undefined}
                           className={`px-2.5 py-1 rounded-lg text-xs font-medium transition-colors border cursor-pointer ${
                             capabilityFilter === cap
@@ -1773,7 +1762,7 @@ export function SettingsModal() {
                             onClick={() => handleCalculateWithModel(p.name)}
                             style={isSelectedForCalc ? {
                               backgroundColor: 'var(--accent-color)',
-                              color: '#ffffff',
+                              color: 'var(--accent-contrast)',
                             } : undefined}
                             className={`w-full py-2 rounded-xl text-xs font-semibold transition-all flex items-center justify-center gap-1.5 cursor-pointer ${
                               isSelectedForCalc
@@ -2063,7 +2052,7 @@ export function SettingsModal() {
                             onClick={() => updateSettings({ defaultMaxTokens: tok })}
                             style={settings.defaultMaxTokens === tok ? {
                               backgroundColor: 'var(--accent-color)',
-                              color: '#ffffff',
+                              color: 'var(--accent-contrast)',
                             } : undefined}
                             className={`px-1.5 py-0.5 rounded text-[9px] font-mono transition-colors ${
                               settings.defaultMaxTokens === tok
@@ -2150,7 +2139,7 @@ export function SettingsModal() {
                             onClick={() => updateSettings({ reasoningEffort: eff })}
                             style={(settings.reasoningEffort || 'MEDIUM') === eff ? {
                               backgroundColor: 'var(--accent-color)',
-                              color: '#ffffff',
+                              color: 'var(--accent-contrast)',
                             } : undefined}
                             className={`flex-1 py-1.5 rounded-xl text-xs font-semibold uppercase transition-all ${
                               (settings.reasoningEffort || 'MEDIUM') === eff
@@ -2198,7 +2187,7 @@ export function SettingsModal() {
                             style={(settings.bubbleStyle || 'card') === style.id ? {
                               backgroundColor: 'var(--accent-color)',
                               borderColor: 'var(--accent-color)',
-                              color: '#ffffff',
+                              color: 'var(--accent-contrast)',
                             } : undefined}
                             className={`py-1.5 px-2 rounded-xl text-xs font-medium border transition-all cursor-pointer ${
                               (settings.bubbleStyle || 'card') === style.id
@@ -2229,7 +2218,7 @@ export function SettingsModal() {
                             style={(settings.fontSizeLevel || 'md') === sz.id ? {
                               backgroundColor: 'var(--accent-color)',
                               borderColor: 'var(--accent-color)',
-                              color: '#ffffff',
+                              color: 'var(--accent-contrast)',
                             } : undefined}
                             className={`py-1.5 px-2 rounded-xl text-xs font-medium border transition-all cursor-pointer ${
                               (settings.fontSizeLevel || 'md') === sz.id
@@ -2359,7 +2348,7 @@ export function SettingsModal() {
                           style={(settings.searchDepth || 'quick') === dp.id ? {
                             backgroundColor: 'var(--accent-color)',
                             borderColor: 'var(--accent-color)',
-                            color: '#ffffff',
+                            color: 'var(--accent-contrast)',
                           } : undefined}
                           className={`py-2 px-2.5 rounded-xl text-xs font-medium border transition-all cursor-pointer ${
                             (settings.searchDepth || 'quick') === dp.id
@@ -2541,7 +2530,7 @@ export function SettingsModal() {
                           onClick={() => setLogFilter(lvl)}
                           style={logFilter === lvl ? {
                             backgroundColor: 'var(--accent-color)',
-                            color: '#ffffff',
+                            color: 'var(--accent-contrast)',
                           } : undefined}
                           className={`px-2.5 py-1 rounded-lg text-xs font-mono font-medium transition-colors cursor-pointer ${
                             logFilter === lvl
@@ -2710,7 +2699,7 @@ export function SettingsModal() {
                       setIsCustomFontModalOpen(false);
                     }}
                     disabled={!customFontName.trim()}
-                    style={{ backgroundColor: 'var(--accent-color)', color: '#ffffff' }}
+                    style={{ backgroundColor: 'var(--accent-color)', color: 'var(--accent-contrast)' }}
                     className="px-4 py-2 hover:opacity-90 disabled:opacity-40 text-white rounded-xl text-xs font-medium transition-colors cursor-pointer shrink-0 shadow-xs"
                   >
                      <UiText source={"Add"}/> </button>

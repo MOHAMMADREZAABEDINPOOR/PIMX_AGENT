@@ -201,7 +201,7 @@ export function MessageBubble({ message }: MessageBubbleProps) {
       >
         <div className="flex flex-col items-end max-w-full md:max-w-[75%] group/user">
           {isEditingUser ? (
-            <div className="w-full min-w-[280px] sm:min-w-[340px] p-3.5 rounded-3xl bg-white dark:bg-neutral-900 border border-purple-500/50 shadow-md space-y-2.5">
+            <div className="w-full min-w-[280px] sm:min-w-[340px] p-3.5 rounded-3xl bg-white dark:bg-neutral-900 border border-accent/50 shadow-md space-y-2.5">
               <textarea
                 value={editContent}
                 onChange={(e) => setEditContent(e.target.value)}
@@ -451,7 +451,7 @@ export function MessageBubble({ message }: MessageBubbleProps) {
                   </div>
                 ) : message.state === 'STREAMING' && !isStreamingFile ? (
                   <div className="flex items-center gap-2 py-1 not-prose select-none animate-in fade-in duration-150">
-                    <span className="w-2 h-2 rounded-full bg-purple-500 animate-pulse" />
+                    <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
                     <span className="text-xs text-neutral-400 dark:text-neutral-500 font-medium">
                        <UiText source={"Writing response..."}/> </span>
                   </div>
@@ -526,16 +526,16 @@ export function MessageBubble({ message }: MessageBubbleProps) {
 
                 {/* 4. Generated Slide Deck Presentation Card */}
                 {extractedSlideDeck && extractedSlideDeck.slides.length > 0 && (
-                  <div className="p-3.5 rounded-2xl border border-purple-500/30 bg-purple-500/5 dark:bg-purple-500/10 space-y-2.5">
+                  <div className="p-3.5 rounded-2xl border border-accent/30 bg-accent/5 dark:bg-accent/10 space-y-2.5">
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2 text-xs font-bold text-purple-800 dark:text-purple-300">
-                        <Presentation className="w-4 h-4 text-purple-500" />
+                      <div className="flex items-center gap-2 text-xs font-bold text-accent dark:text-accent">
+                        <Presentation className="w-4 h-4 text-accent" />
                         <span><UiText source={"Presentation Slides:"}/> {extractedSlideDeck.slides.length}  <UiText source={"Slides Ready"}/></span>
                       </div>
                       <button
                         type="button"
                         onClick={openSlides}
-                        className="px-3 py-1 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold flex items-center gap-1.5 shadow-xs cursor-pointer transition-all hover:scale-[1.02]"
+                        className="px-3 py-1 rounded-xl bg-accent hover:bg-accent text-white text-xs font-semibold flex items-center gap-1.5 shadow-xs cursor-pointer transition-all hover:scale-[1.02]"
                       >
                         <ExternalLink className="w-3.5 h-3.5" />
                         <span><UiText source={"Open in Workspace"}/></span>
@@ -544,10 +544,10 @@ export function MessageBubble({ message }: MessageBubbleProps) {
 
                     <div
                       onClick={openSlides}
-                      className="p-2.5 rounded-xl border border-black/10 dark:border-white/10 bg-white dark:bg-neutral-900 flex items-center justify-between gap-2 text-xs cursor-pointer hover:border-purple-500 hover:shadow-xs transition-all"
+                      className="p-2.5 rounded-xl border border-black/10 dark:border-white/10 bg-white dark:bg-neutral-900 flex items-center justify-between gap-2 text-xs cursor-pointer hover:border-accent hover:shadow-xs transition-all"
                     >
                       <div className="flex items-center gap-2 truncate">
-                        <Presentation className="w-4 h-4 text-purple-500 shrink-0" />
+                        <Presentation className="w-4 h-4 text-accent shrink-0" />
                         <span className="font-semibold truncate text-neutral-900 dark:text-neutral-100">
                           {extractedSlideDeck.title}
                         </span>
@@ -565,7 +565,7 @@ export function MessageBubble({ message }: MessageBubbleProps) {
                     <button
                       type="button"
                       onClick={() => regenerateMessage(message.id)}
-                      className="px-2 py-0.5 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 text-purple-600 dark:text-purple-400 font-medium transition-colors cursor-pointer text-xs not-italic"
+                      className="px-2 py-0.5 rounded-lg bg-black/5 dark:bg-white/10 hover:bg-black/10 text-accent dark:text-accent font-medium transition-colors cursor-pointer text-xs not-italic"
                     >
                        <UiText source={"Retry"}/> </button>
                   </div>
@@ -582,7 +582,7 @@ export function MessageBubble({ message }: MessageBubbleProps) {
               {settings.showModelLine && <span className="font-semibold">{modelDisplayName}</span>}
               {settings.showTokenUsage && (
                 <span title={$t("Prompt / Completion tokens; — means the provider did not report usage")} className="flex items-center gap-1 text-neutral-700 dark:text-neutral-300">
-                  <Cpu className="w-3 h-3 text-purple-500" />
+                  <Cpu className="w-3 h-3 text-accent" />
                   <span>{message.usageEstimated ? '~' : ''}{message.promptTokens ?? '—'}↑ {message.usageEstimated ? '~' : ''}{message.completionTokens ?? '—'}↓</span>
                   <span className="opacity-60 text-[9px]"><UiText source={"tokens"}/></span>
                 </span>

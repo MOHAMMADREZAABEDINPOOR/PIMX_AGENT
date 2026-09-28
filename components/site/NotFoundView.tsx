@@ -10,15 +10,15 @@ export default function NotFound() {
   return (
     <div
       dir={locale==='fa'?'rtl':'ltr'}
-      className="min-h-screen w-full flex flex-col items-center justify-center p-4 sm:p-6 bg-[var(--bg-color,#0a0a0c)] text-[var(--text-color,#f4f4f8)] relative overflow-hidden font-persian selection:bg-purple-500/30"
+      className="min-h-screen w-full flex flex-col items-center justify-center p-4 sm:p-6 bg-[var(--bg-color,#0a0a0c)] text-[var(--text-color,#f4f4f8)] relative overflow-hidden font-persian selection:bg-accent/30"
     >
       {/* Background Decorative Glows */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent/15 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-lg w-full text-center space-y-6 animate-fade-scale">
         {/* Glowing 404 Badge */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-400 text-xs font-mono font-semibold backdrop-blur-md shadow-xs">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-accent/30 bg-accent/10 text-accent text-xs font-mono font-semibold backdrop-blur-md shadow-xs">
           <Compass className="w-3.5 h-3.5 animate-spin" style={{ animationDuration: '6s' }} />
           <span><UiText source={"کد خطا: ۴۰۴ • صفحه پیدا نشد"}/></span>
         </div>
@@ -53,7 +53,7 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
           <Link
             href="/"
-            className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold shadow-md shadow-purple-500/20 flex items-center justify-center gap-2 transition-all active:scale-95 cursor-pointer"
+            className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-accent hover:bg-accent text-white text-xs font-semibold shadow-md shadow-accent/20 flex items-center justify-center gap-2 transition-all active:scale-95 cursor-pointer"
           >
             <Home className="w-4 h-4" />
             <span><UiText source={"بازگشت به چت و صفحه اصلی"}/></span>

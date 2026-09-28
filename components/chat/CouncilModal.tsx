@@ -126,7 +126,7 @@ export function CouncilModal() {
                 placeholder={$t("Search models for council...")}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full pl-9 pr-3 py-1.5 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-xl text-xs text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-400 focus:outline-none focus:border-purple-500"
+                className="w-full pl-9 pr-3 py-1.5 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-xl text-xs text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-400 focus:outline-none focus:border-accent"
               />
             </div>
 
@@ -182,7 +182,7 @@ export function CouncilModal() {
                       </div>
                       <div className="flex flex-wrap items-center gap-2 text-[10px] text-muted">
                         <span>{(m.contextWindow / 1000).toFixed(0)}<UiText source={"k context"}/></span>
-                        {m.reasoningCapable && <span className="text-purple-600 dark:text-purple-400 font-medium"><UiText source={"• Reasoning"}/></span>}
+                        {m.reasoningCapable && <span className="text-accent dark:text-accent font-medium"><UiText source={"• Reasoning"}/></span>}
                         {m.visionCapable && <span className="text-blue-600 dark:text-blue-400 font-medium"><UiText source={"• Vision"}/></span>}
                         {m.toolsCapable && <span className="text-emerald-600 dark:text-emerald-400 font-medium"><UiText source={"• Tools"}/></span>}
                       </div>

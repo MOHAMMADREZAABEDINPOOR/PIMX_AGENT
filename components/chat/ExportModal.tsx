@@ -251,7 +251,7 @@ function FormatOption({
       onClick={onClick}
       className={`p-3 rounded-xl border flex flex-col items-center justify-center gap-2 text-xs font-medium transition-all cursor-pointer ${
         active
-          ? 'bg-purple-500/15 dark:bg-white/15 border-purple-500 dark:border-white/30 text-purple-700 dark:text-white shadow-2xs font-semibold'
+          ? 'bg-accent/15 dark:bg-white/15 border-accent dark:border-white/30 text-accent dark:text-white shadow-2xs font-semibold'
           : 'bg-black/[0.02] dark:bg-white/5 border-black/10 dark:border-transparent hover:border-black/20 dark:hover:border-white/15 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
       }`}
     >

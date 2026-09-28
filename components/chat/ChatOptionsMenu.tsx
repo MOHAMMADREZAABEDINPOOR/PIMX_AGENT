@@ -220,7 +220,7 @@ export function ChatOptionsMenu({ chatId }: { chatId: string }) {
               >
                 <button
                   onClick={handleNewProject}
-                  className="w-full flex items-center gap-2 px-2.5 py-2 rounded-xl hover:bg-purple-500/10 text-purple-600 dark:text-purple-400 font-semibold transition-colors cursor-pointer text-left"
+                  className="w-full flex items-center gap-2 px-2.5 py-2 rounded-xl hover:bg-accent/10 text-accent dark:text-accent font-semibold transition-colors cursor-pointer text-left"
                 >
                   <Plus className="w-4 h-4" />
                   <span><UiText source={"New project"}/></span>
@@ -245,7 +245,7 @@ export function ChatOptionsMenu({ chatId }: { chatId: string }) {
                           onClick={() => handleMoveToProject(proj.id)}
                           className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-xl text-left transition-colors cursor-pointer ${
                             isSelected
-                              ? 'bg-purple-500/15 text-purple-700 dark:text-purple-300 font-semibold'
+                              ? 'bg-accent/15 text-accent dark:text-accent font-semibold'
                               : 'hover:bg-black/5 dark:hover:bg-white/10 text-neutral-800 dark:text-neutral-200'
                           }`}
                         >
@@ -253,7 +253,7 @@ export function ChatOptionsMenu({ chatId }: { chatId: string }) {
                             <span>{proj.emoji || '📁'}</span>
                             <span className="truncate">{proj.name}</span>
                           </div>
-                          {isSelected && <Check className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400 shrink-0" />}
+                          {isSelected && <Check className="w-3.5 h-3.5 text-accent dark:text-accent shrink-0" />}
                         </button>
                       );
                     })}

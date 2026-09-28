@@ -905,13 +905,13 @@ function ChatItem({
         isActive
           ? 'font-medium bg-black/5 dark:bg-white/10 shadow-2xs text-inherit'
           : 'hover:bg-black/5 dark:hover:bg-white/5 opacity-85 hover:opacity-100'
-      } ${isWorking ? 'ring-1 ring-violet-500/50 bg-violet-500/[0.07] dark:bg-violet-500/[0.12]' : ''}`}
+      } ${isWorking ? 'ring-1 ring-accent/50 bg-accent/[0.07] dark:bg-accent/[0.12]' : ''}`}
     >
       <div className="flex items-center gap-2 min-w-0 flex-1">
         {isWorking ? (
           <span className="relative flex w-3.5 h-3.5 shrink-0" title={$t("AI is working in this chat")}>
-            <span className="absolute inline-flex h-full w-full rounded-full bg-violet-500 opacity-60 animate-ping" />
-            <Loader2 className="relative w-3.5 h-3.5 text-violet-500 animate-spin" />
+            <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-60 animate-ping" />
+            <Loader2 className="relative w-3.5 h-3.5 text-accent animate-spin" />
           </span>
         ) : justFinished ? (
           <span className="shrink-0 animate-in fade-in zoom-in-95" title={$t("Just finished")}>

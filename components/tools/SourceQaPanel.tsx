@@ -93,14 +93,14 @@ export function SourceQaPanel({ onClose }: { onClose: () => void }) {
               <button
                 onClick={() => setAddMode('TEXT')}
                 className={`px-2 py-0.5 rounded-md font-medium transition-all cursor-pointer ${
-                  addMode === 'TEXT' ? 'bg-purple-500/20 text-purple-700 dark:text-purple-300 font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
+                  addMode === 'TEXT' ? 'bg-accent/20 text-accent dark:text-accent font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
                 }`}
               >
                  <UiText source={"Paste Text / Markdown"}/> </button>
               <button
                 onClick={() => setAddMode('URL')}
                 className={`px-2 py-0.5 rounded-md font-medium transition-all cursor-pointer ${
-                  addMode === 'URL' ? 'bg-purple-500/20 text-purple-700 dark:text-purple-300 font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
+                  addMode === 'URL' ? 'bg-accent/20 text-accent dark:text-accent font-semibold' : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white'
                 }`}
               >
                  <UiText source={"Fetch Web URL"}/> </button>
@@ -114,14 +114,14 @@ export function SourceQaPanel({ onClose }: { onClose: () => void }) {
                 placeholder={$t("Source Title / Document Name...")}
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                className="w-full bg-black/[0.03] dark:bg-white/5 border border-black/15 dark:border-white/10 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-purple-500 text-neutral-900 dark:text-white placeholder-neutral-400"
+                className="w-full bg-black/[0.03] dark:bg-white/5 border border-black/15 dark:border-white/10 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-accent text-neutral-900 dark:text-white placeholder-neutral-400"
               />
               <textarea
                 rows={3}
                 placeholder={$t("Paste document text or content to index...")}
                 value={textContent}
                 onChange={(e) => setTextContent(e.target.value)}
-                className="w-full bg-black/[0.03] dark:bg-white/5 border border-black/15 dark:border-white/10 rounded-lg p-2.5 focus:outline-none focus:border-purple-500 resize-none font-mono text-[11px] text-neutral-900 dark:text-white placeholder-neutral-400"
+                className="w-full bg-black/[0.03] dark:bg-white/5 border border-black/15 dark:border-white/10 rounded-lg p-2.5 focus:outline-none focus:border-accent resize-none font-mono text-[11px] text-neutral-900 dark:text-white placeholder-neutral-400"
               />
               <button
                 onClick={handleAddText}
@@ -138,7 +138,7 @@ export function SourceQaPanel({ onClose }: { onClose: () => void }) {
                   placeholder={$t("https://example.com/article")}
                   value={urlInput}
                   onChange={(e) => setUrlInput(e.target.value)}
-                  className="flex-1 bg-black/[0.03] dark:bg-white/5 border border-black/15 dark:border-white/10 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-purple-500 text-neutral-900 dark:text-white placeholder-neutral-400"
+                  className="flex-1 bg-black/[0.03] dark:bg-white/5 border border-black/15 dark:border-white/10 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-accent text-neutral-900 dark:text-white placeholder-neutral-400"
                 />
                 <button
                   onClick={handleFetchUrl}

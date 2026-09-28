@@ -122,7 +122,7 @@ export function CodeArtifactBox({
     <div
       className={`my-3.5 rounded-2xl border transition-all duration-300 overflow-hidden shadow-sm not-prose ${
         isFullscreen
-          ? 'fixed inset-4 z-50 bg-neutral-950/95 backdrop-blur-xl border-purple-500/50 shadow-2xl flex flex-col'
+          ? 'fixed inset-4 z-50 bg-neutral-950/95 backdrop-blur-xl border-accent/50 shadow-2xl flex flex-col'
           : 'border-black/15 dark:border-white/10 bg-neutral-950 text-neutral-100'
       }`}
     >
@@ -131,7 +131,7 @@ export function CodeArtifactBox({
         {/* Left: File Badge & Tabs */}
         <div className="flex items-center gap-2 min-w-0">
           <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-white/5 border border-white/10 text-xs font-mono">
-            <Icon className="w-3.5 h-3.5 text-purple-400 shrink-0" />
+            <Icon className="w-3.5 h-3.5 text-accent shrink-0" />
             <span className="font-semibold text-white truncate max-w-[180px] sm:max-w-[240px]">
               {meta.filename}
             </span>
@@ -148,7 +148,7 @@ export function CodeArtifactBox({
                 onClick={() => setActiveTab('code')}
                 className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 cursor-pointer ${
                   activeTab === 'code'
-                    ? 'bg-purple-600 text-white font-medium shadow-2xs'
+                    ? 'bg-accent text-white font-medium shadow-2xs'
                     : 'text-neutral-400 hover:text-white'
                 }`}
               >
@@ -160,7 +160,7 @@ export function CodeArtifactBox({
                 onClick={() => setActiveTab('preview')}
                 className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 cursor-pointer ${
                   activeTab === 'preview'
-                    ? 'bg-purple-600 text-white font-medium shadow-2xs'
+                    ? 'bg-accent text-white font-medium shadow-2xs'
                     : 'text-neutral-400 hover:text-white'
                 }`}
               >
@@ -216,10 +216,10 @@ export function CodeArtifactBox({
             <button
               type="button"
               onClick={() => onSaveArtifact(title || meta.filename, cleanLang.toUpperCase())}
-              className="px-2.5 py-1 rounded-xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/30 text-purple-300 transition-colors flex items-center gap-1 cursor-pointer"
+              className="px-2.5 py-1 rounded-xl bg-accent/15 hover:bg-accent/25 border border-accent/30 text-accent transition-colors flex items-center gap-1 cursor-pointer"
               title={$t("Save as Workspace Artifact")}
             >
-              <Sparkles className="w-3 h-3 text-purple-400" />
+              <Sparkles className="w-3 h-3 text-accent" />
               <span className="text-[11px] hidden sm:inline"><UiText source={"Artifact"}/></span>
             </button>
           )}
