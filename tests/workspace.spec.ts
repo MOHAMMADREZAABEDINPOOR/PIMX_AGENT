@@ -379,8 +379,8 @@ test('new project from a conversation keeps and enters that conversation', async
   await page.getByTitle('More conversation options').click(); await page.getByRole('button', { name: 'Move to project', exact: true }).click(); await page.locator('#project-sub-menu').getByRole('button', { name: 'New project' }).click();
   await page.locator('#project-modal input').first().fill('Aurora Studio'); await page.locator('#btn-save-project').click();
   await expect(page.getByRole('heading', { name: 'Aurora Studio', exact: true })).toBeVisible();
-  const saved = (await persisted(page));
-  expect(saved.chats.find((c: { id: string }) => c.id === 'test-chat').projectId).toBe(saved.projects[0].id); expect(saved.chats).toHaveLength(1);
+  await expect.poll(async()=>{const state=await persisted(page);return !!state.projects?.[0]?.id && state.chats.find((chat: {id:string})=>chat.id==='test-chat')?.projectId===state.projects[0].id;}).toBe(true);
+  const saved = await persisted(page);expect(saved.chats).toHaveLength(1);
 });
 
 test('project deletion can be cancelled and retains linked chats when confirmed', async ({ page }) => {
