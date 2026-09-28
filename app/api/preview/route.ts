@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { checkOrigin, requireUser } from '@/lib/server/session';
+import { checkOrigin, requireWorkspace } from '@/lib/server/workspace';
 import { HttpError } from '@/lib/server/errors';
 import { readBody } from '@/lib/server/validation';
 import { rateLimit } from '@/lib/server/rate-limit';
@@ -9,7 +9,7 @@ import { escapeHtml } from '@/lib/html';
 export async function POST(request: NextRequest) {
   try {
     checkOrigin(request);
-    const user = await requireUser(request);
+    const user = await requireWorkspace(request);
     await rateLimit(`preview:${user.id}`, 120, 60_000);
     if (!request.headers.get('content-type')?.startsWith('application/x-www-form-urlencoded')) {
       throw new HttpError(415, 'Send a preview form.');

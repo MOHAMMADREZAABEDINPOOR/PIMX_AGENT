@@ -1,10 +1,5 @@
-import { SecureWorkspace } from '@/components/security/SecureWorkspace';
-import { Welcome } from '@/components/site/Welcome';
-import { currentUser } from '@/lib/server/session';
-import { localizedMetadata } from '@/lib/i18n/server';
-
-export const generateMetadata=()=>localizedMetadata(['Ideas in motion','از ایده تا نتیجه'],['Research, build websites and create presentations in your own intelligent workspace.','فضای کاری هوشمند برای گفتگو، تحقیق، ساخت وب و اسلاید با مدل منتخب شما.'],'/');
-export default async function Home() {
-  const user=await currentUser();
-  return user?<SecureWorkspace user={{id:user.id,displayName:user.displayName}}/>:<Welcome/>;
-}
+import {SecureWorkspace} from '@/components/security/SecureWorkspace';
+import {Welcome} from '@/components/site/Welcome';
+import {localizedMetadata} from '@/lib/i18n/server';
+export const generateMetadata=()=>localizedMetadata(['PIMX Agent — from a question to something real',"PIMX Agent — از یک سؤال تا یک نتیجهٔ واقعی"],['Your AI workspace for chat, research, websites, presentations and learning. Open it without signup.',"فضای کاری هوش مصنوعی برای گفتگو، تحقیق، ساخت سایت، ارائه و یادگیری؛ بدون ثبت‌نام."],'/');
+export default function Home(){return process.env.APP_SURFACE==='chat'?<SecureWorkspace/>:<Welcome/>;}

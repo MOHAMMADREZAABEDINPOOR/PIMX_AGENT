@@ -21,8 +21,7 @@ const project = { id: 'solar-project', name: 'Solar Lab', description: 'Solar de
 async function seed(page: Page, overrides: Record<string, unknown> = {}) {
   const origin = 'http://localhost:3010';
   const request = page.context().request;
-  let response = await request.post('/api/auth/login', {headers:{Origin:origin},data:{email:'workspace-fixture@example.invalid',password:'Long fixture passphrase 2026'}});
-  if(!response.ok())response=await request.post('/api/auth/signup',{headers:{Origin:origin},data:{email:'workspace-fixture@example.invalid',password:'Long fixture passphrase 2026',confirmPassword:'Long fixture passphrase 2026',username:'workspace_fixture',birthYear:1995}});
+  const response = await request.get('/api/workspace?key=1');
   expect(response.ok()).toBeTruthy();
   for(const credential of (await (await request.get('/api/credentials')).json()).credentials)await request.delete('/api/credentials?id='+credential.id,{headers:{Origin:origin}});
   const data = { settings: { ...DEFAULT_SETTINGS, themeMode: 'LIGHT', aiReactions: false }, models: [model], selectedModelIds: [model.id], accounts: [], chats: [chat], messages: {}, ...overrides };
@@ -33,12 +32,12 @@ async function seed(page: Page, overrides: Record<string, unknown> = {}) {
   await page.route('**/api/fetch?*', route => route.fulfill({ body: 'Solar research evidence from a source page. Photovoltaic systems convert light into electricity and require inverter and storage design. Evidence should distinguish production from storage, account for operating conditions, and report assumptions transparently.' }));
   await page.route('https://fonts.googleapis.com/**', route => route.abort());
   await page.route('https://fonts.gstatic.com/**', route => route.abort());
-  await page.goto('/');
+  await page.goto('/chat');
   await expect(page.locator('#composer-input')).toBeVisible();
 }
 
 async function persisted(page:Page):Promise<any>{
-  return page.evaluate(async()=>{const user=(await (await fetch('/api/auth/session')).json()).user,keyData=(await (await fetch('/api/workspace?key=1')).json()).key;const raw=await new Promise<string>((resolve,reject)=>{const opening=indexedDB.open('pimx-private-workspace',1);opening.onerror=()=>reject(opening.error);opening.onsuccess=()=>{const db=opening.result,transaction=db.transaction('workspaces','readonly'),request=transaction.objectStore('workspaces').get(user.id);transaction.oncomplete=()=>{resolve(request.result);db.close();};};});const envelope=JSON.parse(raw);const decode=(value:string)=>Uint8Array.from(atob(value),char=>char.charCodeAt(0));const key=await crypto.subtle.importKey('raw',decode(keyData),'AES-GCM',false,['decrypt']);const plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:decode(envelope.iv),additionalData:new TextEncoder().encode(user.id)},key,decode(envelope.data));return JSON.parse(new TextDecoder().decode(plain));});
+  return page.evaluate(async()=>{const user=await (await fetch('/api/workspace?key=1')).json(),keyData=user.key;const raw=await new Promise<string>((resolve,reject)=>{const opening=indexedDB.open('pimx-private-workspace',1);opening.onerror=()=>reject(opening.error);opening.onsuccess=()=>{const db=opening.result,transaction=db.transaction('workspaces','readonly'),request=transaction.objectStore('workspaces').get(user.id);transaction.oncomplete=()=>{resolve(request.result);db.close();};};});const envelope=JSON.parse(raw);const decode=(value:string)=>Uint8Array.from(atob(value),char=>char.charCodeAt(0));const key=await crypto.subtle.importKey('raw',decode(keyData),'AES-GCM',false,['decrypt']);const plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:decode(envelope.iv),additionalData:new TextEncoder().encode(user.id)},key,decode(envelope.data));return JSON.parse(new TextDecoder().decode(plain));});
 }
 
 test('creation intent, valid slides and all 100 unique reactions', () => {

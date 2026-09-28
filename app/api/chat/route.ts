@@ -1,4 +1,4 @@
-import { requireUser, checkOrigin } from '@/lib/server/session';
+import { requireWorkspace, checkOrigin } from '@/lib/server/workspace';
 import { readJson, chatSchema } from '@/lib/server/validation';
 import { resolveCredential } from '@/lib/server/credentials';
 import { apiFailure } from '@/lib/server/errors';
@@ -42,7 +42,7 @@ function completedSse(content: string, reasoning = '') {
 export async function POST(req: NextRequest) {
   try {
     checkOrigin(req);
-    const user = await requireUser(req);
+    const user = await requireWorkspace(req);
     await rateLimit('chatSchema:'+user.id, 120, 60*1000);
     const validated = await readJson(req, chatSchema, 12*1024*1024);
     const resolved = await resolveCredential(user.id, validated);

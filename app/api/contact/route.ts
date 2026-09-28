@@ -1,6 +1,6 @@
 import { NextRequest } from 'next/server';
 import { randomUUID } from 'node:crypto';
-import { checkOrigin } from '@/lib/server/session';
+import { checkOrigin } from '@/lib/server/workspace';
 import { query } from '@/lib/server/database';
 import { seal } from '@/lib/server/encryption';
 import { contactSchema,readJson } from '@/lib/server/validation';

@@ -9,7 +9,14 @@ import { cloudflareBindings } from './cloudflare';
 export type DbRow = Record<string, string | number | null>;
 type Param = string | number | null;
 const globals = globalThis as unknown as { pimxDatabase?: DatabaseSync };
-const schema = `
+const schema = `CREATE TABLE IF NOT EXISTS app_browser_workspaces (id TEXT PRIMARY KEY, token_hash TEXT UNIQUE NOT NULL, workspace_key TEXT NOT NULL, created_at BIGINT NOT NULL);
+CREATE TABLE IF NOT EXISTS app_browser_credentials (id TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES app_browser_workspaces(id) ON DELETE CASCADE, provider_id TEXT NOT NULL, label TEXT NOT NULL, secret TEXT NOT NULL, base_url TEXT, api_format TEXT NOT NULL, created_at BIGINT NOT NULL);
+CREATE TABLE IF NOT EXISTS app_browser_shares (id TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES app_browser_workspaces(id) ON DELETE CASCADE, payload TEXT NOT NULL, expires_at BIGINT NOT NULL, created_at BIGINT NOT NULL);
+CREATE TABLE IF NOT EXISTS app_browser_share_index (id TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES app_browser_workspaces(id) ON DELETE CASCADE);
+CREATE INDEX IF NOT EXISTS app_browser_credentials_owner ON app_browser_credentials(user_id);
+CREATE INDEX IF NOT EXISTS app_browser_shares_owner ON app_browser_shares(user_id);
+
+
 CREATE TABLE IF NOT EXISTS app_users (id TEXT PRIMARY KEY, email TEXT UNIQUE NOT NULL, username TEXT UNIQUE, display_name TEXT NOT NULL, profile TEXT, password_hash TEXT NOT NULL, role TEXT NOT NULL DEFAULT 'USER', workspace_key TEXT NOT NULL, created_at BIGINT NOT NULL, last_login BIGINT);
 CREATE TABLE IF NOT EXISTS app_sessions (token_hash TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES app_users(id) ON DELETE CASCADE, expires_at BIGINT NOT NULL, last_seen BIGINT NOT NULL);
 CREATE TABLE IF NOT EXISTS app_credentials (id TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES app_users(id) ON DELETE CASCADE, provider_id TEXT NOT NULL, label TEXT NOT NULL, secret TEXT NOT NULL, base_url TEXT, api_format TEXT NOT NULL, created_at BIGINT NOT NULL);

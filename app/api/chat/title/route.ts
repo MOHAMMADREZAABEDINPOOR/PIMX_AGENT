@@ -1,4 +1,4 @@
-import { requireUser, checkOrigin } from '@/lib/server/session';
+import { requireWorkspace, checkOrigin } from '@/lib/server/workspace';
 import { readJson, titleSchema } from '@/lib/server/validation';
 import { resolveCredential } from '@/lib/server/credentials';
 import { apiFailure } from '@/lib/server/errors';
@@ -25,7 +25,7 @@ interface TitleRequestBody {
 export async function POST(req: NextRequest) {
   try {
     checkOrigin(req);
-    const user = await requireUser(req);
+    const user = await requireWorkspace(req);
     await rateLimit('titleSchema:'+user.id, 120, 60*1000);
     const validated = await readJson(req, titleSchema, 256*1024);
     const resolved = await resolveCredential(user.id, validated);

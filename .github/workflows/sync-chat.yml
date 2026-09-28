@@ -1,0 +1,19 @@
+name: Keep chat workspace current
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+concurrency:
+  group: chat-branch
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Mirror the published code to the chat surface
+        run: git push origin HEAD:chat

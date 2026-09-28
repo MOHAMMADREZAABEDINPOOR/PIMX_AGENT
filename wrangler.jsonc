@@ -19,9 +19,26 @@
     "APP_RUNTIME": "cloudflare",
     "APP_URL": "https://pimxagent.pages.dev",
     "TRUST_PROXY": "true",
-    "SMTP_HOST": "smtp.gmail.com",
-    "SMTP_PORT": "465",
-    "SMTP_USER": "pimxagent@gmail.com",
-    "NEXT_PUBLIC_TURNSTILE_SITE_KEY": "0x4AAAAAAFFgNkcM8Bi6FkBS"
+    "NEXT_PUBLIC_TURNSTILE_SITE_KEY": "0x4AAAAAAFFgNkcM8Bi6FkBS",
+    "APP_SURFACE": "site"
+  },
+  "env": {
+    "preview": {
+      "vars": {
+        "APP_RUNTIME": "cloudflare",
+        "APP_URL": "https://chat.pimxagent.pages.dev",
+        "TRUST_PROXY": "true",
+        "NEXT_PUBLIC_TURNSTILE_SITE_KEY": "0x4AAAAAAFFgNkcM8Bi6FkBS",
+        "APP_SURFACE": "chat"
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "pimx-agent-db",
+          "database_id": "533064eb-b7ce-41e9-b7f4-4e552da4ea90",
+          "migrations_dir": "migrations/d1"
+        }
+      ]
+    }
   }
 }

@@ -1,4 +1,4 @@
-import { requireUser } from '@/lib/server/session';
+import { requireWorkspace } from '@/lib/server/workspace';
 import { rateLimit } from '@/lib/server/rate-limit';
 import { apiFailure, HttpError } from '@/lib/server/errors';
 import { NextRequest, NextResponse } from 'next/server';
@@ -35,7 +35,7 @@ async function wikiThumb(query: string, lang: 'en' | 'fa', signal: AbortSignal) 
 }
 
 export async function GET(req: NextRequest) {
-  try { const user=await requireUser(req); await rateLimit('evidence:'+user.id,180,60*1000); const checkedQuery=req.nextUrl.searchParams.get('q') || '';if(checkedQuery.length>500)throw new HttpError(400,'Search query is too long.');
+  try { const user=await requireWorkspace(req); await rateLimit('evidence:'+user.id,180,60*1000); const checkedQuery=req.nextUrl.searchParams.get('q') || '';if(checkedQuery.length>500)throw new HttpError(400,'Search query is too long.');
   const { searchParams } = new URL(req.url);
   const q = (searchParams.get('q') || '').trim().slice(0, 80);
   if (!q) return NextResponse.json({ imageUrl: null, candidates: [] });

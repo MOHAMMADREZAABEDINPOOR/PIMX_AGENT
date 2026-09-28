@@ -1,4 +1,4 @@
-import { requireUser, checkOrigin } from '@/lib/server/session';
+import { requireWorkspace, checkOrigin } from '@/lib/server/workspace';
 import { readJson, providerTestSchema } from '@/lib/server/validation';
 import { resolveCredential } from '@/lib/server/credentials';
 import { apiFailure } from '@/lib/server/errors';
@@ -22,7 +22,7 @@ interface TestRequest {
 export async function POST(req: NextRequest) {
   try {
     checkOrigin(req);
-    const user = await requireUser(req);
+    const user = await requireWorkspace(req);
     await rateLimit('providerTestSchema:'+user.id, 120, 60*1000);
     const validated = await readJson(req, providerTestSchema, 32*1024);
     const resolved = await resolveCredential(user.id, validated, validated.apiKey);

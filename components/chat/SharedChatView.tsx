@@ -76,9 +76,8 @@ export default function SharedChatPage() {
     setForking(true);
 
     try {
-      const session=await (await fetch('/api/auth/session',{cache:'no-store'})).json();
-      if(!session.user){window.location.assign('/login?next='+encodeURIComponent('/share/'+shareId));return;}
-      await unlockVault(session.user.id);useAppStore.setState({isHydrated:false});useAppStore.getState().hydrateFromStorage();
+      const response=await fetch('/api/workspace?key=1',{cache:'no-store'});if(!response.ok)throw new Error('Workspace unavailable.');
+      const workspace=await response.json();await unlockVault(workspace.id,workspace.key);useAppStore.setState({isHydrated:false});await useAppStore.getState().hydrateFromStorage();
       // 1. Create a fresh new chat in the recipient's local workspace
       const newChatTitle = `${snapshot.title} (Forked)`;
       const newChatId = createChat({
@@ -105,12 +104,12 @@ export default function SharedChatPage() {
       // 4. If visitor typed a prompt, send it now in their new chat
       const promptToSend = customPrompt || inputPrompt;
       if (promptToSend.trim()) {
-        router.push(`/?c=${newChatId}`);
+        router.push(`/chat?c=${newChatId}`);
         setTimeout(() => {
           sendMessage(promptToSend.trim());
         }, 300);
       } else {
-        router.push(`/?c=${newChatId}`);
+        router.push(`/chat?c=${newChatId}`);
       }
     } catch (e) {
       console.error('Failed to fork conversation:', e);
@@ -144,7 +143,7 @@ export default function SharedChatPage() {
         <h1 className="text-xl font-bold mb-2"><UiText source={"Conversation Not Found"}/></h1>
         <p className="text-sm text-neutral-400 max-w-md mb-6">{error || 'This shared link may be invalid or expired.'}</p>
         <button
-          onClick={() => router.push('/')}
+          onClick={() => router.push('/chat')}
           className="px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-semibold cursor-pointer transition-colors"
         >
            <UiText source={"Go to Home"}/> </button>
@@ -158,7 +157,7 @@ export default function SharedChatPage() {
       <header className="sticky top-0 z-30 w-full backdrop-blur-md bg-white/80 dark:bg-neutral-900/80 border-b border-black/10 dark:border-white/10 px-4 py-3 flex items-center justify-between gap-4">
         <div className="flex items-center gap-3 min-w-0">
           <button
-            onClick={() => router.push('/')}
+            onClick={() => router.push('/chat')}
             title={$t("Go to App")}
             className="w-8 h-8 rounded-xl bg-purple-600 text-white flex items-center justify-center font-bold text-sm shrink-0"
           >

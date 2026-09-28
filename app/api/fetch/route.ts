@@ -1,4 +1,4 @@
-import { requireUser } from '@/lib/server/session';
+import { requireWorkspace } from '@/lib/server/workspace';
 import { safeFetch, limitedText } from '@/lib/server/network';
 import { apiFailure, HttpError } from '@/lib/server/errors';
 import { rateLimit } from '@/lib/server/rate-limit';
@@ -28,7 +28,7 @@ function decodeEntities(s: string): string {
 }
 
 export async function GET(req: NextRequest) {
-  try { const user=await requireUser(req); await rateLimit('fetch:'+user.id,120,60*1000);
+  try { const user=await requireWorkspace(req); await rateLimit('fetch:'+user.id,120,60*1000);
   const { searchParams } = new URL(req.url);
   const targetUrl = searchParams.get('url') || '';
   const maxChars = Math.min(parseInt(searchParams.get('maxChars') || '12000', 10) || 12000, 20000);

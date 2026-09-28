@@ -56,10 +56,10 @@ import {
   ChevronLeft,
   PanelRightOpen,
 } from 'lucide-react';
-import {UiText,useT} from '@/components/i18n/LocaleProvider';
+import {UiText,useT,useLocale} from '@/components/i18n/LocaleProvider';
 
 export function AppShell() {
-  const $t=useT();
+  const $t=useT(),locale=useLocale(),prefix=locale==='fa'?'/fa':'';
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const {
@@ -102,7 +102,7 @@ export function AppShell() {
     if (typeof window === 'undefined' || initialUrlChecked.current) return;
     initialUrlChecked.current = true;
 
-    const pathname = window.location.pathname;
+    const pathname = window.location.pathname.replace(/^\/fa(?=\/|$)/,'') || '/';
 
     let targetIdFromUrl: string | null = null;
     if (pathname.startsWith('/chat/')) {
@@ -154,11 +154,11 @@ export function AppShell() {
     const activeMsgs = activeChatId ? getActivePath(activeChatId) : [];
     if (!activeChatId || activeMsgs.length === 0) {
       if (pathname.startsWith('/chat/')) {
-        window.history.replaceState(null, '', '/');
+        window.history.replaceState(null, '', prefix+'/chat');
       }
     } else {
-      const targetPath = `/chat/${activeChatId}`;
-      if (pathname !== targetPath && !pathname.startsWith('/share/')) {
+      const targetPath = prefix+`/chat/${activeChatId}`;
+      if (window.location.pathname !== targetPath && !pathname.startsWith('/share/')) {
         window.history.replaceState(null, '', targetPath);
       }
     }

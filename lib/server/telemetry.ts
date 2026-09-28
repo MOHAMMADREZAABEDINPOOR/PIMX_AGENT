@@ -1,7 +1,6 @@
 import 'server-only';
-import { randomUUID, createHmac } from 'node:crypto';
-import { query } from './database';
-import { encryptionKey, seal } from './encryption';
+import { createHmac } from 'node:crypto';
+import { encryptionKey } from './encryption';
 export function deviceInfo(request: Request) {
   const agent = (request.headers.get('user-agent') || '').slice(0, 500);
   const device = /iPad|Tablet/i.test(agent) ? 'Tablet' : /Mobile|Android|iPhone/i.test(agent) ? 'Mobile' : 'Desktop';
@@ -14,6 +13,3 @@ export function deviceInfo(request: Request) {
   return { device, browser, ...geo };
 }
 export const visitorHash = (value: string) => createHmac('sha256', encryptionKey()).update('visitor\0' + value).digest('hex');
-export async function recordAuthEvent(request: Request, userId: string, kind: 'SIGNUP' | 'LOGIN' | 'PASSWORD_CHANGED' | 'PASSWORD_RESET') {
-  const id = randomUUID(); await query('INSERT INTO app_auth_events(id,user_id,kind,metadata,created_at) VALUES(?,?,?,?,?)', [id,userId,kind,seal(JSON.stringify(deviceInfo(request)),`auth-event:${userId}:${id}`),Date.now()]);
-}
