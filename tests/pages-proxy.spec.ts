@@ -1,5 +1,16 @@
 import {test,expect} from '@playwright/test';
 import {createPagesWorker} from '../cloudflare-pages/runtime.js';
+import {readFileSync,readdirSync} from 'node:fs';
+
+test('provider logos reach the public asset binding instead of app routes',async()=>{
+ const worker=createPagesWorker({fetch:()=>new Response('Not found',{status:404})});
+ const env={ASSETS:{fetch:(request:Request)=>new Response(readFileSync('public'+decodeURIComponent(new URL(request.url).pathname)))}};
+ for(const name of readdirSync('public/logos')){
+  const response=await worker.fetch(new Request('https://chat.pimxagent.pages.dev/logos/'+encodeURIComponent(name)),env,{});
+  expect(response.status,name).toBe(200);
+  expect(Buffer.from(await response.arrayBuffer()),name).toEqual(readFileSync('public/logos/'+name));
+ }
+});
 import {NextRequest} from 'next/server';
 import {proxy} from '../proxy';
 test('Proxy rewrites Persian routes to the authenticated request host instead of normalized localhost',()=>{

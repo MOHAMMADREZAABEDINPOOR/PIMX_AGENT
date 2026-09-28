@@ -1,7 +1,7 @@
 export function createPagesWorker(app){return {async fetch(request,env,ctx){
  const url=new URL(request.url);
  if(url.protocol!=='https:'&&!['localhost','127.0.0.1'].includes(url.hostname)){url.protocol='https:';return Response.redirect(url,308);}
- if(/^\/(?:_next\/static\/|media\/|fonts\/|icons\/|pdf\.worker)/.test(url.pathname)||['/sw.js','/offline','/offline.html','/brand-logo.webp','/favicon.ico'].includes(url.pathname))return env.ASSETS.fetch(request);
+ if(/^\/(?:_next\/static\/|media\/|logos\/|fonts\/|icons\/|pdf\.worker)/.test(url.pathname)||['/sw.js','/offline','/offline.html','/brand-logo.webp','/favicon.ico'].includes(url.pathname))return env.ASSETS.fetch(request);
  const headers=new Headers(request.headers);
  for(const name of ['x-pimx-proxy-secret','x-pimx-geo','x-pimx-locale','x-forwarded-host','x-forwarded-proto','x-forwarded-for'])headers.delete(name);
  // Preserve the original locale before OpenNext rewrites /fa to the shared route.

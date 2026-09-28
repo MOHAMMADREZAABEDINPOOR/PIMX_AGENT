@@ -126,10 +126,10 @@ export function ProviderLogo({
     mistral: '/logos/mistral.webp',
     kimi: '/logos/kimi.webp',
     moonshot: '/logos/kimi.webp',
+    minimax: '/logos/minimax.webp',
     xiaomi: '/logos/mi.png',
     mimo: '/logos/mi.png',
     mi: '/logos/mi.png',
-    minimax: '/logos/minimax.webp',
     nvidia: '/logos/nvidia.png',
     ollama: '/logos/ollama.png',
     openrouter: '/logos/openrouter.png',
@@ -148,7 +148,7 @@ export function ProviderLogo({
       <img
         src={logoImageMap[matchedKey]}
         alt={$t(providerId || 'AI Provider')}
-        className={`${currentSizeClass} shrink-0 rounded-md object-contain ${className}`}
+        className={`${currentSizeClass} shrink-0 rounded-md object-contain ${logoImageMap[matchedKey] === '/logos/openai.png' ? 'dark:invert' : ''} ${className}`}
       />
     );
   }
