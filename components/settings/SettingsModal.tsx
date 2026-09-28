@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import { useAppStore } from '@/lib/store/useAppStore';
+import { CookieSettingsButton } from '@/components/site/CookieSettingsButton';
 import { AdvancedPreferences } from './AdvancedPreferences';
 import { ToggleSwitch } from '@/components/ui/ToggleSwitch';
 import {
@@ -2171,6 +2172,7 @@ export function SettingsModal() {
             {/* GENERAL & UI DISPLAY TAB */}
             {activeTab === 'General' && (
               <div className="space-y-5">
+                <CookieSettingsButton className="w-full rounded-2xl border border-black/10 dark:border-white/10 p-3 text-start text-xs font-semibold hover:bg-black/5 dark:hover:bg-white/5 cursor-pointer" />
                 <AdvancedPreferences section="general" />
                 {/* Visual Appearance & Layout */}
                 <div className="space-y-3">
