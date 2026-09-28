@@ -1,17 +1,22 @@
 'use client';
-import { createContext, useCallback, useContext, useState } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
+import { createContext, useCallback, useContext, useEffect,useRef,useState } from 'react';
+import {acceptAppearanceLink} from '@/lib/client/preferences';
+import { useRouter } from 'next/navigation';
 import { Globe2 } from 'lucide-react';
 import { translate, type Locale } from '@/lib/i18n/text';
 const LocaleContext = createContext<{locale: Locale; setLocale: (value: Locale) => void}>({locale:'en',setLocale:()=>{}});
 export function LocaleProvider({initialLocale,children}:{initialLocale:Locale;children:React.ReactNode}) {
-  const [locale,setCurrentLocale] = useState(initialLocale), router = useRouter(), pathname = usePathname();
+  const [locale,setCurrentLocale] = useState(initialLocale), router = useRouter();
   const setLocale = useCallback((value: Locale) => {
+    localStorage.setItem('pimx_locale',value);
     setCurrentLocale(value); document.cookie = `pimx_locale=${value}; Path=/; Max-Age=31536000; SameSite=Lax${location.protocol==='https:'?'; Secure':''}`;
     document.documentElement.lang = value; document.documentElement.dir = value === 'fa' ? 'rtl' : 'ltr';
-    const path = pathname.replace(/^\/fa(?=\/|$)/,'') || '/';
-    router.replace(value === 'fa' ? '/fa' + path + location.search : path + location.search, {scroll:false}); router.refresh();
-  },[pathname,router]);
+    const path = location.pathname.replace(/^\/fa(?=\/|$)/,'') || '/';
+    const target=value === 'fa' ? '/fa' + (path==='/'?'':path) + location.search : path + location.search;
+    if(location.pathname+location.search!==target)router.replace(target,{scroll:false});
+  },[router]);
+  const restored=useRef(false);
+  useEffect(()=>{if(restored.current)return;restored.current=true;const incoming=acceptAppearanceLink(),saved=incoming||localStorage.getItem('pimx_locale');setLocale(saved==='fa'||saved==='en'?saved:initialLocale);},[setLocale,initialLocale]);
   return <LocaleContext value={{locale,setLocale}}>{children}</LocaleContext>;
 }
 export const useLocale = () => useContext(LocaleContext).locale;

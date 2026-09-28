@@ -5,6 +5,7 @@ import { useAppStore } from '@/lib/store/useAppStore';
 import { getPresetById } from '@/lib/theme/presets';
 import { resolveAccent,applyAccentTokens } from '@/lib/theme/appearance';
 import { persistPublicAccent } from '@/lib/client/appearance';
+import {persistAppearance} from '@/lib/client/preferences';
 import { getFontFamily, getFontItem } from '@/lib/theme/fonts';
 
 function hexToHsl(hex: string): { h: number; s: number; l: number } {
@@ -86,11 +87,11 @@ const subscribeSystemTheme=(callback:()=>void)=>{const media=window.matchMedia('
 const systemThemeSnapshot=()=>window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 export function ThemeApplier() {
-  const { settings, customFonts } = useAppStore();
+  const { settings, customFonts,isHydrated } = useAppStore();
   const systemDark=useSyncExternalStore(subscribeSystemTheme,systemThemeSnapshot,()=>false);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined'||!isHydrated) return;
 
     // 1. Inject or update dynamic @font-face rules for all user uploaded fonts
     let styleEl = document.getElementById('pimx-custom-fonts-style') as HTMLStyleElement | null;
@@ -220,6 +221,7 @@ export function ThemeApplier() {
     }
 
     const accentHex = resolveAccent(settings,isDark);
+    persistAppearance(settings);
     persistPublicAccent(resolveAccent(settings,false),resolveAccent(settings,true));
 
     applyAccentTokens(root,accentHex,isDark);
@@ -337,7 +339,7 @@ export function ThemeApplier() {
     } else {
       root.classList.remove('dark');
     }
-  }, [settings, customFonts,systemDark]);
+  }, [settings, customFonts,systemDark,isHydrated]);
 
   return null;
 }

@@ -2,6 +2,9 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import { useAppStore } from '@/lib/store/useAppStore';
+import {LanguageSwitcher,useLocale} from '@/components/i18n/LocaleProvider';
+import {appearanceHref,usePublicAccent} from '@/lib/client/appearance';
+import {WorkspaceControls} from '@/components/security/WorkspaceControls';
 import { CookieSettingsButton } from '@/components/site/CookieSettingsButton';
 import { AdvancedPreferences } from './AdvancedPreferences';
 import { ToggleSwitch } from '@/components/ui/ToggleSwitch';
@@ -108,7 +111,7 @@ const GLOBAL_MODEL_PRICES: ModelPriceItem[] = [
 ];
 
 export function SettingsModal() {
-  const $t=useT();
+  const $t=useT(),locale=useLocale(),publicLight=usePublicAccent('light'),publicDark=usePublicAccent('dark');
   const {
     settingsOpen,
     setSettingsOpen,
@@ -2161,7 +2164,7 @@ export function SettingsModal() {
             {/* GENERAL & UI DISPLAY TAB */}
             {activeTab === 'General' && (
               <div className="space-y-5">
-                <CookieSettingsButton className="w-full rounded-2xl border border-black/10 dark:border-white/10 p-3 text-start text-xs font-semibold hover:bg-black/5 dark:hover:bg-white/5 cursor-pointer" />
+                <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-black/10 dark:border-white/10 p-3"><span className="font-semibold">{locale==='fa'?'زبان رابط':'Interface language'}</span><LanguageSwitcher compact/></div><a className="block rounded-2xl border border-black/10 dark:border-white/10 p-3 font-semibold hover:bg-black/5 dark:hover:bg-white/5" href={appearanceHref('https://pimxagent.pages.dev'+(locale==='fa'?'/fa/':'/'),publicLight,publicDark)}>{locale==='fa'?'دربارهٔ PIMX Agent':'About PIMX Agent'}</a><WorkspaceControls/><CookieSettingsButton className="w-full rounded-2xl border border-black/10 dark:border-white/10 p-3 text-start text-xs font-semibold hover:bg-black/5 dark:hover:bg-white/5 cursor-pointer" />
                 <AdvancedPreferences section="general" />
                 {/* Visual Appearance & Layout */}
                 <div className="space-y-3">

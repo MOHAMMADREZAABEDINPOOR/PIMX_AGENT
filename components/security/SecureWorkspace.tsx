@@ -12,5 +12,5 @@ export function useWorkspaceVault(){const[id,setId]=useState(''),[error,setError
 export function SecureWorkspace(){const fa=useLocale()==='fa',c=(en:string,persian:string)=>fa?persian:en;const{id,error,retry}=useWorkspaceVault(),[sync,setSync]=useState('');useEffect(()=>{const listener=(event:Event)=>setSync((event as CustomEvent<string>).detail);window.addEventListener('pimx-vault-status',listener);return()=>window.removeEventListener('pimx-vault-status',listener);},[]);
  if(error)return <main className="secure-state"><h1>{c('Workspace could not be opened',"فضای کاری باز نشد")}</h1><p role="alert">{c('Check your connection and allow browser storage, then try again.',"اتصال اینترنت و دسترسی مرورگر به فضای ذخیره‌سازی را بررسی کنید و دوباره تلاش کنید.")}</p><button onClick={retry}>{c('Try again',"تلاش دوباره")}</button></main>;
  if(!id)return <main className="secure-state" role="status"><div className="secure-spinner"/><h1>{c('Getting your workspace ready',"در حال آماده‌سازی فضای کاری")}</h1><p>{c('No account needed. Your saved chats stay on this device.',"بدون نیاز به حساب. چت‌های ذخیره‌شده روی همین دستگاه می‌مانند.")}</p></main>;
- return <WorkspaceContext value={{sync}}><AppShell/></WorkspaceContext>;
+ return <WorkspaceContext value={{sync,id}}><AppShell/></WorkspaceContext>;
 }

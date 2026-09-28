@@ -20,12 +20,14 @@ test('selected accent reaches settings, chat and public pages and survives theme
  await expect(page.locator('#composer-input')).toBeVisible();
  await expect.poll(accent).toBe('#2dd4bf');
  await expect(page.locator('#btn-composer-model')).toHaveCSS('color','rgb(45, 212, 191)');
+ await page.locator('#btn-composer-model').click();
+ await page.getByRole('button',{name:'General & UI Display',exact:true}).click();
  const homeLink=page.getByRole('link',{name:'About PIMX Agent'});
  await expect(homeLink).toHaveAttribute('href',/accentLight=%230D9488.*accentDark=%232DD4BF/i);
  await page.screenshot({path:'artifacts/qa/accent-dark-chat.png'});
  await page.goto('/privacy');
  await expect(page.locator('.site-button')).toHaveCSS('background-color','rgb(45, 212, 191)');
- await page.getByRole('button',{name:'Toggle theme'}).click();
+ if(await page.locator('.cosmic-site').getAttribute('data-public-theme')==='dark')await page.getByRole('button',{name:'Toggle theme'}).click();
  await expect(page.locator('.site-button')).toHaveCSS('background-color','rgb(13, 148, 136)');
 });
 

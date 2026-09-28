@@ -39,7 +39,7 @@ import {
 } from 'lucide-react';
 import { ChatTool, ChatEntity, ProjectEntity } from '@/lib/types';
 import { PimxLogo } from '@/components/ui/PimxLogo';
-import {WorkspaceControls} from '@/components/security/WorkspaceControls';
+
 import {UiText,useT} from '@/components/i18n/LocaleProvider';
 
 interface ChatDrawerProps {
@@ -432,7 +432,7 @@ export function ChatDrawer({ isOpen, onClose, onOpenWorkspace }: ChatDrawerProps
 
           {/* Bottom Expand & Settings */}
           <div className="flex flex-col items-center gap-2">
-            <WorkspaceControls compact/>
+
             <button
               onClick={() => {
                 setSettingsOpen(true);
@@ -731,7 +731,7 @@ export function ChatDrawer({ isOpen, onClose, onOpenWorkspace }: ChatDrawerProps
 
         {/* Footer Navigation */}
         <div className="p-2 border-t space-y-1" style={{ borderColor: 'var(--border-color)' }}>
-          <WorkspaceControls/>
+
           <button
             id="btn-open-workspace"
             onClick={() => {

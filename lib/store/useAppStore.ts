@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import {readAppearance,persistAppearance} from '@/lib/client/preferences';
 import {
   AccountEntity,
   AppSettings,
@@ -780,6 +781,7 @@ export const useAppStore = create<AppState>((set, get) => {
       const initial = loadPersistedState();
       if (!initial || Object.keys(initial).length === 0) {
         set({
+          settings:{...DEFAULT_SETTINGS,...readAppearance()},
           isHydrated: true,
           logs: [
             {
@@ -809,7 +811,7 @@ export const useAppStore = create<AppState>((set, get) => {
       });
 
       const initialPersonas = initial.personas?.length ? initial.personas : SEEDED_PERSONAS;
-      const initialSettings = { ...DEFAULT_SETTINGS, ...initial.settings };
+      const initialSettings = { ...DEFAULT_SETTINGS, ...initial.settings,...readAppearance() };
       const oldBubble = String(initialSettings.bubbleStyle).toUpperCase();
       initialSettings.bubbleStyle = (['MODERN', 'GLASS', 'MINIMAL', 'CARD'].includes(oldBubble) ? oldBubble : 'MODERN') as AppSettings['bubbleStyle'];
       const oldSize = String(initialSettings.fontSizeLevel).toUpperCase();
@@ -917,6 +919,7 @@ export const useAppStore = create<AppState>((set, get) => {
     updateSettings: (partial) => {
       set((state) => {
         const next = { ...state.settings, ...partial };
+        if(['themeMode','themePreset','accent','customAccentHex'].some(field=>field in partial))persistAppearance(next);
         const newState = { ...state, settings: next };
         saveState(newState);
         return newState;

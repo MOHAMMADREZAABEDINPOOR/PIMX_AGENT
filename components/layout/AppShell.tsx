@@ -1,6 +1,8 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useContext,useCallback } from 'react';
+import {WorkspaceContext,OPEN_TRANSFER} from '../security/WorkspaceControls';
+import {TransferModal} from '../security/TransferModal';
 import { useAppStore } from '@/lib/store/useAppStore';
 import { ThemeApplier } from './ThemeApplier';
 import { ResizableWorkspace } from './ResizableWorkspace';
@@ -61,6 +63,9 @@ import {UiText,useT,useLocale} from '@/components/i18n/LocaleProvider';
 export function AppShell() {
   const $t=useT(),locale=useLocale(),prefix=locale==='fa'?'/fa':'';
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const workspace=useContext(WorkspaceContext),[transferOpen,setTransferOpen]=useState(false);
+  const closeTransfer=useCallback(()=>setTransferOpen(false),[]);
+  useEffect(()=>{const open=()=>{setTransferOpen(true);setDrawerOpen(false);};window.addEventListener(OPEN_TRANSFER,open);return()=>window.removeEventListener(OPEN_TRANSFER,open);},[]);
 
   const {
     workspaceModalOpen,
@@ -442,6 +447,7 @@ export function AppShell() {
       <ExportModal />
       <VoiceModal />
       <SettingsModal />
+      {transferOpen&&workspace?.id&&<TransferModal id={workspace.id} onClose={closeTransfer}/>}
       <WorkspaceModal isOpen={workspaceModalOpen} onClose={() => setWorkspaceModalOpen(false)} />
     </div>
   );
