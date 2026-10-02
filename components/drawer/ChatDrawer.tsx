@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
 import { useAppStore } from '@/lib/store/useAppStore';
@@ -106,6 +106,19 @@ export function ChatDrawer({ isOpen, onClose, onOpenWorkspace }: ChatDrawerProps
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [collapsedFlyout]);
+
+  // Close drawer on Escape key when open
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === 'Escape' && isOpen) {
+        onClose();
+      }
+    }
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isOpen, onClose]);
 
   // Clean up timers on unmount only
   useEffect(() => {
@@ -273,8 +286,9 @@ export function ChatDrawer({ isOpen, onClose, onOpenWorkspace }: ChatDrawerProps
       {/* Mobile overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-40 bg-black/50 backdrop-blur-xs lg:hidden"
+          className="fixed inset-0 z-40 bg-black/60 backdrop-blur-xs lg:hidden transition-opacity animate-in fade-in duration-200"
           onClick={onClose}
+          aria-hidden="true"
         />
       )}
 
@@ -455,23 +469,34 @@ export function ChatDrawer({ isOpen, onClose, onOpenWorkspace }: ChatDrawerProps
       ) : (
         <aside
           id="chat-drawer"
-          className={`fixed lg:relative top-0 bottom-0 left-0 z-30 lg:z-30 w-72 flex flex-col border-r transition-transform duration-200 ease-in-out select-none bg-[var(--surface-color)] text-[var(--text-color)] shrink-0 ${
+          className={`fixed lg:relative top-0 bottom-0 left-0 z-50 lg:z-30 w-[85vw] max-w-[320px] sm:w-72 h-dvh lg:h-full flex flex-col border-r transition-transform duration-200 ease-in-out select-none bg-[var(--surface-color)] text-[var(--text-color)] shrink-0 shadow-2xl lg:shadow-none ${
             isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
           }`}
           style={{ borderColor: 'var(--border-color)' }}
         >
           {/* Header Actions */}
-          <div className="p-3 border-b space-y-2.5" style={{ borderColor: 'var(--border-color)' }}>
+          <div className="p-3 pt-[max(0.75rem,env(safe-area-inset-top))] border-b space-y-2.5" style={{ borderColor: 'var(--border-color)' }}>
             <div className="flex items-center justify-between px-1">
               <PimxLogo size="xs" showText={true} />
-              {/* Collapse sidebar trigger (Desktop) */}
-              <button
-                onClick={() => setIsCollapsed(true)}
-                title={$t("Collapse Sidebar")}
-                className="hidden lg:flex p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 opacity-70 hover:opacity-100 transition-colors cursor-pointer"
-              >
-                <PanelLeftClose className="w-4 h-4" />
-              </button>
+              <div className="flex items-center gap-1">
+                {/* Close drawer trigger (Mobile) */}
+                <button
+                  onClick={onClose}
+                  title={$t("Close")}
+                  className="lg:hidden p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 opacity-70 hover:opacity-100 transition-colors cursor-pointer"
+                  aria-label="Close menu"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+                {/* Collapse sidebar trigger (Desktop) */}
+                <button
+                  onClick={() => setIsCollapsed(true)}
+                  title={$t("Collapse Sidebar")}
+                  className="hidden lg:flex p-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/10 opacity-70 hover:opacity-100 transition-colors cursor-pointer"
+                >
+                  <PanelLeftClose className="w-4 h-4" />
+                </button>
+              </div>
             </div>
 
             <div className="flex items-center justify-between gap-2">
@@ -730,7 +755,7 @@ export function ChatDrawer({ isOpen, onClose, onOpenWorkspace }: ChatDrawerProps
         </div>
 
         {/* Footer Navigation */}
-        <div className="p-2 border-t space-y-1" style={{ borderColor: 'var(--border-color)' }}>
+        <div className="p-2 pb-[max(0.75rem,env(safe-area-inset-bottom))] border-t space-y-1" style={{ borderColor: 'var(--border-color)' }}>
 
           <button
             id="btn-open-workspace"
