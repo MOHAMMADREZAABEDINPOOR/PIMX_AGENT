@@ -86,7 +86,7 @@ function ProjectsListView() {
     <div id="projects-list-view" className="flex-1 h-full overflow-y-auto bg-neutral-50/50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 flex flex-col">
       {deleteTarget && <ConfirmDialog title={$t("Delete project")} description={$t("Delete “{0}”? Its conversations will remain in your chat history, outside this project.",deleteTarget.name)} confirmLabel={$t("Delete project")} onClose={() => setDeleteTarget(null)} onConfirm={() => { deleteProject(deleteTarget.id); setDeleteTarget(null); }} />}
       {/* Top Header - Unified container sizing */}
-      <div className="w-full max-w-6xl mx-auto px-6 sm:px-8 pt-8 pb-4 shrink-0">
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 pt-16 lg:pt-8 pb-4 shrink-0">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
           <div>
             <h1 className="text-2xl font-bold tracking-tight flex items-center gap-3">
@@ -512,7 +512,7 @@ function ProjectDetailView({ project }: { project: ProjectEntity }) {
   return (
     <div id="project-detail-view" className="flex-1 h-full overflow-y-auto bg-neutral-50/50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 flex flex-col">
       {/* Top Breadcrumb Header - Unified 6xl container */}
-      <div className="w-full max-w-6xl mx-auto px-6 sm:px-8 pt-8 pb-4 shrink-0">
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 pt-16 lg:pt-8 pb-4 shrink-0">
         <button
           onClick={() => setViewMode('PROJECTS_LIST')}
           className="flex items-center gap-1.5 text-xs text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white transition-colors mb-5 cursor-pointer font-medium"

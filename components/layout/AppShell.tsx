@@ -214,12 +214,16 @@ export function AppShell() {
       {/* Main Chat & Workspace Area */}
       <div className="flex-1 flex flex-col min-w-0 h-full overflow-hidden relative z-0">
         <PimxPet />
+        {/* Mobile Top Header Gradient Bar */}
+        <div className="absolute top-0 left-0 right-0 h-16 z-10 pointer-events-none bg-gradient-to-b from-[var(--bg-color)] via-[var(--bg-color)]/70 to-transparent lg:hidden" />
+
         {/* Mobile Floating Drawer Toggle Button */}
         <button
           id="btn-toggle-drawer"
           onClick={() => setDrawerOpen(!drawerOpen)}
           className={`absolute top-3.5 left-4 z-20 p-2 rounded-xl border border-black/10 dark:border-white/10 bg-[var(--surface-color)]/80 hover:bg-[var(--surface-color)] backdrop-blur-md shadow-xs transition-all lg:hidden cursor-pointer text-[var(--text-color)] ${isMounted ? 'hidden' : ''}`}
           title={$t("Open Navigation Drawer")}
+          aria-label={$t("Open Navigation Drawer")}
         >
           <Menu className="w-4 h-4" />
         </button>
