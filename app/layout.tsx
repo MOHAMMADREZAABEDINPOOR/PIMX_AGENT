@@ -22,6 +22,11 @@ export default async function RootLayout({children}: {children: React.ReactNode}
   return (
     <html lang={locale} dir={locale==='fa'?'rtl':'ltr'}>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var s=localStorage.getItem('pimx_public_theme');if(!s){var p=localStorage.getItem('pimx_appearance_preferences');if(p){var j=JSON.parse(p);if(j&&j.themeMode)s=j.themeMode.toLowerCase();}}var d=s==='dark'||(!s&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);if(d){document.documentElement.classList.add('dark');document.documentElement.setAttribute('data-theme','dark');document.documentElement.style.colorScheme='dark';}else{document.documentElement.classList.remove('dark');document.documentElement.setAttribute('data-theme','light');document.documentElement.style.colorScheme='light';}}catch(e){}})();`,
+          }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

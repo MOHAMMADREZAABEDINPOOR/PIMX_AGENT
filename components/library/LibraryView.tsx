@@ -264,7 +264,7 @@ export function LibraryView() {
     <div id="library-view" className="flex-1 h-full overflow-y-auto bg-neutral-50/50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 flex flex-col">
       {/* Top Header */}
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 pt-16 lg:pt-8 pb-4 shrink-0">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pl-14 lg:pl-0">
           <div>
             <h1 className="text-2xl font-bold tracking-tight flex items-center gap-3">
               <span><UiText source={"Library"}/></span>
