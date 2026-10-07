@@ -1,65 +1,134 @@
-# PIMX Agent
+<div align="center">
 
-A responsive AI workspace built with Next.js, React and Zustand. Connect a provider in **Settings & Providers**, choose a model, then start a conversation. Gemini can also use `GEMINI_API_KEY` from `.env.local`.
+<img src="assets/readme/hero.gif" width="1200" alt="PIMX AGENT — rotating 3D geometry" />
 
-## Run locally
+**[English](README.md) · [فارسی](README.fa.md)**
 
-Use Node.js 22.13 or newer. This workspace was validated with Node.js 24.18.1.
+<img src="assets/readme/identity.svg" width="1200" alt="ai / English and Persian documentation" />
 
-```sh
-npm install
+</div>
+
+# PIMX AGENT
+
+A Next.js AI workspace with provider configuration, conversations, attachments, project/library organization, research tools and document/presentation workflows.
+
+[GitHub](https://github.com/MOHAMMADREZAABEDINPOOR/PIMX_AGENT) · [PIMX / Profile](https://github.com/MOHAMMADREZAABEDINPOOR) · [Static artwork](assets/readme/hero.png)
+
+## Features
+
+- Provider selection, comparison and configurable credentials
+- Chat, attachments, source Q&A and retrieval helpers
+- Canvas, research, slides and export tools
+- Account/workspace controls and Cloudflare adapters
+
+## Stack
+
+| Tool | Version / source |
+|---|---|
+| React | `^19.2.1` |
+| Next.js | `^16.3.4` |
+| TypeScript | `5.9.3` |
+| Three.js | `^0.186.1` |
+| Motion | `^12.23.24` |
+| Tailwind CSS | `4.1.11` |
+
+## Getting started
+
+Node.js 22.12+ and the package manager declared in package.json. Install dependencies from the checked-in lockfile where available.
+
+```bash
+git clone https://github.com/MOHAMMADREZAABEDINPOOR/PIMX_AGENT.git
+cd PIMX_AGENT
+
+npm ci
 npm run dev
 ```
 
-For a production build:
+## Configuration
 
-```sh
+These names are found in the example configuration or source; not all are required. Check their defaults/usage in those files and supply secrets only in your local or hosting environment.
+
+| Name | Role |
+|---|---|
+| `ALLOW_LOCAL_PROVIDERS` | Application setting; inspect its definition |
+| `ALLOW_SHARED_PROVIDER_KEYS` | Credential/connection setting; keep private |
+| `APP_DATA_DIR` | Application setting; inspect its definition |
+| `APP_DATA_ENCRYPTION_KEY` | Credential/connection setting; keep private |
+| `APP_PROXY_SECRET` | Credential/connection setting; keep private |
+| `APP_RUNTIME` | Application setting; inspect its definition |
+| `APP_SURFACE` | Application setting; inspect its definition |
+| `APP_URL` | Application setting; inspect its definition |
+| `GEMINI_API_KEY` | Credential/connection setting; keep private |
+| `NEXT_PUBLIC_TURNSTILE_SITE_KEY` | Public browser configuration; never put secrets here |
+| `TEST_BASE_URL` | Application setting; inspect its definition |
+| `TRUST_PROXY` | Application setting; inspect its definition |
+| `TURNSTILE_SECRET_KEY` | Credential/connection setting; keep private |
+
+Hosting bindings: `ASSETS`, `DB`.
+
+## Usage
+
+Configure `.env` from `.env.example`, start the application and choose an AI provider in settings. Add credentials for that provider, then open a chat, attach a document or create a project.
+
+## Project structure
+
+| Path | Role |
+|---|---|
+| [`app/`](app/) | Application routes / PHP application |
+| [`assets/`](assets/) | Brand/media/README assets |
+| [`components/`](components/) | Reusable interface components |
+| [`docs/`](docs/) | Supporting documentation |
+| [`lib/`](lib/) | Shared application modules |
+| [`migrations/`](migrations/) | Database migrations |
+| [`public/`](public/) | Public web assets |
+| [`scripts/`](scripts/) | Development and maintenance utilities |
+| [`tests/`](tests/) | Existing automated checks |
+| [`metadata.json`](metadata.json) | Project entry/configuration file |
+| [`package.json`](package.json) | Project entry/configuration file |
+| [`tsconfig.json`](tsconfig.json) | Project entry/configuration file |
+
+## Commands and checks
+
+```bash
+npm run dev
 npm run build
-npm start
-```
-
-## Workspaces
-
-- **Web Dev:** natural requests such as “Build a website” activate file generation. HTML, CSS and JavaScript run in an isolated preview; the complete project downloads as ZIP. If the model emits no files, an optional repair request asks that same model for valid output.
-- **Slides:** natural presentation requests create an editable deck with six layouts, four themes, a thumbnail rail and keyboard presentation mode. Edit titles, points and speaker notes; search ranked topic photos, upload an image or remove it. Photo source links stay with the deck. PowerPoint embeds images, editable text and speaker notes; PDF uses the same slide design. Invalid output triggers a repair request or a clear error.
-- **Deep Research:** plans multiple searches, reads source pages when enabled, and supplies the collected evidence to the selected model for a cited report. Reports become downloadable document artifacts.
-- **Sources:** text-based PDF, DOCX and text uploads are extracted and retrieved as chat-scoped source passages. Scanned PDFs require OCR text. Maximum upload size is 20 MB per file.
-- **Learn:** model-generated roadmaps and recall cards persist with lesson completion progress.
-- **Compare:** runs up to four selected models independently. **Council** requires at least two distinct models and synthesizes their answers. **Debate** runs two opposing models for one to four rounds, then a selected judge produces the verdict.
-
-Live activity reflects the running request or tool phase. Reasoning panels display summaries supplied by the model. Token values marked `~` are estimates, not provider billing records.
-
-Web evidence runs start with a real planning request to the selected model, then search, page reading and final synthesis. Think enables the configured native reasoning effort; new defaults use High and a 4096-token budget where supported. Auxiliary planning and optional contextual emoji reactions use additional model requests. A failed reaction request does not substitute a canned emoji.
-
-Drag the workspace divider, use its arrow keys or use the size buttons to resize it. Expand fills the work area; minimize returns to chat. The last width saves on this device. Project deletion uses an app dialog; deleting a project keeps its chats in general history. Moving a conversation to an existing or newly created project opens that project and retains the conversation.
-
-**Pip**, the PIMX companion, follows actual planning, browsing, response and completion states. Tap it for status or a new chat. Hide it from its small menu or **General & UI Display → PIMX companion**.
-
-Default Vazirmatn and Inter typography is self-hosted and cached for offline use, including printed PDF exports. Font licenses are included in `public/fonts/core`.
-
-## Privacy and PWA
-
-Saved conversations, projects and generated files are encrypted in this browser's IndexedDB. They are not automatically backed up to the server. Temporary conversations, their generated files, decks, sources and prompt logs are excluded from persistence and disappear on reload. Messages still go to the selected AI provider to generate a response.
-
-Use **Account → Export chat database** to create a passphrase-protected `.pimxdb` file. Sign in on another device and choose **Upload chat database** to restore it. Import replaces that device's workspace after confirmation. Provider secrets and session tokens are excluded. Keep an export before clearing browser storage.
-
-English is the default interface language; the language control switches the public pages, workspace, settings and tools to Persian with RTL layout and self-hosted Vazirmatn.
-
-The production app includes a manifest, app icons and an offline fallback. Install it from **General & UI Display → Install app**, or use Safari's **Share → Add to Home Screen**. Mobile installation requires HTTPS; localhost supports development on the same computer. Unlocking private history, AI responses and web searches require an internet connection. Private pages and API responses are never cached by the service worker.
-
-## Cloudflare and account email
-
-Production runs on Cloudflare Pages with OpenNext and a private D1 binding. GitHub pushes to `main` trigger Cloudflare builds using `npm run pages:build`. Account profiles, sign-in events and consented visitor statistics live in D1; private chats remain on the device. See [deployment and security](docs/security-launch.md) and [Gmail setup](docs/gmail-smtp.md).
-
-## Validation
-
-```sh
+npm run start
+npm run build:cloudflare
+npm run pages:build
+npm run lint
+npm run test
 npm run check
-npm run build
-npx playwright install chromium
-npm test
+npm run security:secrets
 ```
 
-The browser tests exercise file generation, JavaScript preview execution, ZIP/PPTX contents, output repair, temporary-chat privacy, 100 single-choice reactions, PDF/DOCX extraction, learning data, independent model requests, responsive layouts and offline loading. Model output uses controlled fixtures; the API route uses a local upstream fixture. These tests do not spend credits or verify a paid provider account.
+These commands are declared in package.json; the list is not a test execution report. Test commands may need a browser, service or prepared database.
 
-Screenshots from the validation run are written to `artifacts/qa/`.
+## Deployment
+
+Use build/start for Node hosting, or the Cloudflare-specific package.json scripts with your own bindings. Configure databases/secrets separately and consult the repository’s supporting guides.
+
+## Detailed project guide
+
+[Extended project guide](docs/PROJECT_GUIDE.md)
+
+## Limitations
+
+Provider availability, pricing and limits vary. Database and Cloudflare bindings must match the chosen deployment. Model names in the catalog are configuration entries, not a guarantee of provider availability.
+
+## Troubleshooting
+
+- Missing packages: install dependencies using the project’s package manager.
+- API/network failure: check the configured origin, provider and hosting bindings.
+- Old assets: rebuild when a build script exists, then clear the browser cache.
+
+## Contributing
+
+Create a focused branch, verify the affected behavior and explain the change clearly. Keep private data, build outputs and local databases out of commits.
+
+## License
+
+No repository-level license file is included in this snapshot. Public visibility alone does not grant reuse rights; contact the repository owner for terms.
+
+---
+
+Part of **PIMX** · Documentation in English and Persian.
