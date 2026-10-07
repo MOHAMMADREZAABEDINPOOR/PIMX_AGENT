@@ -1,27 +1,43 @@
 <div align="center">
 
-<img src="assets/readme/hero.gif" width="1200" alt="PIMX AGENT — rotating 3D geometry" />
+<img src="assets/readme/hero.gif" width="1200" alt="PIMX AGENT: a luminous neural network surrounding an AI workspace" />
 
 **[English](README.md) · [فارسی](README.fa.md)**
 
-<img src="assets/readme/identity.svg" width="1200" alt="ai / English and Persian documentation" />
-
 </div>
 
-# PIMX AGENT
+# 🧠 PIMX AGENT
 
 A Next.js AI workspace with provider configuration, conversations, attachments, project/library organization, research tools and document/presentation workflows.
 
 [GitHub](https://github.com/MOHAMMADREZAABEDINPOOR/PIMX_AGENT) · [PIMX / Profile](https://github.com/MOHAMMADREZAABEDINPOOR) · [Static artwork](assets/readme/hero.png)
 
-## Features
+| At a glance | Details |
+|:---|:---|
+| 🧠 Experience | Web application / browser experience |
+| 🧰 Built with | `React` · `Next.js` · `TypeScript` · `Three.js` |
+| 🌐 Documentation | [English](README.md) · [فارسی](README.fa.md) |
 
-- Provider selection, comparison and configurable credentials
-- Chat, attachments, source Q&A and retrieval helpers
-- Canvas, research, slides and export tools
-- Account/workspace controls and Cloudflare adapters
+[✨ Features](#features) · [🚀 Getting started](#getting-started) · [⚙️ Configuration](#configuration) · [🌍 Deployment](#deployment)
 
-## Stack
+📖 [Detailed project guide](docs/PROJECT_GUIDE.md)
+
+---
+
+<a id="features"></a>
+
+## ✨ Features
+
+| Area | Included capability |
+|:---|:---|
+| 🧠 Intelligence | Provider selection, comparison and configurable credentials |
+| ⚡ Workflow | Chat, attachments, source Q&A and retrieval helpers |
+| 🧠 Intelligence | Canvas, research, slides and export tools |
+| 👤 Accounts | Account/workspace controls and Cloudflare adapters |
+
+<a id="stack"></a>
+
+## 🧰 Stack
 
 | Tool | Version / source |
 |---|---|
@@ -32,7 +48,9 @@ A Next.js AI workspace with provider configuration, conversations, attachments, 
 | Motion | `^12.23.24` |
 | Tailwind CSS | `4.1.11` |
 
-## Getting started
+<a id="getting-started"></a>
+
+## 🚀 Getting started
 
 Node.js 22.12+ and the package manager declared in package.json. Install dependencies from the checked-in lockfile where available.
 
@@ -44,7 +62,9 @@ npm ci
 npm run dev
 ```
 
-## Configuration
+<a id="configuration"></a>
+
+## ⚙️ Configuration
 
 These names are found in the example configuration or source; not all are required. Check their defaults/usage in those files and supply secrets only in your local or hosting environment.
 
@@ -66,11 +86,15 @@ These names are found in the example configuration or source; not all are requir
 
 Hosting bindings: `ASSETS`, `DB`.
 
-## Usage
+<a id="usage"></a>
+
+## 🎯 Usage
 
 Configure `.env` from `.env.example`, start the application and choose an AI provider in settings. Add credentials for that provider, then open a chat, attach a document or create a project.
 
-## Project structure
+<a id="project-structure"></a>
+
+## 🗂️ Project structure
 
 | Path | Role |
 |---|---|
@@ -87,7 +111,20 @@ Configure `.env` from `.env.example`, start the application and choose an AI pro
 | [`package.json`](package.json) | Project entry/configuration file |
 | [`tsconfig.json`](tsconfig.json) | Project entry/configuration file |
 
-## Commands and checks
+<a id="commands-and-checks"></a>
+
+## 🧪 Commands and checks
+
+| Command | Purpose |
+|:---|:---|
+| `npm run dev` | 🧑‍💻 Development server |
+| `npm run build` | 📦 Production build |
+| `npm run start` | ▶️ Application server |
+| `npm run build:cloudflare` | 🔧 build:cloudflare |
+| `npm run pages:build` | 🔧 pages:build |
+| `npm run lint` | 🧹 Lint source |
+| `npm run test` | 🧪 Declared tests |
+| `npm run check` | 🔎 Source checks |
 
 ```bash
 npm run dev
@@ -103,32 +140,46 @@ npm run security:secrets
 
 These commands are declared in package.json; the list is not a test execution report. Test commands may need a browser, service or prepared database.
 
-## Deployment
+<a id="deployment"></a>
+
+## 🌍 Deployment
 
 Use build/start for Node hosting, or the Cloudflare-specific package.json scripts with your own bindings. Configure databases/secrets separately and consult the repository’s supporting guides.
 
-## Detailed project guide
+<a id="limitations"></a>
 
-[Extended project guide](docs/PROJECT_GUIDE.md)
-
-## Limitations
+## 📌 Limitations
 
 Provider availability, pricing and limits vary. Database and Cloudflare bindings must match the chosen deployment. Model names in the catalog are configuration entries, not a guarantee of provider availability.
 
-## Troubleshooting
+<a id="troubleshooting"></a>
+
+## 🛠️ Troubleshooting
 
 - Missing packages: install dependencies using the project’s package manager.
 - API/network failure: check the configured origin, provider and hosting bindings.
 - Old assets: rebuild when a build script exists, then clear the browser cache.
 
-## Contributing
+<a id="contributing"></a>
+
+## 🤝 Contributing
 
 Create a focused branch, verify the affected behavior and explain the change clearly. Keep private data, build outputs and local databases out of commits.
 
-## License
+<a id="license"></a>
+
+## 📄 License
 
 No repository-level license file is included in this snapshot. Public visibility alone does not grant reuse rights; contact the repository owner for terms.
 
 ---
 
 Part of **PIMX** · Documentation in English and Persian.
+
+---
+
+<div align="center">
+
+🧠 **PIMX AGENT** · [English](README.md) · [فارسی](README.fa.md)
+
+</div>
