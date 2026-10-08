@@ -10,6 +10,14 @@
 
 # 🧠 PIMX AGENT
 
+<!-- pimx-live-site:start -->
+## وب‌سایت آنلاین
+
+**[مشاهدهٔ PIMX_AGENT ↗](https://pimxagent.pages.dev/)**
+
+[نسخهٔ Cloudflare Workers ↗](https://pimxagent.mohammadrezaabedinpoor6.workers.dev/)
+<!-- pimx-live-site:end -->
+
 فضای کار هوش مصنوعی با Next.js، تنظیم سرویس‌دهندگان، گفتگو، پیوست، سازمان‌دهی پروژه و کتابخانه، پژوهش و ساخت سند و ارائه.
 
 [GitHub](https://github.com/MOHAMMADREZAABEDINPOOR/PIMX_AGENT) · [PIMX / Profile](https://github.com/MOHAMMADREZAABEDINPOOR) · [بنر ثابت](assets/readme/hero.png)
