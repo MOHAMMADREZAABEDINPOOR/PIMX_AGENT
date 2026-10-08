@@ -8,6 +8,14 @@
 
 # 🧠 PIMX AGENT
 
+<!-- pimx-live-site:start -->
+## Live website
+
+**[Open PIMX_AGENT ↗](https://pimxagent.pages.dev/)**
+
+[Alternate Cloudflare Workers website ↗](https://pimxagent.mohammadrezaabedinpoor6.workers.dev/)
+<!-- pimx-live-site:end -->
+
 A Next.js AI workspace with provider configuration, conversations, attachments, project/library organization, research tools and document/presentation workflows.
 
 [GitHub](https://github.com/MOHAMMADREZAABEDINPOOR/PIMX_AGENT) · [PIMX / Profile](https://github.com/MOHAMMADREZAABEDINPOOR) · [Static artwork](assets/readme/hero.png)
