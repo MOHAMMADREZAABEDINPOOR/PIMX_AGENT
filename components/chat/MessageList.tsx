@@ -150,8 +150,7 @@ export function EmptyChatHero({ currentProject, currentChat }: { currentProject?
 
   if (currentPersona) {
     return (
-      <Scene3D near className="w-full select-none">
-        <DepthCard depth={3} className="mx-auto w-full rounded-2xl p-5 sm:p-6">
+      <section aria-label={currentPersona.name} className="assistant-welcome mx-auto w-full rounded-2xl border border-[var(--border-color)] bg-[var(--surface-color)] p-5 sm:p-6">
           <div className="flex flex-col items-center text-center">
             <div
               className="mb-3 grid h-14 w-14 place-items-center rounded-2xl border border-[var(--border-color)] text-3xl sm:h-16 sm:w-16"
@@ -185,8 +184,7 @@ export function EmptyChatHero({ currentProject, currentChat }: { currentProject?
               ) : null}
             </div>
           </div>
-        </DepthCard>
-      </Scene3D>
+      </section>
     );
   }
 

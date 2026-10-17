@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useAppStore } from '@/lib/store/useAppStore';
+import { personaSelectionPatch } from '@/lib/prompt/personas';
 import {
   X,
   Edit3,
@@ -183,13 +184,7 @@ export function ActiveToolStrip() {
 
           <button
             onClick={() =>
-              updateChat(currentChat!.id, {
-                personaId: undefined,
-                systemPrompt: undefined,
-                temperature: undefined,
-                topP: undefined,
-                maxTokens: undefined,
-              })
+              updateChat(currentChat!.id, personaSelectionPatch(currentChat, activePersona))
             }
             title={$t("Detach Assistant from Chat")}
             className="p-0.5 rounded-md hover:bg-black/5 dark:hover:bg-white/10 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white cursor-pointer transition-colors"

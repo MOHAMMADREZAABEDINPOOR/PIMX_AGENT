@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { useAppStore } from '@/lib/store/useAppStore';
+import { personaSelectionPatch } from '@/lib/prompt/personas';
 import { Attachment, ChatTool } from '@/lib/types';
 import { ProviderLogo } from '@/components/ui/ProviderLogo';
 import {
@@ -144,7 +145,7 @@ export function Composer() {
   };
 
   // Primary model name to show
-  const primaryModelId = currentChat?.modelIds?.[0] || selectedModelIds[0];
+  const primaryModelId = activePersona?.modelId || currentChat?.modelIds?.[0] || selectedModelIds[0];
   const primaryModel = models.find((m) => m.id === primaryModelId);
   const modelCount = currentChat?.modelIds?.length || selectedModelIds.length;
 
@@ -218,13 +219,7 @@ export function Composer() {
                   type="button"
                   onClick={(e) => {
                     e.stopPropagation();
-                    updateChat(currentChat!.id, {
-                      personaId: undefined,
-                      systemPrompt: undefined,
-                      temperature: undefined,
-                      topP: undefined,
-                      maxTokens: undefined,
-                    });
+                    updateChat(currentChat!.id, personaSelectionPatch(currentChat, activePersona));
                   }}
                   className="p-0.5 ml-0.5 rounded-full hover:bg-black/10 dark:hover:bg-white/15 cursor-pointer opacity-70 hover:opacity-100 transition-opacity"
                   title={$t("Detach Assistant")}

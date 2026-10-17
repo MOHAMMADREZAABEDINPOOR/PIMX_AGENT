@@ -34,6 +34,7 @@ import {
 import { PersonaEntity, PersonaCategory, PersonaResponseStyle, MemoryEntity, KnowledgeBaseEntity } from '@/lib/types';
 import { CustomSelect } from '@/components/ui/CustomSelect';
 import {UiText,useT} from '@/components/i18n/LocaleProvider';
+import { personaSelectionPatch } from '@/lib/prompt/personas';
 
 const CATEGORIES: { key: PersonaCategory | 'ALL'; label: string }[] = [
   { key: 'ALL', label: 'All Assistants' },
@@ -184,16 +185,9 @@ export function WorkspaceModal({ isOpen, onClose }: { isOpen: boolean; onClose: 
         instructions: pInstructions.trim(),
       });
 
-      // If active chat currently uses this persona, sync parameters directly
+      // Profiles are resolved at send time; remove settings copied by older versions.
       if (currentChat && currentChat.personaId === editingPersonaId) {
-        updateChat(currentChat.id, {
-          systemPrompt: pInstructions.trim(),
-          temperature: pTemperature,
-          topP: pTopP,
-          maxTokens: pMaxTokens,
-          modelIds: pModelId ? [pModelId] : currentChat.modelIds,
-          webSearchEnabled: pDefaultWebSearch ? true : currentChat.webSearchEnabled,
-        });
+        updateChat(currentChat.id, personaSelectionPatch(currentChat, activePersona, activePersona));
       }
     } else {
       addPersona({
@@ -222,26 +216,12 @@ export function WorkspaceModal({ isOpen, onClose }: { isOpen: boolean; onClose: 
     if (!currentChat) {
       const newId = createChat({
         title: `${p.name} Session`,
-        systemPrompt: p.instructions,
-        modelIds: pModelId ? [pModelId] : undefined,
+        modelIds: p.modelId ? [p.modelId] : undefined,
       });
-      updateChat(newId, {
-        personaId: p.id,
-        temperature: p.temperature,
-        topP: p.topP,
-        maxTokens: p.maxTokens,
-        webSearchEnabled: p.defaultWebSearch,
-      });
+      updateChat(newId, { personaId: p.id });
+      setActiveChat(newId);
     } else {
-      updateChat(currentChat.id, {
-        personaId: p.id,
-        systemPrompt: p.instructions,
-        temperature: p.temperature,
-        topP: p.topP,
-        maxTokens: p.maxTokens,
-        modelIds: p.modelId ? [p.modelId] : currentChat.modelIds,
-        webSearchEnabled: p.defaultWebSearch ? true : currentChat.webSearchEnabled,
-      });
+      updateChat(currentChat.id, personaSelectionPatch(currentChat, activePersona, p));
     }
     onClose();
   };
@@ -250,16 +230,9 @@ export function WorkspaceModal({ isOpen, onClose }: { isOpen: boolean; onClose: 
   const handleStartNewChatWithPersona = (p: PersonaEntity) => {
     const newId = createChat({
       title: `${p.name} Session`,
-      systemPrompt: p.instructions,
       modelIds: p.modelId ? [p.modelId] : undefined,
     });
-    updateChat(newId, {
-      personaId: p.id,
-      temperature: p.temperature,
-      topP: p.topP,
-      maxTokens: p.maxTokens,
-      webSearchEnabled: p.defaultWebSearch,
-    });
+    updateChat(newId, { personaId: p.id });
     setActiveChat(newId);
     onClose();
   };
@@ -267,13 +240,7 @@ export function WorkspaceModal({ isOpen, onClose }: { isOpen: boolean; onClose: 
   // DETACH ACTIVE PERSONA
   const handleDetachPersona = () => {
     if (!currentChat) return;
-    updateChat(currentChat.id, {
-      personaId: undefined,
-      systemPrompt: undefined,
-      temperature: undefined,
-      topP: undefined,
-      maxTokens: undefined,
-    });
+    updateChat(currentChat.id, personaSelectionPatch(currentChat, activePersona));
   };
 
   // Memory Handlers
@@ -762,6 +729,7 @@ export function WorkspaceModal({ isOpen, onClose }: { isOpen: boolean; onClose: 
                   return (
                     <div
                       key={p.id}
+                      data-assistant-id={p.id}
                       className={`p-3.5 rounded-3xl border transition-all flex flex-col justify-between gap-2.5 ${
                         isCurrentActive
                           ? 'shadow-md ring-1'

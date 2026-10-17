@@ -28,7 +28,8 @@ import {
 } from '../types';
 import { parseSlideDeckFromContent } from '../slides/parser';
 import { buildInitialModelEntities, VISIBLE_PROVIDERS } from '../providers/catalog';
-import { SEEDED_PERSONAS, assembleSystemPrompt, sanitizePrompt, compressPrompt } from '../prompt/assembly';
+import { SEEDED_PERSONAS, assembleSystemPrompt, sanitizePrompt, compressPrompt } from '../prompt/assembly.ts';
+import { mergePersonas, personaSelectionPatch, personaReasoningEffort } from '../prompt/personas';
 import { chunkText, extractTerms, retrievePassages, computeHash } from '../rag/engine';
 import { AGENT_TOOLS, executeAgentTool } from '../agent/tools';
 import {
@@ -428,6 +429,7 @@ export const useAppStore = create<AppState>((set, get) => {
     systemPrompt: string;
     thinking: boolean;
     stream: boolean;
+    reasoningEffort?: 'LOW' | 'MEDIUM' | 'HIGH';
   }
 
   const buildHistoryForApi = (chatId: string, excludeMsgId: string) => {
@@ -582,7 +584,7 @@ export const useAppStore = create<AppState>((set, get) => {
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...body, systemPrompt: `${body.systemPrompt}\n${responsePreferences(get().settings)}`, reasoningEffort: get().settings.reasoningEffort, reasoningBudget: get().settings.reasoningBudget, frequencyPenalty: get().settings.frequencyPenalty, presencePenalty: get().settings.presencePenalty }),
+        body: JSON.stringify({ ...body, systemPrompt: `${body.systemPrompt}\n${responsePreferences(get().settings)}`, reasoningEffort: body.reasoningEffort ?? get().settings.reasoningEffort, reasoningBudget: get().settings.reasoningBudget, frequencyPenalty: get().settings.frequencyPenalty, presencePenalty: get().settings.presencePenalty }),
         signal,
       });
       if (!response.ok) {
@@ -810,7 +812,7 @@ export const useAppStore = create<AppState>((set, get) => {
         return false;
       });
 
-      const initialPersonas = initial.personas?.length ? initial.personas : SEEDED_PERSONAS;
+      const initialPersonas = mergePersonas(initial.personas, SEEDED_PERSONAS);
       const initialSettings = { ...DEFAULT_SETTINGS, ...initial.settings,...readAppearance() };
       const oldBubble = String(initialSettings.bubbleStyle).toUpperCase();
       initialSettings.bubbleStyle = (['MODERN', 'GLASS', 'MINIMAL', 'CARD'].includes(oldBubble) ? oldBubble : 'MODERN') as AppSettings['bubbleStyle'];
@@ -839,7 +841,9 @@ export const useAppStore = create<AppState>((set, get) => {
           }
           return true;
         })
-        .map((c) => {
+        .map((savedChat) => {
+          const profile = initialPersonas.find(persona => persona.id === savedChat.personaId);
+          const c = { ...savedChat, ...personaSelectionPatch(savedChat, profile, profile) };
           // Clean legacy truncated titles like "...لاید برام درست کن درمورد ماشین ه"
           if (
             c.title &&
@@ -2061,9 +2065,9 @@ export const useAppStore = create<AppState>((set, get) => {
         // Standard chat: strictly single primary model!
         const activePersona = chat.personaId ? state.personas.find(p => p.id === chat.personaId) : undefined;
         const preferredModelId = activePersona?.modelId;
-        modelsToRun = chat.modelIds?.length
+        modelsToRun = preferredModelId ? [preferredModelId] : chat.modelIds?.length
           ? [chat.modelIds[0]]
-          : (preferredModelId ? [preferredModelId] : (state.selectedModelIds.length ? [state.selectedModelIds[0]] : (state.models[0] ? [state.models[0].id] : [])));
+          : (state.selectedModelIds.length ? [state.selectedModelIds[0]] : (state.models[0] ? [state.models[0].id] : []));
       }
 
       if (modelsToRun.length === 0 && state.models[0]) {
@@ -2356,7 +2360,7 @@ export const useAppStore = create<AppState>((set, get) => {
               systemPrompt,
               thinking: isThinkingActive,
               stream: state.settings.streamResponses,
-              reasoningEffort: state.settings.reasoningEffort,
+              reasoningEffort: personaReasoningEffort(persona, state.settings.reasoningEffort),
               reasoningBudget: state.settings.reasoningBudget,
               frequencyPenalty: state.settings.frequencyPenalty,
               presencePenalty: state.settings.presencePenalty,
@@ -2782,6 +2786,7 @@ export const useAppStore = create<AppState>((set, get) => {
             maxTokens: chat.maxTokens ?? persona?.maxTokens ?? s.defaultMaxTokens,
             topP: chat.topP ?? persona?.topP ?? s.defaultTopP,
             systemPrompt, thinking, stream: s.streamResponses,
+            reasoningEffort: personaReasoningEffort(persona, s.reasoningEffort),
           }, signal);
         })
       );
@@ -2893,6 +2898,7 @@ export const useAppStore = create<AppState>((set, get) => {
             baseUrl: creds.baseUrl, apiFormat: creds.apiFormat,
             temperature: 0.7, maxTokens: chat.maxTokens ?? s.defaultMaxTokens, topP: 1.0,
             systemPrompt: roleSystem(extra), thinking, stream: s.streamResponses,
+            reasoningEffort: personaReasoningEffort(persona, s.reasoningEffort),
           } as Parameters<typeof streamIntoMessage>[2],
         };
       };

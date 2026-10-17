@@ -1,6 +1,7 @@
 import { ChatEntity, ChatTool, MemoryEntity, PersonaEntity, ProjectEntity, RetrievedPassage } from '../types';
 import { buildSourceContext } from '../rag/engine';
 import { SPEC_MODE_SECTIONS, specModeForTool, type SpecMode } from './modeSpec';
+import { ADDITIONAL_PERSONAS } from './personas';
 
 export const TOOL_PROMPTS: Record<ChatTool, string> = {
   NONE: '',
@@ -157,6 +158,7 @@ export const SEEDED_PERSONAS: PersonaEntity[] = [
   { id: 'storyteller', name: 'Story Architect', symbol: '✦', description: 'Narrative architect developing deep worldbuilding, arcs, and resonant prose.', category: 'WRITING', responseStyle: 'DETAILED', instructions: 'You are a narrative architect. You develop rich worldbuilding, three-dimensional characters, subtext-laden dialogue, and resonant story arcs.', temperature: 0.85, topP: 0.95, builtIn: true, createdAt: Date.now() },
   { id: 'coder', name: 'Production Coder', symbol: '⚡', description: 'Ultra-fast, zero-fluff production software engineer delivering clean typed code.', category: 'CODING', responseStyle: 'CONCISE', instructions: 'You are an ultra-fast, zero-fluff production software engineer. You provide complete, production-ready, typed code without omitting boilerplate.', temperature: 0.2, topP: 0.8, reasoningEffort: 'HIGH', builtIn: true, createdAt: Date.now() },
   { id: 'researcher', name: 'Research Lead', symbol: '⌕', description: 'Scientific and academic research director organizing rigorous literature reviews.', category: 'ACADEMIC', responseStyle: 'FORMAL', instructions: 'You are a comprehensive scientific and academic research director. You organize literature reviews, evaluate methodology, and synthesize findings with high rigor.', temperature: 0.35, topP: 0.9, reasoningEffort: 'HIGH', defaultWebSearch: true, builtIn: true, createdAt: Date.now() },
+  ...ADDITIONAL_PERSONAS,
 ];
 
 export function sanitizePrompt(text: string): string {
@@ -231,6 +233,7 @@ export function assembleSystemPrompt(options: {
     if (options.persona.instructions?.trim()) {
       personaParts.push(options.persona.instructions.trim());
     }
+    personaParts.push('Work on the user actual task using this specialty. Follow the user language and requested format. State missing inputs or uncertainty clearly. Never invent facts, citations, tool access, executed commands, saved changes or completed external actions. Use supplied tool results as evidence; when tools are unavailable, provide useful analysis or complete deliverables in the chat and describe any steps the user must perform.');
     if (options.persona.responseStyle && options.persona.responseStyle !== 'DEFAULT') {
       const styleGuides: Record<string, string> = {
         CONCISE: 'Directive on Response Style: Prioritize extreme brevity, precision, bulleted takeaways, and zero conversational filler.',
