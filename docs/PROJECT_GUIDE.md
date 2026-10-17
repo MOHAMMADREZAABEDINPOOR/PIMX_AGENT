@@ -33,7 +33,6 @@ Web evidence runs start with a real planning request to the selected model, then
 
 Drag the workspace divider, use its arrow keys or use the size buttons to resize it. Expand fills the work area; minimize returns to chat. The last width saves on this device. Project deletion uses an app dialog; deleting a project keeps its chats in general history. Moving a conversation to an existing or newly created project opens that project and retains the conversation.
 
-**Pip**, the PIMX companion, follows actual planning, browsing, response and completion states. Tap it for status or a new chat. Hide it from its small menu or **General & UI Display → PIMX companion**.
 
 Default Vazirmatn and Inter typography is self-hosted and cached for offline use, including printed PDF exports. Font licenses are included in `public/fonts/core`.
 

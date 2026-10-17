@@ -43,28 +43,6 @@ test('language, mode and accent survive navigation between chat and public pages
  await expect.poll(()=>page.evaluate(()=>getComputedStyle(document.documentElement).getPropertyValue('--accent-color').trim().toLowerCase())).toBe('#2dd4bf');
 });
 
-test('Pip wanders, can be dragged, and stays still with reduced motion',async({page})=>{
- await page.setViewportSize({width:390,height:850});
- await page.addInitScript(()=>localStorage.setItem('pimx_cookie_consent','rejected'));
- await page.goto('/chat');await expect(page.locator('#composer-input')).toBeVisible();
- const pet=page.locator('.pimx-pet');await expect(pet).toBeVisible();
- await page.mouse.move(350,50);
- const initial=await pet.boundingBox();
- await expect.poll(async()=>Math.abs((await pet.boundingBox())!.x-initial!.x),{timeout:9000}).toBeGreaterThan(25);
- const before=await pet.boundingBox();
- await page.mouse.move(before!.x+30,before!.y+30);await page.mouse.down();
- await page.mouse.move(before!.x+130,before!.y-110,{steps:8});await page.mouse.up();
- const after=await pet.boundingBox();expect(after!.y).toBeLessThan(before!.y-90);
- await expect(page.locator('.pet-dialog')).toHaveCount(0);
- await pet.locator('button.pet-body').click();
- const dialog=await page.locator('.pet-dialog').boundingBox();expect(dialog!.x).toBeGreaterThanOrEqual(0);expect(dialog!.x+dialog!.width).toBeLessThanOrEqual(390);
- await page.screenshot({path:'artifacts/qa/pip-mobile.png'});
- await page.getByRole('button',{name:'Close companion',exact:true}).click();
- await page.emulateMedia({reducedMotion:'reduce'});await page.mouse.move(350,50);
- const resting=await pet.boundingBox();await page.waitForTimeout(5000);
- expect((await pet.boundingBox())!.x).toBeCloseTo(resting!.x,0);
-});
-
 for(const width of [390,1440])test(`transfer stays in a modal and sidebar controls stay fixed at ${width}px`,async({page})=>{
  await page.setViewportSize({width,height:1000});
  await page.addInitScript(()=>localStorage.setItem('pimx_cookie_consent','rejected'));

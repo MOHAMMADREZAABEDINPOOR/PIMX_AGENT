@@ -88,6 +88,8 @@ for (const [index, persona] of SEEDED_PERSONAS.entries()) {
       await card.getByRole('button', { name: 'Activate for This Chat', exact: true }).click();
       const welcome = page.locator('.assistant-welcome');
       await expect(welcome.getByRole('heading', { name: persona.name, exact: true })).toBeVisible();
+      await expect(welcome).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
+      await expect(welcome).toHaveCSS('border-top-width', '0px');
       expect(await welcome.evaluate(el => {
         for (let node: Element | null = el; node; node = node.parentElement) {
           const css = getComputedStyle(node);

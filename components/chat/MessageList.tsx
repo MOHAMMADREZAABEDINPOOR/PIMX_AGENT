@@ -150,35 +150,23 @@ export function EmptyChatHero({ currentProject, currentChat }: { currentProject?
 
   if (currentPersona) {
     return (
-      <section aria-label={currentPersona.name} className="assistant-welcome mx-auto w-full rounded-2xl border border-[var(--border-color)] bg-[var(--surface-color)] p-5 sm:p-6">
+      <section aria-label={currentPersona.name} className="assistant-welcome mx-auto w-full px-5 py-6 sm:px-6">
           <div className="flex flex-col items-center text-center">
-            <div
-              className="mb-3 grid h-14 w-14 place-items-center rounded-2xl border border-[var(--border-color)] text-3xl sm:h-16 sm:w-16"
-              style={{
-                backgroundColor: 'var(--accent-subtle)',
-                color: 'var(--accent-color)',
-                boxShadow: 'var(--depth-2)',
-              }}
-            >
-              {currentPersona.symbol || '🤖'}
-            </div>
-
             <h2 className="t-h1 text-[var(--text-color)]">{currentPersona.name}</h2>
             <p className="mt-1.5 max-w-md t-small leading-relaxed text-[var(--text-muted)]">
               {currentPersona.description || currentPersona.instructions.slice(0, 120)}
             </p>
 
             <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--accent-border)] bg-[var(--accent-subtle)] px-3 py-1 t-cap font-semibold text-[var(--accent-color)]">
-                <Sparkles className="h-3 w-3" strokeWidth={1.9} />
+              <span className="t-cap font-semibold text-[var(--accent-color)]">
                  <UiText source={"Persona instructions active"}/> </span>
               {currentPersona.category ? (
-                <span className="rounded-full border border-[var(--border-color)] bg-[var(--bg-color)] px-3 py-1 t-mono text-[10px] text-[var(--text-muted)]">
+                <span className="t-cap text-[var(--text-muted)]">
                   {currentPersona.category}
                 </span>
               ) : null}
               {currentPersona.responseStyle && currentPersona.responseStyle !== 'DEFAULT' ? (
-                <span className="rounded-full border border-[var(--border-color)] bg-[var(--bg-color)] px-3 py-1 t-mono text-[10px] text-[var(--text-muted)]">
+                <span className="t-cap text-[var(--text-muted)]">
                   {currentPersona.responseStyle}
                 </span>
               ) : null}

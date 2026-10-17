@@ -391,15 +391,6 @@ test('project deletion can be cancelled and retains linked chats when confirmed'
   await page.screenshot({ path: 'artifacts/qa/projects-after-delete.png' });
 });
 
-test('Pip reacts to live thinking and can be disabled', async ({ page }) => {
-  let release!: () => void; const gate = new Promise<void>(resolve => { release = resolve; });
-  await page.route('**/api/chat', async route => { await gate; await route.fulfill({ contentType: 'text/event-stream', body: sse('Your answer is ready.') }); });
-  await seed(page); await page.getByRole('button', { name: 'PIMX companion Pip' }).click(); await expect(page.getByText('Pip · PIMX companion')).toBeVisible();
-  await page.locator('#composer-input').fill('Hello Pip'); await page.locator('#btn-send-message').click(); await expect(page.locator('.pimx-pet')).toHaveAttribute('data-mood', 'work'); await page.screenshot({ path: 'artifacts/qa/pip-working.png' });
-  release(); await expect(page.locator('.pimx-pet')).toHaveAttribute('data-mood', 'happy'); await page.getByRole('button', { name: 'Hide pet', exact: true }).click(); await expect(page.locator('.pimx-pet')).toHaveCount(0);
-  expect((await persisted(page)).settings.petEnabled).toBe(false);
-});
-
 test('multiple tools animate the actual planning, search and slide stages', async ({ page }) => {
   let planRelease!: () => void, searchRelease!: () => void, answerRelease!: () => void;
   const planning = new Promise<void>(r => { planRelease = r; }), searching = new Promise<void>(r => { searchRelease = r; }), answering = new Promise<void>(r => { answerRelease = r; });

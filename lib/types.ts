@@ -450,7 +450,6 @@ export interface AppSettings {
   maxWebSources?: number;
   reasoningBudget?: number;
   workspaceWidth?: number;
-  petEnabled?: boolean;
   showAgentActivity?: boolean;
   activityStyle?: 'IMMERSIVE' | 'COMPACT';
   reasoningTextSize?: number;

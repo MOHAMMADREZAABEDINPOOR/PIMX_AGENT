@@ -1431,30 +1431,6 @@
     "Dismiss",
     "بستن"
   ],
-  "Pip · PIMX companion": [
-    "Pip · PIMX companion",
-    "پیپ · همراه PIMX"
-  ],
-  "Close companion": [
-    "Close companion",
-    "بستن همراه"
-  ],
-  "Start a chat with Pip": [
-    "Start a chat with Pip",
-    "شروع گفتگو با پیپ"
-  ],
-  "Companion settings": [
-    "Companion settings",
-    "تنظیمات همراه"
-  ],
-  "Hide pet": [
-    "Hide pet",
-    "مخفی کردن همراه"
-  ],
-  "PIMX companion Pip": [
-    "PIMX companion Pip",
-    "پیپ، همراه PIMX"
-  ],
   "PIMX on your home screen": [
     "PIMX on your home screen",
     "PIMX روی صفحهٔ اصلی دستگاه"
@@ -2570,14 +2546,6 @@
   "Let your selected model choose a reaction to your message; uses a small extra request.": [
     "Let your selected model choose a reaction to your message; uses a small extra request.",
     "مدل منتخب شما برای پیام‌تان واکنش انتخاب کند؛ یک درخواست کوچک اضافه دارد."
-  ],
-  "PIMX companion": [
-    "PIMX companion",
-    "همراه PIMX"
-  ],
-  "A small animated pet follows real tool activity. Tap it to see your run or start a new chat.": [
-    "A small animated pet follows real tool activity. Tap it to see your run or start a new chat.",
-    "همراه کوچک و متحرک، فعالیت واقعی ابزار را دنبال می‌کند. برای دیدن اجرا یا شروع گفتگو روی آن بزنید."
   ],
   "Message timestamps": [
     "Message timestamps",

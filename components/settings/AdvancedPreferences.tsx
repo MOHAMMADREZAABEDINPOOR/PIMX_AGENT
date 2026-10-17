@@ -48,7 +48,6 @@ export function AdvancedPreferences({ section }: { section: 'prompt' | 'general'
       <Toggle label={$t("Follow new messages")} description={$t("Scroll to the latest response when a new turn arrives.")} name="autoScroll" />
       <Toggle label={$t("Message reactions")} description={$t("Show the 100-emoji picker and one selected reaction per message.")} name="showReactions" />
       <Toggle label={$t("AI reactions")} description={$t("Let your selected model choose a reaction to your message; uses a small extra request.")} name="aiReactions" />
-      <Toggle label={$t("PIMX companion")} description={$t("A small animated pet follows real tool activity. Tap it to see your run or start a new chat.")} name="petEnabled" />
       <Toggle label={$t("Message timestamps")} description={$t("Show when each assistant reply was created.")} name="showTimestamps" />
       <Toggle label={$t("Start new chats as temporary")} description={$t("New chats and their generated files stay in this tab until reload.")} name="temporaryByDefault" />
       <InstallAppCard />
